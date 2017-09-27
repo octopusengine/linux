@@ -30,7 +30,7 @@ nc (net cat / listen / connect)
 ifconfig<br />
 ip a l / a s (addr show)<br />
 nmap (network mapper)<br />
-nmap - sn / -v -A / -sP<br />
+nmap - sn / -v -A / -sP 192.168.0.*<br />
 netstat -vat<br />
 <hr />
 sysv-rc-conf (start init)<br />
