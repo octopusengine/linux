@@ -26,15 +26,19 @@ service ssh strat<br />
 /etc/init.d/ssh start<br />
 ssh-copy-id<br />
 <hr />
+nc (net cat / listen / connect)
 ifconfig<br />
-ip a l<br />
+ip a l / a s (addr show)<br />
 nmap (network mapper)<br />
-nmap - sn / -v -A<br />
+nmap - sn / -v -A / -sP<br />
 netstat -vat<br />
 <hr />
 sysv-rc-conf (start init)<br />
+screen
 tmux / alt+B / Create Next Prew % (hor) " (vert)<br />
 htop<br />
 iotop<br />
+wiresharp-gtk<br />
 iftop<br />
-lsusb<br />
+lsusb<br /><hr />
+mc<br />
