@@ -42,3 +42,7 @@ wiresharp-gtk<br />
 iftop<br />
 lsusb<br /><hr />
 mc<br />
+
+<hr />
+<a href=http://wiki.ubuntu.cz/z%C3%A1kladn%C3%AD_p%C5%99%C3%ADkazy>wiky-ubuntu-cz</a>
+
