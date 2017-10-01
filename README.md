@@ -29,6 +29,9 @@ service ssh strat<br />
 /etc/init.d/ssh start<br />
 ssh-copy-id<br />
 <hr />
+cat FILE | top<br />
+sudo nano FILE<br />
+cmp F1 F2<br />
 nc (net cat / listen / connect)
 ifconfig<br />
 ip a l / a s (addr show)<br />
