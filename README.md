@@ -3,6 +3,7 @@
 simple "memory" AND SCRIPTS<br />
 <hr />
 whoami > @user<br />
+passwd<br />
 pwd > DIR<br />
 history | less / tail..<br />
 alias COMM<br />
@@ -15,7 +16,7 @@ wget http://abc.cz/sh/hi.sh<br />
 chmod 775 DIR(pwd)/hi.sh (change mode)<br />
 dmesg (report sit.)<br />
 free (mem)<br />
-df / (space)<br />
+df / (space - disk free)<br />
 df -h (human)<br />
 du -sh /dir/<br />
 du -s * | sort -nr > $HOME/user_space_report.txt<br />
@@ -29,9 +30,11 @@ service ssh strat<br />
 /etc/init.d/ssh start<br />
 ssh-copy-id<br />
 <hr />
-cat FILE | top<br />
-sudo nano FILE<br />
+cat FILE | less / more<br />
+sudo nano FILE / vi<br />
 cmp F1 F2<br />
+find <br />
+sed (stream editor)<br />
 nc (net cat / listen / connect)
 ifconfig<br />
 ip a l / a s (addr show)<br />
@@ -53,6 +56,8 @@ lsusb<br />
 lsmod<br />
 <hr />
 mc<br />
+shutdown -h / -r<br />
+reboot<br />
 
 <hr />
 <a href=http://wiki.ubuntu.cz/z%C3%A1kladn%C3%AD_p%C5%99%C3%ADkazy>wiky-ubuntu-cz</a><br />
