@@ -5,6 +5,7 @@ simple "memory" AND SCRIPTS<br />
 whoami > @user<br />
 pwd > DIR<br />
 history | less / tail..<br />
+alias COMM<br />
 man COMM (manual)<br />
 COMM -h (help)<br />
 wc FILE<br />
@@ -19,6 +20,7 @@ df -h (human)<br />
 du -sh /dir/<br />
 du -s * | sort -nr > $HOME/user_space_report.txt<br />
 ls -lat (line all time)<br />
+mkdir<br />
 cp file.txt file-bak.txt<br />
 rm file.txt<br />
 echo file.txt byl > backup and delete<br />
@@ -32,7 +34,7 @@ ifconfig<br />
 ip a l / a s (addr show)<br />
 nmap (network mapper)<br />
 nmap - sn / -v -A / -sP 192.168.0.*<br />
-netstat -vat<br />
+netstat -vat / -nr / -i / -ta<br />
 <hr />
 sysv-rc-conf (start init)<br />
 screen
