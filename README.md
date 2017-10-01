@@ -36,14 +36,19 @@ nmap (network mapper)<br />
 nmap - sn / -v -A / -sP 192.168.0.*<br />
 netstat -vat / -nr / -i / -ta<br />
 <hr />
+ps afux (process - all tree user)
+ps afx | grap py > ID<br />
+kill ID<br />
 sysv-rc-conf (start init)<br />
-screen
+screen<br />
 tmux / alt+B / Create Next Prew % (hor) " (vert)<br />
 htop<br />
 iotop<br />
 wiresharp-gtk<br />
 iftop<br />
-lsusb<br /><hr />
+lsusb<br />
+lsmod<br />
+<hr />
 mc<br />
 
 <hr />
