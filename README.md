@@ -19,7 +19,7 @@ free (mem)<br />
 df / (space - disk free)<br />
 df -h (human)<br />
 du -sh /dir/<br />
-du -s * | sort -nr > $HOME/user_space_report.txt<br />
+<b>du -s * | sort -nr > $HOME/user_space_report.txt</b><br />
 ls -lat (line all time)<br />
 mkdir<br />
 cp file.txt file-bak.txt<br />
@@ -39,7 +39,7 @@ nc (net cat / listen / connect)
 ifconfig<br />
 ip a l / a s (addr show)<br />
 nmap (network mapper)<br />
-nmap - sn / -v -A / -sP 192.168.0.*<br />
+<b>nmap - sn / -v -A / -sP 192.168.0.*</b><br />
 netstat -vat / -nr / -i / -ta<br />
 <hr />
 ps afux (process - all tree user)
