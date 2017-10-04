@@ -6,6 +6,7 @@ whoami -> @USER<br />
 passwd<br />
 sudo adduser newUser<br />
 sudo passwd newUser<br />
+RPi: myPiName - /etc/hostname<br />
 pwd -> DIR<br />
 history | less / tail..<br />
 alias COMM/expr.<br />
@@ -22,6 +23,9 @@ wget -O https://raw.githubusercontent.com/octopusengine/linux/master/ct/btc.sh<b
 chmod 775 DIR(pwd)/hi.sh (change mode)<br />
 dmesg (report sit.)<br />
 free (mem)<br />
+sudo fdisk -l<br />
+sudo blkid<br />
+sudo mount -a / /media/usb1t<br />
 df / (space - disk free)<br />
 df -h (human)<br />
 du -sh /dir/<br />
@@ -44,15 +48,23 @@ cmp F1 F2<br />
 find <br />
 sed (stream editor)<br />
 nc (net cat / listen / connect)
+sudo ifdown eth0 && sudo ifup eth0 (restart wifi)<br />
+nohup (no hangup)<br />
+<i>sudo nohup sh -c "ifdown eth0 && ifup eth0"</i><br />
 ifconfig<br />
+sudo route -n<br />
+ping IP<br />
+ping -c 5 google.com / 8.8.8.8
 ip a l / a s (addr show)<br />
 nmap (network mapper)<br />
 <b><i>nmap - sn / -v -A / -sP 192.168.0.*</i></b><br />
 netstat -vat / -nr / -i / -ta<br />
 <hr />
 ps afux (process - all tree user)
-ps afx | grap py > ID<br />
+ps afx | grep py > ID<br />
+ps aux | grep -i vi (-i ignore case)<br />
 kill ID<br />
+kill $(ps aux | grep ´...´ | awk ...)
 sysv-rc-conf (start init)<br />
 screen<br />
 tmux / alt+B / Create Next Prew % (hor) " (vert)<br />
