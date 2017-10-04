@@ -9,10 +9,13 @@ history | less / tail..<br />
 alias COMM<br />
 man COMM (manual)<br />
 COMM -h (help)<br />
+dpkg -l | more (what is installed)<br />
+dpkg -l | grep -i game (-i case intersensitice - Game / gaMe..)<br />
 wc FILE<br />
 grep FILE<br />
 find DIR<br />
 wget http://abc.cz/sh/hi.sh<br />
+wget -O<br />
 chmod 775 DIR(pwd)/hi.sh (change mode)<br />
 dmesg (report sit.)<br />
 free (mem)<br />
