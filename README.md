@@ -9,10 +9,11 @@ sudo passwd newUser<br />
 pwd > DIR<br />
 history | less / tail..<br />
 alias COMM/expr.<br />
+<i>grep alias ~/.bashrc</i><br />
 man COMM (manual)<br />
 COMM -h (help)<br />
 dpkg -l | more (what is installed)<br />
-dpkg -l | grep -i game (-i case intersensitice - Game / gaMe..)<br />
+<i>dpkg -l | grep -i game (-i case intersensitice - Game / gaMe..)</i><br />
 wc FILE<br />
 grep FILE<br />
 find DIR<br />
@@ -25,7 +26,7 @@ df / (space - disk free)<br />
 df -h (human)<br />
 du -sh /dir/<br />
 <b>du -s * | sort -nr > $HOME/user_space_report.txt</b><br />
-echo "& one more line" >> FILE / tilda + /name.txt<br />
+echo "& one more line" >> FILE / ~/name.txt<br />
 ls -lat (line all time)<br />
 ls -A (all)<br />
 mkdir<br />
@@ -46,7 +47,7 @@ nc (net cat / listen / connect)
 ifconfig<br />
 ip a l / a s (addr show)<br />
 nmap (network mapper)<br />
-<b>nmap - sn / -v -A / -sP 192.168.0.*</b><br />
+<b><i>nmap - sn / -v -A / -sP 192.168.0.*</i></b><br />
 netstat -vat / -nr / -i / -ta<br />
 <hr />
 ps afux (process - all tree user)
@@ -69,4 +70,5 @@ reboot<br />
 <hr />
 <a href=http://wiki.ubuntu.cz/z%C3%A1kladn%C3%AD_p%C5%99%C3%ADkazy>wiky-ubuntu-cz</a><br />
 <a href=http://searchdatacenter.techtarget.com/tutorial/77-Linux-commands-and-utilities-youll-actually-use>77-commands</a><br />
+~~~
 
