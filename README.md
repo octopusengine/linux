@@ -13,7 +13,7 @@ alias COMM/expr.<br />
 man COMM (manual)<br />
 COMM -h (help)<br />
 dpkg -l | more (what is installed)<br />
-<i>dpkg -l | grep -i game (-i case intersensitice - Game / gaMe..)</i><br />
+<i>dpkg -l | grep -i game (-i case intersensitive - Game / gaMe..)</i><br />
 wc FILE<br />
 grep FILE<br />
 find DIR<br />
