@@ -2,11 +2,11 @@
 
 simple "memory" AND SCRIPTS<br />
 <hr />
-whoami > @user<br />
+whoami -> @USER<br />
 passwd<br />
 sudo adduser newUser<br />
 sudo passwd newUser<br />
-pwd > DIR<br />
+pwd -> DIR<br />
 history | less / tail..<br />
 alias COMM/expr.<br />
 <i>grep alias ~/.bashrc</i><br />
