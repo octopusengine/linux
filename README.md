@@ -4,6 +4,8 @@ simple "memory" AND SCRIPTS<br />
 <hr />
 whoami > @user<br />
 passwd<br />
+sudo adduser newUser<br />
+sudo passwd newUser<br />
 pwd > DIR<br />
 history | less / tail..<br />
 alias COMM/expr.<br />
@@ -25,6 +27,7 @@ du -sh /dir/<br />
 <b>du -s * | sort -nr > $HOME/user_space_report.txt</b><br />
 echo "& one more line" >> FILE / tilda + /name.txt<br />
 ls -lat (line all time)<br />
+ls -A (all)<br />
 mkdir<br />
 cp file.txt file-bak.txt<br />
 rm file.txt<br />
