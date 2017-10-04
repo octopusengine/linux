@@ -15,7 +15,7 @@ wc FILE<br />
 grep FILE<br />
 find DIR<br />
 wget http://abc.cz/sh/hi.sh<br />
-wget -O<br />
+wget https://raw.githubusercontent.com/octopusengine/linux/master/ct/btc.sh -O<br />
 chmod 775 DIR(pwd)/hi.sh (change mode)<br />
 dmesg (report sit.)<br />
 free (mem)<br />
