@@ -6,7 +6,7 @@ whoami > @user<br />
 passwd<br />
 pwd > DIR<br />
 history | less / tail..<br />
-alias COMM<br />
+alias COMM/expr.<br />
 man COMM (manual)<br />
 COMM -h (help)<br />
 dpkg -l | more (what is installed)<br />
