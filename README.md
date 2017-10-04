@@ -23,6 +23,7 @@ df / (space - disk free)<br />
 df -h (human)<br />
 du -sh /dir/<br />
 <b>du -s * | sort -nr > $HOME/user_space_report.txt</b><br />
+echo "& one more line" >> FILE / tilda + /name.txt<br />
 ls -lat (line all time)<br />
 mkdir<br />
 cp file.txt file-bak.txt<br />
