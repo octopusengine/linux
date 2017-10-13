@@ -75,6 +75,9 @@ iftop<br />
 lsusb<br />
 lsmod<br />
 <hr />
+apt-get install python-pip<br />
+pip install pybitcoin<br / >
+<hr />
 mc<br />
 shutdown -h / -r<br />
 reboot<br />
