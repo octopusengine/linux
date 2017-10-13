@@ -4,3 +4,4 @@
 
 
 <a href=https://docs.python.org/2/library/hashlib.html>https://docs.python.org/2/library/hashlib.html</a><br>
+<a htef=https://github.com/weex/addrgen>python addr gen</a><br />
