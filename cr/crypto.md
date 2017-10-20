@@ -10,3 +10,9 @@
 <a href=https://github.com/vbuterin/pybitcointools>vbuterin/pybitcointools</a><br />
 <a href=https://github.com/grondilu/bitcoin-bash-tools/blob/master/bitcoin.sh>bitcoin-bash-tools</a><br />
 <a href=https://en.bitcoin.it/wiki/Wallet_import_format>WIF</a><br />
+<hr />
+<a href=https://walletgenerator.net/?currency=Vertcoin>VTC walletgenerator</a><br />
+<a href=https://explorer.vertcoin.org/ext/getaddress/VjYdScbpMAC7jbTLAPjNNc1LETayW16SuX>explorer.vertcoin.org</a><br />
+<a href=https://github.com/priestc/moneywagon>moneywagon lib</a><br />
+
+
