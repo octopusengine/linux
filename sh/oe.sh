@@ -1,10 +1,9 @@
 #!/bin/bash
 #oe / octopusengine
-#wget -O https://raw.githubusercontent.com/octopusengine/linux/master/sh/oe.sh
-
+#wget https://raw.githubusercontent.com/octopusengine/linux/master/sh/oe.sh
+#chmod 755 ../oe.sh
 
 echo
-
 if [[ $1 = "i" ]]; then
   echo "----- octopus engine info -----"
   uname -a
@@ -17,17 +16,18 @@ echo "whoami>"
 whoami
 echo "pwd>" 
 pwd
-echo "free>"
-free
-echo "dp -h>"
-df -h
 
+if [[ $2 = "m" ]]; then
+  echo "----- memory RAM..HD -----"
+  echo "free>"
+  free
+  echo "dp -h>"
+  df -h
+fi
 
-
-if [[ $(which toilet) = "" ]]; then
-                echo $price
-        else
-                toilet -t -f bigascii12 $price
-        fi
-
-echo $x
+#if [[ $(which toilet) = "" ]]; then
+#                echo $price
+#        else
+toilet -t -f bigascii12 $price
+#fi
+#echo $x
