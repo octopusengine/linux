@@ -1,10 +1,13 @@
 #!/bin/bash
 #oe / octopusengine
+#wget -O https://raw.githubusercontent.com/octopusengine/linux/master/sh/oe.sh
+
 
 echo
 
 if [[ $1 = "i" ]]; then
   echo "----- octopus engine info -----"
+  uname -a
 fi
 
 x = 123 
