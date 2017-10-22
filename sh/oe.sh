@@ -7,15 +7,16 @@ echo
 if [[ $1 = "i" ]]; then
   echo "----- octopus engine info -----"
   uname -a
+  w=whoami
+  echo "whoami > $w" 
+  d=pwd
+  echo "pwd > $d"  
 fi
 
-x = 123 
-price = 567
+x=123 
+price=567
 
-echo "whoami>" 
-whoami
-echo "pwd>" 
-pwd
+
 
 if [[ $2 = "m" ]]; then
   echo "----- memory RAM..HD -----"
