@@ -10,7 +10,6 @@ if [[ $1 = "h" ]]; then
   echo "$2 m(raM/HD) / b(btc/ltc) / c(crypto test)"
 fi
 
-
 if [[ $1 = "i" ]]; then
   echo "----- octopus engine info -----"
   uname -a
@@ -20,7 +19,6 @@ if [[ $1 = "i" ]]; then
   echo "pwd > $d"  
 fi
 
-
 price1=123
 if [[ $2 = "b" ]]; then
   echo "----- BTC/LTC -----"
@@ -28,6 +26,11 @@ if [[ $2 = "b" ]]; then
   echo "$price1 BTC/USD"
   price2=$(wget -qO- https://api.bitfinex.com/v1/pubticker/ltcusd | grep -E -o 'last_price":"[0-9.]+"' | grep -E -o '[0-9.]+')
   echo "$price2 LTC/USD"
+fi
+
+if [[ $2 = "c" ]]; then
+  echo "----- crypto -----"
+  
 fi
 
 if [[ $2 = "m" ]]; then
@@ -44,4 +47,4 @@ fi
 #toilet -t -f bigascii12 $price
 #fi
 #echo $x
-toilet -t -f bigascii12 $price1
+#toilet -t -f bigascii12 $price1
