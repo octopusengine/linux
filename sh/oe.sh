@@ -14,9 +14,9 @@ fi
 if [[ $1 = "i" ]]; then
   echo "----- octopus engine info -----"
   uname -a
-  w=whoami
+  w=´whoami´
   echo "whoami > $w" 
-  d=pwd
+  d=´pwd´
   echo "pwd > $d"  
 fi
 
