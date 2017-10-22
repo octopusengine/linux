@@ -87,4 +87,8 @@ reboot<br />
 <a href=http://wiki.ubuntu.cz/z%C3%A1kladn%C3%AD_p%C5%99%C3%ADkazy>wiky-ubuntu-cz</a><br />
 <a href=http://searchdatacenter.techtarget.com/tutorial/77-Linux-commands-and-utilities-youll-actually-use>77-commands</a><br />
 ~~~
+<hr />
+
+<a href=http://www.root.cz/clanky/programovani-v-bash-shellu/>programovani-v-bash-shellu</a><br />
+<a href=http://www.abclinuxu.cz/clanky/navody/bash-i>navody/bash-i</a><br />
 
