@@ -6,8 +6,13 @@
 echo
 if [[ $1 = "h" ]]; then
   echo "----- octopus engine help -----"
-  echo "$1 h(help) / i(info)"
+  echo "$1 h(help) / c(clear) / i(info)"
   echo "$2 m(raM/HD) / b(btc/ltc) / c(crypto test)"
+fi
+
+if [[ $1 = "c" ]]; then
+  echo "----- octopus engine -----"
+  clear  
 fi
 
 if [[ $1 = "i" ]]; then
