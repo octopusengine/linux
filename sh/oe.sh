@@ -22,7 +22,7 @@ fi
 
 
 price1=123
-if [[ $2 = "m" ]]; then
+if [[ $2 = "b" ]]; then
   echo "----- BTC/LTC -----"
   price1=$(wget -qO- https://www.bitstamp.net/api/v2/ticker/btcusd/ | grep -E -o 'last": "[0-9.]+"' | grep -E -o '[0-9]+.[0-9]{2}')
   echo "$price1 BTC/USD"
