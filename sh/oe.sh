@@ -56,4 +56,5 @@ fi
 #toilet -t -f bigascii12 $price
 #fi
 #echo $x
+
 #toilet -t -f bigascii12 $price1
