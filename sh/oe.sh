@@ -20,6 +20,9 @@ if [[ $1 = "i" ]]; then
   echo "pwd > $d"  
 fi
 
+
+price1=$(wget -qO- https://www.bitstamp.net/api/v2/ticker/btcusd/ | grep -E -o 'last": "[0-9.]+"' | grep -E -o '[0-9]+.[0-9]{2}')
+
 x=123 
 price=567
 
