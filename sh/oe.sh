@@ -21,12 +21,14 @@ if [[ $1 = "i" ]]; then
 fi
 
 
-price1=$(wget -qO- https://www.bitstamp.net/api/v2/ticker/btcusd/ | grep -E -o 'last": "[0-9.]+"' | grep -E -o '[0-9]+.[0-9]{2}')
-
-x=123 
-price=567
-
-
+price1=123
+if [[ $2 = "m" ]]; then
+  echo "----- BTC/LTC -----"
+  price1=$(wget -qO- https://www.bitstamp.net/api/v2/ticker/btcusd/ | grep -E -o 'last": "[0-9.]+"' | grep -E -o '[0-9]+.[0-9]{2}')
+  echo "$price1 BTC/USD"
+  price2=$(wget -qO- https://api.bitfinex.com/v1/pubticker/ltcusd | grep -E -o 'last_price":"[0-9.]+"' | grep -E -o '[0-9.]+')
+  echo "$price2 LTC/USD"
+fi
 
 if [[ $2 = "m" ]]; then
   echo "----- memory RAM..HD -----"
@@ -39,6 +41,7 @@ fi
 #if [[ $(which toilet) = "" ]]; then
 #                echo $price
 #        else
-toilet -t -f bigascii12 $price
+#toilet -t -f bigascii12 $price
 #fi
 #echo $x
+toilet -t -f bigascii12 $price1
