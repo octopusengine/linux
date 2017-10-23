@@ -4,17 +4,17 @@
 #chmod 755 ../oe.sh
 
 okEnd() {
-  echo -n "ok"
+  echo -n "end > "
 
   i=0
-  while [ "$i" -le 10 ]; do
+  while [ "$i" -le 16 ]; do
     i=$((i + 1))
     echo -n "."
-    sleep 0.2
+    sleep 0.1
   done
 
   echo
-  echo "End"
+  echo "OK"
 }
 
 echo
