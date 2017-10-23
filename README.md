@@ -19,6 +19,7 @@ dpkg -l | more (what is installed)<br />
 <i>dpkg -l | grep -i game (-i case intersensitive - Game / gaMe..)</i><br />
 wc FILE<br />
 grep FILE<br />
+md5sum FILE<br />
 find DIR<br />
 wget http://abc.cz/sh/hi.sh<br />
 wget -O https://raw.githubusercontent.com/octopusengine/linux/master/ct/btc.sh<br />
