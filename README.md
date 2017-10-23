@@ -45,6 +45,7 @@ sudo apt-get install openssh-server<br />
 service ssh start<br />
 /etc/init.d/ssh start<br />
 ssh-copy-id<br />
+<b>ssh IP</b> / ssh USER@IP<br />
 <hr />
 cat FILE | less / more<br />
 sudo nano FILE / vi<br />
