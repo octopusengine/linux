@@ -5,16 +5,13 @@
 
 okEnd() {
   echo -n "end > "
-
   i=0
   while [ "$i" -le 16 ]; do
     i=$((i + 1))
     echo -n "."
     sleep 0.1
   done
-
-  echo
-  echo "OK"
+  echo; echo "OK"
 }
 
 echo
