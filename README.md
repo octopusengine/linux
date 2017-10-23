@@ -3,6 +3,7 @@
 simple "memory" AND SCRIPTS<br />
 <hr />
 uname -a<br />
+w<br />
 whoami -> @USER<br />
 passwd<br />
 sudo adduser newUser<br />
