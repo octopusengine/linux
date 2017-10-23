@@ -42,7 +42,7 @@ cp file.txt file-bak.txt<br />
 rm file.txt<br />
 echo file.txt byl > backup and delete<br />
 sudo apt-get install openssh-server<br />
-service ssh strat<br />
+service ssh start<br />
 /etc/init.d/ssh start<br />
 ssh-copy-id<br />
 <hr />
