@@ -3,6 +3,20 @@
 #wget https://raw.githubusercontent.com/octopusengine/linux/master/sh/oe.sh
 #chmod 755 ../oe.sh
 
+okEnd() {
+  echo -n "ok"
+
+  i=0
+  while [ "$i" -le 10 ]; do
+    i=$((i + 1))
+    echo -n "."
+    sleep 0.2
+  done
+
+  echo
+  echo "End"
+}
+
 echo
 if [[ $1 = "h" ]]; then
   echo "----- octopus engine help -----"
@@ -60,3 +74,6 @@ fi
 #echo $x
 
 #toilet -t -f bigascii12 $price1
+
+okEnd
+
