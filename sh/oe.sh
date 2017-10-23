@@ -33,8 +33,9 @@ if [[ $1 = "i" ]]; then
   echo "whoami > `$w`" 
   d=pwd
   echo "pwd > `$d`"
-  r=$(which)
-  echo "which > $r"
+  #r=$(which)
+  r=which
+  echo "which > `$r`"
   sleep 1s  
 fi
 
