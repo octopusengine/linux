@@ -1,5 +1,5 @@
 #!/bin/bash
-#oe / octopusengine
+#oe / octopusengine 2015-17
 #wget https://raw.githubusercontent.com/octopusengine/linux/master/sh/oe.sh
 #chmod 755 ../oe.sh
 
@@ -33,6 +33,8 @@ if [[ $2 = "b" ]]; then
   sleep 1s
   price2=$(wget -qO- https://api.bitfinex.com/v1/pubticker/ltcusd | grep -E -o 'last_price":"[0-9.]+"' | grep -E -o '[0-9.]+')
   echo "$price2 LTC/USD"
+  price3=$(wget -qO- https://api.bitfinex.com/v1/pubticker/vtcusd | grep -E -o 'last_price":"[0-9.]+"' | grep -E -o '[0-9.]+')
+  echo "$price3 VTC/USD"
   sleep 1s
 fi
 
