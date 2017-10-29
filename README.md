@@ -8,6 +8,7 @@ whoami -> @USER<br />
 passwd<br />
 sudo adduser newUser<br />
 sudo passwd newUser<br />
+hostname<br />
 RPi: myPiName - /etc/hostname<br />
 pwd -> DIR<br />
 history | less / tail..<br />
