@@ -85,6 +85,7 @@ pip install pybitcoin<br / >
 <hr />
 mc<br />
 shutdown -h / -r<br />
+sudo apt-get update > upgrade<br />
 reboot<br />
 
 <hr />
