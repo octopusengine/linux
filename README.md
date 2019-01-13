@@ -81,7 +81,7 @@ kill ID<br />
 kill $(ps aux | grep ´...´ | awk ...)
 sysv-rc-conf (start init)<br />
 screen<br />
-tmux / alt+B / Create Next Prew % (hor) " (vert)<br />
+tmux / ctrl+B / Create Next Prew % (hor) " (vert)<br />
 htop<br />
 iotop<br />
 wiresharp-gtk<br />
