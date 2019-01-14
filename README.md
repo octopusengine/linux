@@ -2,6 +2,9 @@
 
 simple "memory" AND SCRIPTS<br />
 <hr />
+man man<br />
+man intro<br />
+man -k = apropos STH<br />
 uname -a<br />
 w<br />
 whoami -> @USER<br />
@@ -18,7 +21,7 @@ watch -n 30 COMM<br />
 man COMM (manual)<br />
 COMM -h (help)<br />
 dpkg -l | more (what is installed)<br />
-<i>dpkg -l | grep -i game (-i case intersensitive - Game / gaMe..)</i><br />
+<i>dpkg -l | grep -i game/python... (-i case intersensitive - Game / gaMe..)</i><br />
 wc FILE<br />
 grep FILE<br />
 md5sum FILE<br />
@@ -59,6 +62,7 @@ curl -s -X POST -F "fileToUpload=@/tmp/temp.jpg" -F "authkey=${UPLOAD_KEY}" -F "
 cat FILE | less / more<br />
 sudo nano FILE / vi<br />
 cmp F1 F2<br />
+hexdump -C FILE<br />
 find <br />
 sed (stream editor)<br />
 nc (net cat / listen / connect)
