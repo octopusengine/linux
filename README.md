@@ -72,7 +72,7 @@ nohup (no hangup)<br />
 ifconfig<br />
 sudo route -n<br />
 ping IP<br />
-ping -c 5 google.com / 8.8.8.8
+ping -c 5 google.com / 8.8.8.8<br />
 ip a l / a s (addr show)<br />
 nmap (network mapper)<br />
 <b><i>nmap - sn / -v -A / -sP 192.168.0.*</i></b><br />
@@ -82,7 +82,7 @@ ps afux (process - all tree user)
 ps afx | grep py > ID<br />
 ps aux | grep -i vi (-i ignore case)<br />
 kill ID<br />
-kill $(ps aux | grep ´...´ | awk ...)
+kill $(ps aux | grep ´...´ | awk ...)<br />
 sysv-rc-conf (start init)<br />
 screen<br />
 tmux / ctrl+B / Create Next Prew % (hor) " (vert)<br />
