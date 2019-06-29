@@ -16,7 +16,7 @@ RPi: myPiName - /etc/hostname<br />
 pwd -> DIR<br />
 history | less / tail..<br />
 alias COMM/expr. <br />
-<i>alias hm = "ls -l | wc -l" (howmany)</i><br />
+<i>alias hm="ls -l | wc -l"</i> (howmany)<br />
 watch -n 30 COMM<br />
 <i>grep alias ~/.bashrc</i><br />
 man COMM (manual)<br />
