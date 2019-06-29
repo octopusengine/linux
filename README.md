@@ -101,6 +101,10 @@ mc<br />
 shutdown -h / -r<br />
 sudo apt-get update > upgrade<br />
 reboot<br />
+<br />
+system.d service:<br />
+https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/<br />
+<br />
 
 <hr />
 <a href=http://wiki.ubuntu.cz/z%C3%A1kladn%C3%AD_p%C5%99%C3%ADkazy>wiky-ubuntu-cz</a><br />
