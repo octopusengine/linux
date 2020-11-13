@@ -1,6 +1,6 @@
 # linux
 
-## simple "memory" AND SCRIPTS
+## simple notes & scripts
 
 ```bash
 man man
@@ -12,6 +12,7 @@ whoami -> @USER
 passwd
 sudo adduser newUser
 sudo passwd newUser
+
 hostname
 RPi: myPiName - /etc/hostname
 pwd -> DIR
@@ -44,7 +45,7 @@ df / (space - disk free)
 df -h (human)
 du -sh /dir/
 <du -s * | sort -nr > $HOME/user_space_report.txt
-echo "& one more line" >> FILE / ~/name.txt<br />
+echo "& one more line" >> FILE / ~/name.txt
 ls -lat (line all time)
 ls -A (all)
 mkdir
@@ -95,6 +96,7 @@ ps aux | grep -i vi (-i ignore case)
 kill ID
 kill $(ps aux | grep ´...´ | awk ...)
 sysv-rc-conf (start init)
+
 screen
 tmux / ctrl+B / Create Next Prew % (hor) " (vert)
 htop
@@ -103,9 +105,12 @@ wiresharp-gtk
 iftop
 lsusb
 lsmod
+```
 
+---
 
-apt-get install python-pip<br />
+```bash
+apt-get install python-pip
 pip install pybitcoin
 
 
@@ -116,11 +121,11 @@ reboot
 
 system.d service:
 https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/
-
-
 ```
 
 ---
+
+## links
 
 <a href=http://wiki.ubuntu.cz/z%C3%A1kladn%C3%AD_p%C5%99%C3%ADkazy>wiky-ubuntu-cz</a><br />
 <a href=http://searchdatacenter.techtarget.com/tutorial/77-Linux-commands-and-utilities-youll-actually-use>77-commands</a><br />
