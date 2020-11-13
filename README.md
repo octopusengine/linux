@@ -1,28 +1,31 @@
 # linux<br />
 
-simple "memory" AND SCRIPTS<br />
-<hr />
-man man<br />
-man intro<br />
-man -k = apropos STH<br />
-uname -a<br />
-w<br />
-whoami -> @USER<br />
-passwd<br />
-sudo adduser newUser<br />
-sudo passwd newUser<br />
-hostname<br />
-RPi: myPiName - /etc/hostname<br />
-pwd -> DIR<br />
-history | less / tail..<br />
-alias COMM/expr. <br />
-<i>alias hm="ls -l | wc -l"</i> (howmany)<br />
-watch -n 30 COMM<br />
-<i>grep alias ~/.bashrc</i><br />
-man COMM (manual)<br />
-COMM -h (help)<br />
-dpkg -l | more (what is installed)<br />
-<i>dpkg -l | grep -i game/python... (-i case intersensitive - Game / gaMe..)</i><br />
+## simple "memory" AND SCRIPTS
+
+```bash
+man man
+man intro
+man -k = apropos STH
+uname -a
+w
+whoami -> @USER
+passwd
+sudo adduser newUser
+sudo passwd newUser
+hostname
+RPi: myPiName - /etc/hostname
+pwd -> DIR
+history | less / tail..
+*history >> history123.txt*
+alias COMM/expr. 
+alias hm="ls -l | wc -l"(howmany)
+watch -n 30 COMM
+grep alias ~/.bashrc
+man COMM (manual)
+COMM -h (help)
+dpkg -l | more (what is installed)
+*dpkg -l | grep -i game/python... (-i case intersensitive - Game / gaMe..)*
+```
 wc FILE<br />
 grep FILE<br />
 md5sum FILE<br />
