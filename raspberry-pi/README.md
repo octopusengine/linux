@@ -61,6 +61,8 @@ sudo apt install python3 pip3
 
 ## Micropython
 
+### install
+
 ```bash
 sudo apt-get install git
 sudo apt-get install build-essential
@@ -70,38 +72,37 @@ sudo apt-get install libffi-dev
 cd ~ 
 git clone https://github.com/micropython/micropython.git
 
-cd micropython 
-
-cd ports 
-cd unix
-   
+cd micropython/ports/unix
 make clean
-   
-
 make axtls
    
-cd ~
-   
+cd ~   
 cd micropython
   
 cd mpy-cross
-
 make
 
 cd ~  
-cd micropython
-cd ports
-cd unix
+cd micropython/ports/unix
 make
 
 ./micropython 
 
-
 >>>
 
+ctrl+D
 
 
 ```
+
+### py->mpy
+
+```
+cd micropython/mpy-cross 
+./mpy-cross ../../py-mpy/test.py
+
+```
+
 
 ---
 
