@@ -61,6 +61,8 @@ ssh-copy-id
 ssh IP / ssh USER@IP
 debug "Get picture from camera"
 
+--- webcam ---
+cheese
 fswebcam -r "${CAM_RESOLUTION}" --info "${CAM_INFO_TEXT}" --font "${CAM_FONT}" --banner-colour "${CAM_BANNER_COLOUR}" --text-colour<br /> ${CAM_TEXT_COLOUR} --line-colour ${CAM_LINE_COLOUR} /tmp/temp.jpg
 [ ! -e "/tmp/temp.jpg" ] && echo "Error while getting picture" >&2 && exit 1
 
@@ -98,7 +100,7 @@ kill $(ps aux | grep ´...´ | awk ...)
 sysv-rc-conf (start init)
 
 screen
-tmux / ctrl+B / Create Next Prew % (hor) " (vert)
+tmux / ctrl+B / Create: % (-) " (|) ! (x) Next Prew >
 htop
 iotop
 wiresharp-gtk
