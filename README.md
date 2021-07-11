@@ -138,4 +138,6 @@ http://ifanda.cz/it/linux/2011-01-04-vicero-live-linuxu-na-jedne-usb-flash-klice
 
 <a href=http://www.root.cz/clanky/programovani-v-bash-shellu/>programovani-v-bash-shellu</a><br />
 <a href=http://www.abclinuxu.cz/clanky/navody/bash-i>navody/bash-i</a><br />
+<a href=https://edu.dtlab.cz/linux/>edu.dtlab.cz/linux</a><br />
+
 
