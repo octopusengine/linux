@@ -21,7 +21,8 @@ history >> history123.txt
 
 alias COMM/expr. 
 alias hm="ls -l | wc -l"(howmany)
-watch -n 30 COMM
+sleep 2 (pause 2 sec)
+watch -n 30 COMM (periodic)
 grep alias ~/.bashrc
 man COMM (manual)
 COMM -h (help)
@@ -107,6 +108,20 @@ wiresharp-gtk
 iftop
 lsusb
 lsmod
+
+neofetch (system info)
+toilet -f mono12 -F metal Tecmint.com
+figlet Welcome
+asciiview elephant.jpg -driver curses 
+"octopusengine[dot]com is a community of Linux Nerds and Geeks" | pv -qL 10
+rig (random identity)
+sl (Steam Locomotive)
+asciiquarium
+cowsay Hello
+cowsay -f ghostbusters Who you Gonna Call
+cowthink ...funny
+telnet towel.blinkenlights.nl
+curl -u YourUsername:YourPassword -d status="message" http://twitter.com/statuses/update.xml
 ```
 
 ---
@@ -117,7 +132,8 @@ apt-get install python-pip
 pip install pybitcoin
 
 
-mc
+mc (norton comm.)
+scrot (print screen)
 shutdown -h / -r
 sudo apt-get update > upgrade
 reboot
