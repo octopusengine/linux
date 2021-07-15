@@ -4,19 +4,25 @@
 # run:
 # $HOME/mysh/info.sh
 
-echo "oi.sh > octopusLab info 2017-2020"
+python3 $HOME/mysh/octopus.py
+
+echo "info.sh > octopusLab info 2017-2020"
 echo "---basic--------------------------------"
+w=$(whoami)
+echo "- whoami > " $w 
+echo "- HOME   > " $HOME
+
+
 echo "---system---"
 uname -a
 cat /proc/cpuinfo | grep "MHz" | sort -r | head -32
-echo "---disk---"
-du -sh
-#disk=`du -sh`
-#echo "disk > `$disk`" 
+disk=$(du -sh)
+echo "- disk usage > " $disk 
+
 echo "---RAM---"
 free
-w=whoami
-echo "whoami > `$w`" 
+
+
 echo "---NETw---"
 ifconfig | grep broadcast
 echo "----------------------------------------"
