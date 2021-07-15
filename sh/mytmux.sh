@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ver. 0.2 - 2017
-# /home/yenda/mysh/mytmux.sh
+# ${HOME}/mysh/mytmux.sh
 
 tmux has-session -t dev
 if [ $? != 0 ]
@@ -19,10 +19,10 @@ then
     tmux send-keys 'tree' C-m ' neofetch' C-m
     
     tmux send-keys -t dev:0.1 'htop' C-m
-    tmux send-keys -t dev:0.2 'echo "22"' C-m
+    tmux send-keys -t dev:0.2 'echo "octopusengine[dot]com is a community of Makers" | pv -qL 10' C-m
     tmux send-keys -t dev:0.3 'watch -n1 "cat /proc/cpuinfo | grep "MHz" | sort -r | head -32"' C-m
     tmux send-keys -t dev:0.4 'cmatrix' C-m
-    tmux send-keys -t dev:0.5 'watch -n 30 /home/yenda/mysh/btc.sh price btc' C-m
+    tmux send-keys -t dev:0.5 'watch -n 30 ${HOME}/mysh/btc.sh price btc' C-m
     #sl sleep 2 
     #tmux select-window -t dev:0.0 
     #tmux selectp -t'{top-left}' 
