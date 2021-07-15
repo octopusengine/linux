@@ -7,8 +7,9 @@ man man
 man intro
 man -k = apropos STH
 uname -a
-w
 whoami -> @USER
+uptime
+w
 passwd
 sudo adduser newUser
 sudo passwd newUser
@@ -19,7 +20,7 @@ pwd -> DIR
 history | less / tail..
 history >> history123.txt
 
-alias COMM/expr. 
+alias COMM/expr. ("rename")
 alias hm="ls -l | wc -l"(howmany)
 sleep 2 (pause 2 sec)
 watch -n 30 COMM (periodic)
@@ -30,9 +31,9 @@ dpkg -l | more (what is installed)
 dpkg -l | grep -i game/python... (-i case intersensitive - Game / gaMe..)
 
 wc FILE
-grep FILE
+grep FILE/EXPR
 md5sum FILE
-find DIR
+find DIR/FILE
 wget http://abc.cz/sh/hi.sh
 wget -O https://raw.githubusercontent.com/octopusengine/linux/master/ct/btc.sh
 
