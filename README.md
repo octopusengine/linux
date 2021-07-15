@@ -90,6 +90,7 @@ ping -c 5 google.com / 8.8.8.8
 ip a l / a s (addr show)
 nmap (network mapper)
 nmap - sn / -v -A / -sP 192.168.0.*
+nmap - sT -p80,433 192.168.0.* | grep report (scan TCP-IP for port)
 netstat -vat / -nr / -i / -ta
 
 
@@ -113,7 +114,7 @@ neofetch (system info)
 toilet -f mono12 -F metal Tecmint.com
 figlet Welcome
 asciiview elephant.jpg -driver curses 
-"octopusengine[dot]com is a community of Linux Nerds and Geeks" | pv -qL 10
+echo "octopusengine[dot]com is a community of Linux Nerds and Geeks" | pv -qL 10
 rig (random identity)
 sl (Steam Locomotive)
 asciiquarium
