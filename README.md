@@ -13,6 +13,8 @@ w
 passwd
 sudo adduser newUser
 sudo passwd newUser
+which bash
+awk
 
 hostname
 RPi: myPiName - /etc/hostname
@@ -85,6 +87,8 @@ nohup (no hangup)
 sudo nohup sh -c "ifdown eth0 && ifup eth0"
 
 ifconfig
+alias ipaddress="ifconfig | grep broadcast | awk `{print $2}`" 
+alias ipaddress="echo $(ifconfig | grep broadcast | awk `{print $2}`)" 
 sudo route -n
 ping IP
 ping -c 5 google.com / 8.8.8.8
