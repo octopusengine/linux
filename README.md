@@ -1,6 +1,8 @@
 # linux
 
-## simple notes & scripts
+## The Most Useful Linux Commands To Run in the Terminal
+
+### Basic
 
 ```bash
 man man
@@ -15,9 +17,6 @@ sudo adduser newUser
 sudo passwd newUser
 which bash
 awk
-
-hostname
-RPi: myPiName - /etc/hostname
 pwd -> DIR
 history | less / tail..
 history >> history123.txt
@@ -31,12 +30,28 @@ man COMM (manual)
 COMM -h (help)
 dpkg -l | more (what is installed)
 dpkg -l | grep -i game/python... (-i case intersensitive - Game / gaMe..)
+```
 
+### Files
+
+```
+ls -lat (line all time)
+ls -A (all)
+cd
+mkdir
+cp file.txt file-bak.txt
+rm file.txt
+echo file.txt byl > backup and delete
+cat FILE | less / more
+sudo nano FILE / vi
+cmp F1 F2
+hexdump -C FILE
+find
 wc FILE
 grep FILE/EXPR
 md5sum FILE
 find DIR/FILE
-wget http://abc.cz/sh/hi.sh
+*wget* http://abc.cz/sh/hi.sh
 wget -O https://raw.githubusercontent.com/octopusengine/linux/master/ct/btc.sh
 
 chmod 775 DIR(pwd)/hi.sh (change mode)
@@ -50,55 +65,14 @@ df -h (human)
 du -sh /dir/
 <du -s * | sort -nr > $HOME/user_space_report.txt
 echo "& one more line" >> FILE / ~/name.txt
-ls -lat (line all time)
-ls -A (all)
-mkdir
-cp file.txt file-bak.txt
-rm file.txt
-echo file.txt byl > backup and delete
 
 
-sudo apt-get install openssh-server
-service ssh start
-/etc/init.d/ssh start
-ssh-copy-id
-ssh IP / ssh USER@IP
 debug "Get picture from camera"
 
---- webcam ---
-cheese
-fswebcam -r "${CAM_RESOLUTION}" --info "${CAM_INFO_TEXT}" --font "${CAM_FONT}" --banner-colour "${CAM_BANNER_COLOUR}" --text-colour<br /> ${CAM_TEXT_COLOUR} --line-colour ${CAM_LINE_COLOUR} /tmp/temp.jpg
-[ ! -e "/tmp/temp.jpg" ] && echo "Error while getting picture" >&2 && exit 1
+```
 
-debug "Uploading photo to server"
-curl -s -X POST -F "fileToUpload=@/tmp/temp.jpg" -F "authkey=${UPLOAD_KEY}" -F "submit=1" ${UPLOAD_CURL_EXTRA_PARAMS} "${UPLOAD_URL}" > /dev/null
-
-
-
-cat FILE | less / more
-sudo nano FILE / vi
-cmp F1 F2
-hexdump -C FILE
-find
-sed (stream editor)
-nc (net cat / listen / connect)
-sudo ifdown eth0 && sudo ifup eth0 (restart wifi)
-nohup (no hangup)
-sudo nohup sh -c "ifdown eth0 && ifup eth0"
-
-ifconfig
-alias ipaddress="ifconfig | grep broadcast | awk `{print $2}`" 
-alias ipaddress="echo $(ifconfig | grep broadcast | awk `{print $2}`)" 
-sudo route -n
-ping IP
-ping -c 5 google.com / 8.8.8.8
-ip a l / a s (addr show)
-nmap (network mapper)
-nmap - sn / -v -A / -sP 192.168.0.*
-nmap - sT -p80,433 192.168.0.* | grep report (scan TCP-IP for port)
-netstat -vat / -nr / -i / -ta
-
-
+### Process
+```
 ps afux (process - all tree user)
 ps afx | grep py > ID
 ps aux | grep -i vi (-i ignore case)
@@ -114,7 +88,52 @@ wiresharp-gtk
 iftop
 lsusb
 lsmod
+```
 
+### Network
+```
+hostname
+RPi: myPiName - /etc/hostname
+*ifconfig*
+alias ipaddress="ifconfig | grep broadcast | awk `{print $2}`" 
+alias ipaddress="echo $(ifconfig | grep broadcast | awk `{print $2}`)" 
+sudo route -n
+ping IP
+ping -c 5 google.com / 8.8.8.8
+ip a l / a s (addr show)
+nmap (network mapper)
+nmap - sn / -v -A / -sP 192.168.0.*
+nmap - sT -p80,433 192.168.0.* | grep report (scan TCP-IP for port)
+netstat -vat / -nr / -i / -ta
+*ssh*
+sudo apt-get install openssh-server
+service ssh start
+/etc/init.d/ssh start
+ssh-copy-id
+ssh IP / ssh USER@IP
+```
+
+### webcam
+```
+cheese
+fswebcam -r "${CAM_RESOLUTION}" --info "${CAM_INFO_TEXT}" --font "${CAM_FONT}" --banner-colour "${CAM_BANNER_COLOUR}" --text-colour<br /> ${CAM_TEXT_COLOUR} --line-colour ${CAM_LINE_COLOUR} /tmp/temp.jpg
+[ ! -e "/tmp/temp.jpg" ] && echo "Error while getting picture" >&2 && exit 1
+
+debug "Uploading photo to server"
+curl -s -X POST -F "fileToUpload=@/tmp/temp.jpg" -F "authkey=${UPLOAD_KEY}" -F "submit=1" ${UPLOAD_CURL_EXTRA_PARAMS} "${UPLOAD_URL}" > /dev/null
+```
+
+```
+sed (stream editor)
+nc (net cat / listen / connect)
+sudo ifdown eth0 && sudo ifup eth0 (restart wifi)
+nohup (no hangup)
+sudo nohup sh -c "ifdown eth0 && ifup eth0"
+```
+
+### Aps & Etc.
+
+```
 neofetch (system info)
 toilet -f mono12 -F metal Tecmint.com
 figlet Welcome
@@ -153,6 +172,7 @@ https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/
 ## links
 
 <a href=http://wiki.ubuntu.cz/z%C3%A1kladn%C3%AD_p%C5%99%C3%ADkazy>wiky-ubuntu-cz</a><br />
+<a href=https://www.ubuntupit.com/best-linux-commands-to-run-in-the-terminal/>50 best-linux-commands</a><br />
 <a href=http://searchdatacenter.techtarget.com/tutorial/77-Linux-commands-and-utilities-youll-actually-use>77-commands</a><br />
 http://ifanda.cz/it/linux/2011-01-04-vicero-live-linuxu-na-jedne-usb-flash-klicence/
 
