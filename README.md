@@ -166,8 +166,8 @@ pip install pybitcoin
 <a href=http://wiki.ubuntu.cz/z%C3%A1kladn%C3%AD_p%C5%99%C3%ADkazy>wiky-ubuntu-cz</a><br />
 <a href=https://www.ubuntupit.com/best-linux-commands-to-run-in-the-terminal/>50 best-linux-commands</a><br />
 <a href=http://searchdatacenter.techtarget.com/tutorial/77-Linux-commands-and-utilities-youll-actually-use>77-commands</a><br />
-http://ifanda.cz/it/linux/2011-01-04-vicero-live-linuxu-na-jedne-usb-flash-klicence/
-system.d service: https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/
+http://ifanda.cz/it/linux/2011-01-04-vicero-live-linuxu-na-jedne-usb-flash-klicence/<br />
+system.d service: https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/<br />
 
 <hr />
 
