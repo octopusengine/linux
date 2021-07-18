@@ -51,7 +51,7 @@ wc FILE
 grep FILE/EXPR
 md5sum FILE
 find DIR/FILE
-*wget* http://abc.cz/sh/hi.sh
+wget http://abc.cz/sh/hi.sh
 wget -O https://raw.githubusercontent.com/octopusengine/linux/master/ct/btc.sh
 
 chmod 775 DIR(pwd)/hi.sh (change mode)
@@ -65,10 +65,9 @@ df -h (human)
 du -sh /dir/
 <du -s * | sort -nr > $HOME/user_space_report.txt
 echo "& one more line" >> FILE / ~/name.txt
-
-
+sed (stream editor)
+nc (net cat / listen / connect)
 debug "Get picture from camera"
-
 ```
 
 ### Process
@@ -82,21 +81,26 @@ sysv-rc-conf (start init)
 
 screen
 tmux / ctrl+B / Create: % (-) " (|) ! (x) Next Prew >
-htop
+htop (better top)
 iotop
 wiresharp-gtk
-iftop
+
 lsusb
 lsmod
+
+shutdown -h / -r
+sudo apt-get update > upgrade
+reboot
 ```
 
 ### Network
 ```
 hostname
 RPi: myPiName - /etc/hostname
-*ifconfig*
+ifconfig
 alias ipaddress="ifconfig | grep broadcast | awk `{print $2}`" 
 alias ipaddress="echo $(ifconfig | grep broadcast | awk `{print $2}`)" 
+iftop
 sudo route -n
 ping IP
 ping -c 5 google.com / 8.8.8.8
@@ -105,7 +109,7 @@ nmap (network mapper)
 nmap - sn / -v -A / -sP 192.168.0.*
 nmap - sT -p80,433 192.168.0.* | grep report (scan TCP-IP for port)
 netstat -vat / -nr / -i / -ta
-*ssh*
+ssh
 sudo apt-get install openssh-server
 service ssh start
 /etc/init.d/ssh start
@@ -124,16 +128,15 @@ curl -s -X POST -F "fileToUpload=@/tmp/temp.jpg" -F "authkey=${UPLOAD_KEY}" -F "
 ```
 
 ```
-sed (stream editor)
-nc (net cat / listen / connect)
 sudo ifdown eth0 && sudo ifup eth0 (restart wifi)
 nohup (no hangup)
 sudo nohup sh -c "ifdown eth0 && ifup eth0"
 ```
 
 ### Aps & Etc.
-
 ```
+mc (norton comm.)
+scrot (print screen)
 neofetch (system info)
 toilet -f mono12 -F metal Tecmint.com
 figlet Welcome
@@ -150,23 +153,12 @@ curl -u YourUsername:YourPassword -d status="message" http://twitter.com/statuse
 ```
 
 ---
+### bash / CPP / Python
 
-
-```bash
+```
 apt-get install python-pip
 pip install pybitcoin
-
-
-mc (norton comm.)
-scrot (print screen)
-shutdown -h / -r
-sudo apt-get update > upgrade
-reboot
-
-system.d service:
-https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/
 ```
-
 ---
 
 ## links
@@ -175,6 +167,7 @@ https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/
 <a href=https://www.ubuntupit.com/best-linux-commands-to-run-in-the-terminal/>50 best-linux-commands</a><br />
 <a href=http://searchdatacenter.techtarget.com/tutorial/77-Linux-commands-and-utilities-youll-actually-use>77-commands</a><br />
 http://ifanda.cz/it/linux/2011-01-04-vicero-live-linuxu-na-jedne-usb-flash-klicence/
+system.d service: https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/
 
 <hr />
 
