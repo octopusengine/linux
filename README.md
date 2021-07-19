@@ -6,39 +6,62 @@
 
 ```bash
 man man
-man intro
+man COMM (manual) man intro
 man -k = apropos STH
-uname -a
-whoami -> @USER
-uptime
-w
-passwd
-sudo adduser newUser
-sudo passwd newUser
 which bash
 awk
-pwd -> DIR
 history | less / tail..
 history >> history123.txt
-
 alias COMM/expr. ("rename")
 alias hm="ls -l | wc -l"(howmany)
 sleep 2 (pause 2 sec)
 watch -n 30 COMM (periodic)
 grep alias ~/.bashrc
-man COMM (manual)
 COMM -h (help)
 dpkg -l | more (what is installed)
 dpkg -l | grep -i game/python... (-i case intersensitive - Game / gaMe..)
+sudo dpkg --configure -a
+ps -ef | grep dpkg*  --> kill PID# 
 ```
 
-### Files
-
+### Hardware & System
 ```
-ls -lat (line all time)
-ls -A (all)
+uname -a        (display Linux system info) - r (kernel release)
+last reboot     (reboot history)
+date            (current date and time)
+cal             (month calendar)
+lsblk           (block device related info)
+free (mem)
+sudo fdisk -l
+sudo mount -a / /media/usb1t
+df / (space - disk free)
+df -h (human)
+du -sh /dir/
+<du -s * | sort -nr > $HOME/user_space_report.txt
+```
+
+### Users & file permission related
+```
+w               (who is online)
+whoami -> @USER (who you are logged as)
+uptime
+finger user     (info about user)
+sudo adduser newUser
+sudo passwd newUser
+passwd
+chmod           (change the permission of file to octal)
+chmod 775 DIR (pwd)/hi.sh ( - change mode to 775)
+chown owner-user FILE 
+```
+
+### File commands
+```
+pwd -> DIR      (path of current dir)
+ls -lat         (list - line all time)
+ls -A           (- all)
 cd
 mkdir
+touch FILE      (create or update F)
 cp file.txt file-bak.txt
 rm file.txt
 echo file.txt byl > backup and delete
@@ -50,23 +73,16 @@ find
 wc FILE
 grep FILE/EXPR
 md5sum FILE
+gpg -c FILE     (encrypt F)
+gpg file.gpg    (decrypt F)
 find DIR/FILE
 wget http://abc.cz/sh/hi.sh
 wget -O https://raw.githubusercontent.com/octopusengine/linux/master/ct/btc.sh
-
-chmod 775 DIR(pwd)/hi.sh (change mode)
+scp             (file transfer)
 dmesg (report sit.)
-free (mem)
-sudo fdisk -l
 sudo blkid
-sudo mount -a / /media/usb1t
-df / (space - disk free)
-df -h (human)
-du -sh /dir/
-<du -s * | sort -nr > $HOME/user_space_report.txt
 echo "& one more line" >> FILE / ~/name.txt
 sed (stream editor)
-nc (net cat / listen / connect)
 debug "Get picture from camera"
 ```
 
@@ -84,10 +100,8 @@ tmux / ctrl+B / Create: % (-) " (|) ! (x) Next Prew >
 htop (better top)
 iotop
 wiresharp-gtk
-
 lsusb
 lsmod
-
 shutdown -h / -r
 sudo apt-get update > upgrade
 reboot
@@ -100,11 +114,16 @@ RPi: myPiName - /etc/hostname
 ifconfig
 alias ipaddress="ifconfig | grep broadcast | awk `{print $2}`" 
 alias ipaddress="echo $(ifconfig | grep broadcast | awk `{print $2}`)" 
+ethtool eth()
+nc (net cat / listen / connect)
 iftop
 sudo route -n
-ping IP
+ping host-IP
 ping -c 5 google.com / 8.8.8.8
-ip a l / a s (addr show)
+whois domain
+dig domain      (get DNS info)
+dig -x host     (reverse lookup)
+ip a l / a s    (addr show)
 nmap (network mapper)
 nmap - sn / -v -A / -sP 192.168.0.*
 nmap - sT -p80,433 192.168.0.* | grep report (scan TCP-IP for port)
@@ -174,5 +193,3 @@ system.d service: https://www.linode.com/docs/quick-answers/linux/start-service-
 <a href=http://www.root.cz/clanky/programovani-v-bash-shellu/>programovani-v-bash-shellu</a><br />
 <a href=http://www.abclinuxu.cz/clanky/navody/bash-i>navody/bash-i</a><br />
 <a href=https://edu.dtlab.cz/linux/>edu.dtlab.cz/linux</a><br />
-
-
