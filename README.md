@@ -87,7 +87,7 @@ debug "Get picture from camera"
 ```
 
 ### Process
-```
+```bash
 ps afux (process - all tree user)
 ps afx | grep py > ID
 ps aux | grep -i vi (-i ignore case)
