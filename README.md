@@ -31,6 +31,7 @@ last reboot     (reboot history)
 date            (current date and time)
 cal             (month calendar)
 lsblk           (block device related info)
+mount
 free (mem)
 sudo fdisk -l
 sudo mount -a / /media/usb1t
@@ -38,6 +39,7 @@ df / (space - disk free)
 df -h (human)
 du -sh /dir/
 <du -s * | sort -nr > $HOME/user_space_report.txt
+screen
 ```
 
 ### Users & file permission related
@@ -56,18 +58,20 @@ chown owner-user FILE
 
 ### File commands
 ```bash
-pwd -> DIR      (path of current dir)
+pwd -> DIR      (Print Work Directory - path of current dir)
 ls -lat         (list - line all time)
 ls -A           (- all)
 cd
 mkdir
+rmdir
 touch FILE      (create or update F)
-cp file.txt file-bak.txt
+cp F1 F2        (copy) cp file.txt file-bak.txt 
+mv F1 F2        (move)
+cmp F1 F2       (compare)
 rm file.txt
 echo file.txt byl > backup and delete
 cat FILE | less / more
 sudo nano FILE / vi
-cmp F1 F2
 hexdump -C FILE
 find
 wc FILE
@@ -94,9 +98,7 @@ ps aux | grep -i vi (-i ignore case)
 kill ID
 kill $(ps aux | grep ´...´ | awk ...)
 sysv-rc-conf (start init)
-
-screen
-tmux / ctrl+B / Create: % (-) " (|) ! (x) Next Prew >
+service
 htop (better top)
 iotop
 wiresharp-gtk
@@ -154,6 +156,7 @@ sudo nohup sh -c "ifdown eth0 && ifup eth0"
 
 ### Aps & Etc.
 ```bash
+tmux / ctrl+B / Create: % (-) " (|) ! (x) Next Prew >
 mc (norton comm.)
 scrot (print screen)
 neofetch (system info)
