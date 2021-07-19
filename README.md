@@ -25,7 +25,7 @@ ps -ef | grep dpkg*  --> kill PID#
 ```
 
 ### Hardware & System
-```
+```bash
 uname -a        (display Linux system info) - r (kernel release)
 last reboot     (reboot history)
 date            (current date and time)
@@ -41,7 +41,7 @@ du -sh /dir/
 ```
 
 ### Users & file permission related
-```
+```bash
 w               (who is online)
 whoami -> @USER (who you are logged as)
 uptime
@@ -55,7 +55,7 @@ chown owner-user FILE
 ```
 
 ### File commands
-```
+```bash
 pwd -> DIR      (path of current dir)
 ls -lat         (list - line all time)
 ls -A           (- all)
@@ -108,7 +108,7 @@ reboot
 ```
 
 ### Network
-```
+```bash
 hostname
 RPi: myPiName - /etc/hostname
 ifconfig
@@ -137,7 +137,7 @@ ssh IP / ssh USER@IP
 ```
 
 ### webcam
-```
+```bash
 cheese
 fswebcam -r "${CAM_RESOLUTION}" --info "${CAM_INFO_TEXT}" --font "${CAM_FONT}" --banner-colour "${CAM_BANNER_COLOUR}" --text-colour<br /> ${CAM_TEXT_COLOUR} --line-colour ${CAM_LINE_COLOUR} /tmp/temp.jpg
 [ ! -e "/tmp/temp.jpg" ] && echo "Error while getting picture" >&2 && exit 1
@@ -153,7 +153,7 @@ sudo nohup sh -c "ifdown eth0 && ifup eth0"
 ```
 
 ### Aps & Etc.
-```
+```bash
 mc (norton comm.)
 scrot (print screen)
 neofetch (system info)
@@ -172,9 +172,9 @@ curl -u YourUsername:YourPassword -d status="message" http://twitter.com/statuse
 ```
 
 ---
-### bash / CPP / Python
 
-```
+### bash / CPP / Python
+```bash
 apt-get install python-pip
 pip install pybitcoin
 ```
