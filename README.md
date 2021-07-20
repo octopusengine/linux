@@ -18,6 +18,9 @@ sleep 2 (pause 2 sec)
 watch -n 30 COMM (periodic)
 grep alias ~/.bashrc
 COMM -h (help)
+apt install / remove / APPLICATION
+sudo locate APPLICATION
+sudo apt-get purge APPLICATION
 dpkg -l | more (what is installed)
 dpkg -l | grep -i game/python... (-i case intersensitive - Game / gaMe..)
 sudo dpkg --configure -a
