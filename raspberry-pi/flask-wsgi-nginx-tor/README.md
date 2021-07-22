@@ -29,9 +29,9 @@ yltvo3apkzdsijri3tkrsx32ek5dun7tzqm6z53j6e54z7ejad
 
 
 yenda@yenda-desktop:~$ echo "agama3" | sha256sum 
-77... 
+ -> 77... 
 
 yenda@yenda-desktop:~$ echo "agama3" -n | sha256sum 
-"pure" hash
+ -> "pure" hash
 
 ---
