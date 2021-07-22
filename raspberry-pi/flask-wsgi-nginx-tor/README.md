@@ -1,4 +1,4 @@
-## 2020 - static pager RPi
+## 2020 - static page / RPi3
 
 /etc/tor/torrc
 
