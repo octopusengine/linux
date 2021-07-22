@@ -1,4 +1,4 @@
-2020 - static pager RPi
+## 2020 - static pager RPi
 
 /etc/tor/torrc
 
@@ -14,7 +14,7 @@ $ >
 
 ---
 
-2021 - Ubuntu - Py3/Flask
+## 2021 - Ubuntu - Py3/Flask
 
 
 agama3
