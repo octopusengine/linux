@@ -8,20 +8,16 @@ x# HiddenService Dir
 x# HiddenService Port
  
 
-
-/var/lib/tor/hidden_service/hostname
-$ > 
-
 ---
 
 ## 2021 - Ubuntu - Py3/Flask
 
 
-agama3
-
+/var/lib/tor/hidden_service/hostname
+ 
+ -> agama3
 
 yltvo3apkzdsijri3tkrsx32ek5dun7tzqm6z53j6e54z7ejad
-
 
 .onion
 
