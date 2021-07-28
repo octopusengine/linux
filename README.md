@@ -68,7 +68,7 @@ cd
 mkdir
 rmdir
 touch FILE      (create or update F)
-cp F1 F2        (copy) cp file.txt file-bak.txt 
+cp F1 F2        (copy) cp file.txt file-bak.txt
 mv F1 F2        (move)
 cmp F1 F2       (compare)
 rm file.txt
@@ -139,6 +139,11 @@ service ssh start
 /etc/init.d/ssh start
 ssh-copy-id
 ssh IP / ssh USER@IP
+
+scp USER@IP_ADDR:/home/USER/FILE.src FILE.dest (netw copy)
+python3 -m http.server
+>> browser: http://IP_ADDR:8000/
+
 ```
 
 ### webcam
