@@ -120,6 +120,7 @@ ifconfig
 alias ipaddress="ifconfig | grep broadcast | awk `{print $2}`" 
 alias ipaddress="echo $(ifconfig | grep broadcast | awk `{print $2}`)" 
 ethtool eth()
+curl [options] URL -- dtata transfer (HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP or FILE)
 nc (net cat / listen / connect)
 iftop
 sudo route -n
