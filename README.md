@@ -29,6 +29,7 @@ ps -ef | grep dpkg*  --> kill PID#
 
 ### Hardware & System
 ```bash
+lscpu           (cpu architecture)
 uname -a        (display Linux system info) - r (kernel release)
 last reboot     (reboot history)
 date            (current date and time)
@@ -48,6 +49,7 @@ screen
 ### Users & file permission related
 ```bash
 w               (who is online)
+who
 whoami -> @USER (who you are logged as)
 uptime
 finger user     (info about user)
@@ -136,6 +138,8 @@ nmap (network mapper)
 nmap - sn / -v -A / -sP 192.168.0.*
 nmap - sT -p80,433 192.168.0.* | grep report (scan TCP-IP for port)
 netstat -vat / -nr / -i / -ta
+bsh-write       (send message)
+
 ssh
 sudo apt-get install openssh-server
 service ssh start
