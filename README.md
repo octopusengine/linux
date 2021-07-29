@@ -65,6 +65,7 @@ pwd -> DIR      (Print Work Directory - path of current dir)
 ls -lat         (list - line all time)
 ls -A           (- all)
 cd
+cd ~/.. && cd /var/www/...
 mkdir
 rmdir
 touch FILE      (create or update F)
@@ -83,14 +84,14 @@ md5sum FILE
 gpg -c FILE     (encrypt F)
 gpg file.gpg    (decrypt F)
 find DIR/FILE
-wget http://abc.cz/sh/hi.sh
+wget URL
 wget -O https://raw.githubusercontent.com/octopusengine/linux/master/ct/btc.sh
 scp             (file transfer)
 dmesg (report sit.)
 sudo blkid
 echo "& one more line" >> FILE / ~/name.txt
 sed (stream editor)
-debug "Get picture from camera"
+
 ```
 
 ### Process
@@ -101,6 +102,7 @@ ps aux | grep -i vi (-i ignore case)
 kill ID
 kill $(ps aux | grep ´...´ | awk ...)
 sysv-rc-conf (start init)
+tail -f /var/log/uwsgi/app/*.log
 service
 htop (better top)
 iotop
@@ -150,9 +152,10 @@ python3 -m http.server
 ### webcam
 ```bash
 cheese
-fswebcam -r "${CAM_RESOLUTION}" --info "${CAM_INFO_TEXT}" --font "${CAM_FONT}" --banner-colour "${CAM_BANNER_COLOUR}" --text-colour<br /> ${CAM_TEXT_COLOUR} --line-colour ${CAM_LINE_COLOUR} /tmp/temp.jpg
-[ ! -e "/tmp/temp.jpg" ] && echo "Error while getting picture" >&2 && exit 1
 
+fswebcam -r "${CAM_RESOLUTION}" --info "${CAM_INFO_TEXT}" --font "${CAM_FONT}" --banner-colour "${CAM_BANNER_COLOUR}" --text-colour<br /> ${CAM_TEXT_COLOUR} --line-colour ${CAM_LINE_COLOUR} /tmp/temp.jpg
+debug "Get picture from camera"
+[ ! -e "/tmp/temp.jpg" ] && echo "Error while getting picture" >&2 && exit 1
 debug "Uploading photo to server"
 curl -s -X POST -F "fileToUpload=@/tmp/temp.jpg" -F "authkey=${UPLOAD_KEY}" -F "submit=1" ${UPLOAD_CURL_EXTRA_PARAMS} "${UPLOAD_URL}" > /dev/null
 ```
@@ -187,8 +190,20 @@ curl -u YourUsername:YourPassword -d status="message" http://twitter.com/statuse
 
 ### bash / CPP / Python
 ```bash
+#!bin/sh x #!bin/bash
+$BASH (/usr/bin/bash) $SHELL (/bin/bash)
+$HOME (/home/$USER) $HOSTNAME $HOSTTYPE
+$EDITOR $BROWSER
+$LANG (en_US.UTF-8) $LINES (58)
+
+
 apt-get install python-pip
 pip install pybitcoin
+
+python3 -m venv venv
+source ./venv/bin/activate
+
+
 ```
 ---
 
