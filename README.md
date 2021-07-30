@@ -218,6 +218,8 @@ source ./venv/bin/activate
 <a href=http://searchdatacenter.techtarget.com/tutorial/77-Linux-commands-and-utilities-youll-actually-use>77-commands</a><br />
 http://ifanda.cz/it/linux/2011-01-04-vicero-live-linuxu-na-jedne-usb-flash-klicence/<br />
 system.d service: https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/<br />
+https://linuxconfig.org/bash-scripting-tutorial<br />
+https://github.com/LukeSmithxyz/shortcut-sync<br />
 
 <hr />
 
