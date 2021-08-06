@@ -38,6 +38,7 @@ mount
 free (mem)
 sudo fdisk -l
 sudo mount -a / /media/usb1t
+less /etc/fstab
 df / (space - disk free)
 df -h (human)
 du -sh /dir/
@@ -129,6 +130,7 @@ ifconfig
 alias ipaddress="ifconfig | grep broadcast | awk `{print $2}`" 
 alias ipaddress="echo $(ifconfig | grep broadcast | awk `{print $2}`)" 
 ethtool eth()
+ip addr
 curl [options] URL -- dtata transfer (HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP or FILE)
 nc (net cat / listen / connect)
 iftop
@@ -142,7 +144,8 @@ ip a l / a s    (addr show)
 nmap (network mapper)
 nmap - sn / -v -A / -sP 192.168.0.*
 nmap - sT -p80,433 192.168.0.* | grep report (scan TCP-IP for port)
-netstat -vat / -nr / -i / -ta
+netstat -vat / -nr / -i / -ta (install net-tools)
+netstat -tulpn  (ports)
 bsh-write       (send message)
 
 ssh
