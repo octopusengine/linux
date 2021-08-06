@@ -9,7 +9,6 @@ man man
 man COMM (manual) man intro
 man -k = apropos STH
 which bash
-awk
 history | less / tail..
 history >> history123.txt
 alias COMM/expr. ("rename")
@@ -77,6 +76,9 @@ cmp F1 F2       (compare)
 rm file.txt
 echo file.txt byl > backup and delete
 cat FILE | less / more
+awk '{print}' FILE = cat FILE
+awk '{print $2}' / col.
+awk -F':' '{print $1,$7}' /etc/password (-F: separator)
 sudo nano FILE / vi
 hexdump -C FILE
 find
