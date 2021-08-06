@@ -60,7 +60,7 @@ chmod 775 DIR (pwd)/hi.sh ( - change mode to 775)
 chown owner-user FILE 
 ```
 
-### File commands
+### String / File commands
 ```bash
 pwd -> DIR      (Print Work Directory - path of current dir)
 ls -lat         (list - line all time)
@@ -81,6 +81,9 @@ awk '{print $2}' / col.
 awk -F':' '{print $1,$7}' /etc/password (-F: separator)
 sudo nano FILE / vi
 hexdump -C FILE
+tr              (translate or delete characters)
+echo test | tr -d"t" >> es
+echo -n "agama3" | sha256sum | tr -d "[:space:]-" >> correct hash
 find
 wc FILE
 grep FILE/EXPR
