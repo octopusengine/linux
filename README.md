@@ -38,6 +38,8 @@ mount
 free (mem)
 sudo fdisk -l
 sudo mount -a / /media/usb1t
+blkid
+lsblk
 less /etc/fstab
 df / (space - disk free)
 df -h (human)
