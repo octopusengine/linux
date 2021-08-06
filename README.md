@@ -88,7 +88,7 @@ echo test | tr -d"t" >> es
 echo -n "agama3" | sha256sum | tr -d "[:space:]-" >> correct hash
 find
 wc FILE
-grep FILE/EXPR
+grep FILE/EXPR  (history: g/re/p - print regul.expr.)
 md5sum FILE
 gpg -c FILE     (encrypt F)
 gpg file.gpg    (decrypt F)
@@ -194,7 +194,7 @@ neofetch (system info)
 toilet -f mono12 -F metal Tecmint.com
 figlet Welcome
 asciiview elephant.jpg -driver curses 
-echo "octopusengine[dot]com is a community of Linux Nerds and Geeks" | pv -qL 10
+echo "octopusengine[dot]com is a community of Linux Nerds and Geeks" | pv -qL 10  (x ./baudprint.pl 600)
 rig (random identity)
 sl (Steam Locomotive)
 asciiquarium
@@ -225,6 +225,15 @@ source ./venv/bin/activate
 
 ```
 ---
+
+## games
+```
+/usr/games
+
+./rogue
+
+```
+
 
 ## links
 
