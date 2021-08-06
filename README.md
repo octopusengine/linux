@@ -102,7 +102,7 @@ sed (stream editor)
 
 ```
 
-### Process
+### Process / System
 ```bash
 ps afux (process - all tree user)
 ps afx | grep py > ID
@@ -120,6 +120,12 @@ lsmod
 shutdown -h / -r
 sudo apt-get update > upgrade
 reboot
+
+system nginx status / start / stop / restart
+systemctl status nginx
+systemctl daemon-reload
+
+ls /etc/systemd/system
 ```
 
 ### Network
