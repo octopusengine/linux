@@ -34,12 +34,11 @@ last reboot     (reboot history)
 date            (current date and time)
 cal             (month calendar)
 lsblk           (block device related info)
+blkid           (nlock device atributes)
 mount
 free (mem)
 sudo fdisk -l
 sudo mount -a / /media/usb1t
-blkid
-lsblk
 less /etc/fstab
 df / (space - disk free)
 df -h (human)
