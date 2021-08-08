@@ -190,7 +190,7 @@ nohup (no hangup)
 sudo nohup sh -c "ifdown eth0 && ifup eth0"
 ```
 
-### Aps & Etc.
+### Aps & Etc. (terminal)
 ```bash
 tmux / ctrl+B / Create: % (-) " (|) ! (x) Next Prew >
 mc (norton comm.)
@@ -236,6 +236,16 @@ source ./venv/bin/activate
 ./rogue
 
 ```
+
+## SW / APP  (x-prg)
+```
+thunar (file manager)
+brave  (web browser + tor) 
+
+```
+
+
+
 
 
 ## links
