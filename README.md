@@ -3,12 +3,11 @@
 ## The Most Useful Linux Commands To Run in the Terminal
 
 ### Basic
-
 ```bash
 man man
 man COMM (manual) man intro
 man -k = apropos STH
-which bash
+which bash / APP
 history | less / tail..
 history >> history123.txt
 alias COMM/expr. ("rename")
@@ -23,7 +22,8 @@ sudo apt-get purge APPLICATION
 dpkg -l | more (what is installed)
 dpkg -l | grep -i game/python... (-i case intersensitive - Game / gaMe..)
 sudo dpkg --configure -a
-ps -ef | grep dpkg*  --> kill PID# 
+ps -ef | grep dpkg*  --> kill PID#
+clear  (clear terminal)
 ```
 
 ### Hardware & System
@@ -59,7 +59,11 @@ sudo passwd newUser
 passwd
 chmod           (change the permission of file to octal)
 chmod 775 DIR (pwd)/hi.sh ( - change mode to 775)
-chown owner-user FILE 
+chown owner-user FILE
+
+sudo su - (as a superuser)
+su - USER (as e user)
+exit
 ```
 
 ### String / File commands
@@ -108,8 +112,9 @@ sed (stream editor)
 ps afux (process - all tree user)
 ps afx | grep py > ID
 ps aux | grep -i vi (-i ignore case)
-kill ID
+kill ID / NAME
 kill $(ps aux | grep ´...´ | awk ...)
+killall
 sysv-rc-conf (start init)
 tail -f /var/log/uwsgi/app/*.log
 service
@@ -215,14 +220,12 @@ $HOME (/home/$USER) $HOSTNAME $HOSTTYPE
 $EDITOR $BROWSER
 $LANG (en_US.UTF-8) $LINES (58)
 
-
 apt-get install python-pip
 pip install pybitcoin
 
-python3 -m venv venv
+cd python-proj-dir
+python3 -m venv venv  (virtual environment)
 source ./venv/bin/activate
-
-
 ```
 ---
 
