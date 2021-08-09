@@ -257,6 +257,7 @@ http://ifanda.cz/it/linux/2011-01-04-vicero-live-linuxu-na-jedne-usb-flash-klice
 system.d service: https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/<br />
 https://linuxconfig.org/bash-scripting-tutorial<br />
 https://github.com/LukeSmithxyz/shortcut-sync<br />
+https://github.com/EzeeLinux/ezeelinux-script-collection<br />
 
 <hr />
 
