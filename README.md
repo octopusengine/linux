@@ -8,7 +8,7 @@ man man
 man COMM (manual) man intro
 man -k = apropos STH
 which bash / APP
-history | less / tail..
+history | less / tail..  (CTRL+R)
 history >> history123.txt
 alias COMM/expr. ("rename")
 alias hm="ls -l | wc -l" (hm = howmany)
@@ -23,7 +23,9 @@ dpkg -l | more (what is installed)
 dpkg -l | grep -i game/python... (-i case intersensitive - Game / gaMe..)
 sudo dpkg --configure -a
 ps -ef | grep dpkg*  --> kill PID#
-clear  (clear terminal)
+clear      (clear terminal)
+tput civis (cursor off)
+tput cnorm (cursor on)
 ```
 
 ### Hardware & System
@@ -74,9 +76,14 @@ ls -lat         (list - line all time)
 ls -A           (- all)
 cd
 cd ~/.. && cd /var/www/...
+pushd
+popd
 mkdir
 rmdir
 touch FILE      (create or update F)
+cat > FILE      (create..)  end: CTRL+D
+cat >> FILE     (add..)
+echo "add line" >> FILE
 cp F1 F2        (copy) cp file.txt file-bak.txt
 mv F1 F2        (move)
 cmp F1 F2       (compare)
