@@ -208,6 +208,14 @@ cowsay -f ghostbusters Who you Gonna Call
 cowthink ...funny
 telnet towel.blinkenlights.nl
 curl -u YourUsername:YourPassword -d status="message" http://twitter.com/statuses/update.xml
+
+bc (line calculator)
+echo "12+5" | bc
+hex="FF" && echo "obase=10;ibase=16;$hex" | bc  ( -> 255 )
+echo "1==2" | bc           ( -> 0 )
+echo "10>5" | bc           ( -> 1 )
+pi=`echo "h=10;4*a(1)" | bc -l`    ( echo $pi -> 3.14...)
+
 ```
 
 ---
