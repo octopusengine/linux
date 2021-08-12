@@ -11,7 +11,7 @@ which bash / APP
 history | less / tail..
 history >> history123.txt
 alias COMM/expr. ("rename")
-alias hm="ls -l | wc -l"(howmany)
+alias hm="ls -l | wc -l" (hm = howmany)
 sleep 2 (pause 2 sec)
 watch -n 30 COMM (periodic)
 grep alias ~/.bashrc
@@ -225,7 +225,7 @@ pi=`echo "h=10;4*a(1)" | bc -l`    ( echo $pi -> 3.14...)
 ```bash
 #!bin/sh x #!bin/bash
 $BASH (/usr/bin/bash) $SHELL (/bin/bash)
-$HOME (/home/$USER) $HOSTNAME $HOSTTYPE
+$HOME (/home/$USER) ($USER/$HOSTNAME $HOSTTYPE) $PATH
 $EDITOR $BROWSER
 $LANG (en_US.UTF-8) $LINES (58)
 
