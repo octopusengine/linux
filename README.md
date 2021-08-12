@@ -59,6 +59,7 @@ sudo passwd newUser
 passwd
 chmod           (change the permission of file to octal)
 chmod 775 DIR (pwd)/hi.sh ( - change mode to 775)
+chmod +x FILE ("executable" - better)
 chown owner-user FILE
 
 sudo su - (as a superuser)
