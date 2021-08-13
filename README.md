@@ -23,7 +23,7 @@ dpkg -l | more (what is installed)
 dpkg -l | grep -i game/python... (-i case intersensitive - Game / gaMe..)
 sudo dpkg --configure -a
 ps -ef | grep dpkg*  --> kill PID#
-clear      (clear terminal)
+clear      (clear terminal / CTRL+L)
 tput civis (cursor off)
 tput cnorm (cursor on)
 ```
@@ -80,20 +80,22 @@ pushd
 popd
 mkdir
 rmdir
-touch FILE      (create or update F)
-cat > FILE      (create..)  end: CTRL+D
-cat >> FILE     (add..)
+touch FILE              (create or update F)
+cat > FILE              (write and create..)  end: CTRL+C / D
+cat >> FILE             (add..)
+cat F1 F2 > F3 (join)
 echo "add line" >> FILE
-cp F1 F2        (copy) cp file.txt file-bak.txt
-mv F1 F2        (move)
-cmp F1 F2       (compare)
+sudo nano FILE / vi / gedit
+
+cp F1 F2                (copy source destination) cp file.txt file-bak.txt
+mv F1 F2                (move)
+cmp F1 F2               (compare)
 rm file.txt
 echo file.txt byl > backup and delete
 cat FILE | less / more
 awk '{print}' FILE = cat FILE
 awk '{print $2}' / col.
 awk -F':' '{print $1,$7}' /etc/password (-F: separator)
-sudo nano FILE / vi
 hexdump -C FILE
 tr              (translate or delete characters)
 echo test | tr -d"t" >> es
@@ -175,7 +177,14 @@ service ssh start
 ssh-copy-id
 ssh IP / ssh USER@IP
 
-scp USER@IP_ADDR:/home/USER/FILE.src FILE.dest (netw copy)
+scp USER@IP_ADDR:/home/USER/FILE.src FILE.dest  (netw copy)
+
+sftp IP  (secure FTP) 
+> ls/lls / pwd/lpwd / cd/lcd
+> get FILE / -r DIR
+> put FILE
+> bye
+
 python3 -m http.server
 >> browser: http://IP_ADDR:8000/
 
