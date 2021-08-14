@@ -20,6 +20,8 @@ The **/etc** directory contains **configuration files**, which can generally be 
 
 /etc/network
 
+/etc/init.d/ssh start
+
 ## --- /home ---
 
 The **/home** directory contains a home folder for each user. 
@@ -40,6 +42,10 @@ If the file system crashes, a file system check will be performed at next boot. 
 The **/opt** directory contains subdirectories for **optional software packages**. It’s commonly used by proprietary software.
 
 ## --- /proc ---
+
+The **/proc** directory similar to the **/dev** directory because it doesn’t contain standard files. It contains special files that represent system and process information. (**Kernel and process files**)
+
+/proc/cpuinfo
 
 ## --- /root ---
 
