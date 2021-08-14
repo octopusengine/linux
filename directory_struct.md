@@ -1,26 +1,38 @@
-##--- bin ---
+## --- bin ---
 
 
-##--- boot ---
+## --- boot ---
 
-##--- dev ---
+## --- dev ---
 
 
-##--- etc ---
+## --- etc ---
+/etc/fstab (setup RAM-disk etc.)
+/etc/shells
+/etc/network
 
-##--- home ---
+## --- home ---
 
-##--- lib ---
+## --- lib ---
 
-##--- lost+found ---
+## --- lost+found ---
 
-##--- media ---
+## --- media ---
 
-##--- opt ---
-##--- proc ---
-##--- root ---
-##--- run ---
-##--- sys ---
-##--- tmp ---
-##--- usr ---
-##--- var ---
+## --- opt ---
+
+## --- proc ---
+
+## --- root ---
+
+## --- run ---
+
+## --- sys ---
+
+## --- tmp ---
+
+## --- usr ---
+/usr/bin/start_script
+
+## --- var ---
+/var/www/html (nginx default web server) 
