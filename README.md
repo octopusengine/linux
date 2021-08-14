@@ -39,9 +39,9 @@ uname -a        (display Linux system info) - r (kernel release)
 last reboot     (reboot history)
 date            (current date and time)
 cal             (month calendar)
-lsblk           (block device related info)
 blkid           (nlock device atributes)
-mount
+lsblk           (block device related info)
+mount DEV PATH  / sudo mount /dev/sdb1 usb-disk
 free (mem)
 sudo fdisk -l
 sudo mount -a / /media/usb1t
