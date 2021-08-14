@@ -72,8 +72,8 @@ exit
 ### String / File commands
 ```bash
 pwd -> DIR      (Print Work Directory - path of current dir)
-ls -lat         (list - line all time)
-ls -A           (- all)
+ls -lat         (list - line all time) (l=list, a=all, t=time/default Abc)
+ls -d */        (only sub/DIR)
 cd
 cd ~/.. && cd /var/www/...
 pushd
