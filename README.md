@@ -2,6 +2,10 @@
 
 ## The Most Useful Linux Commands To Run in the Terminal
 
+### Directory structure
+
+https://github.com/octopusengine/linux/blob/master/directory_struct.md
+
 ### Basic
 ```bash
 man man
