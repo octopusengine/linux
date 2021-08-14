@@ -5,8 +5,11 @@
 ## --- dev ---
 
 ## --- etc ---
+
 /etc/fstab (setup RAM-disk etc.)
+
 /etc/shells
+
 /etc/network
 
 ## --- home ---
@@ -30,7 +33,11 @@
 ## --- tmp ---
 
 ## --- usr ---
+
 /usr/bin/start_script
 
 ## --- var ---
+
+/var/log/... (logs)
+
 /var/www/html (nginx default web server) 
