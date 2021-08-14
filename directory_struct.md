@@ -26,6 +26,8 @@ The **/etc** directory contains **configuration files**, which can generally be 
 
 The **/home** directory contains a home folder for each user. 
 
+/home/USER/.bashrc   (script after login)
+
 ## --- /lib ---
 
 The **/lib** directory contains **libraries** needed by the essential binaries in the **/bin** and **/sbin** folder. 
