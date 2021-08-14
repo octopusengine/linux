@@ -138,7 +138,7 @@ wiresharp-gtk
 lsusb
 lsmod
 shutdown -h / -r
-sudo apt-get update > upgrade
+sudo apt-get update && apt-get upgrade
 reboot
 
 system nginx status / start / stop / restart
