@@ -1,10 +1,10 @@
-## --- bin ---
+## --- /bin ---
 
-## --- boot ---
+## --- /boot ---
 
-## --- dev ---
+## --- /dev ---
 
-## --- etc ---
+## --- /etc ---
 
 /etc/fstab (setup RAM-disk etc.)
 
@@ -12,27 +12,27 @@
 
 /etc/network
 
-## --- home ---
+## --- /home ---
 
-## --- lib ---
+## --- /lib ---
 
-## --- lost+found ---
+## --- /lost+found ---
 
-## --- media ---
+## --- /media ---
 
-## --- opt ---
+## --- /opt ---
 
-## --- proc ---
+## --- /proc ---
 
-## --- root ---
+## --- /root ---
 
-## --- run ---
+## --- /run ---
 
-## --- sys ---
+## --- /sys ---
 
-## --- tmp ---
+## --- /tmp ---
 
-## --- usr ---
+## --- /usr ---
 
 /usr/bin/start_script
 
