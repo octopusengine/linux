@@ -1,10 +1,8 @@
 ## --- bin ---
 
-
 ## --- boot ---
 
 ## --- dev ---
-
 
 ## --- etc ---
 /etc/fstab (setup RAM-disk etc.)
