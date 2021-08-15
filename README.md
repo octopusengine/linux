@@ -34,6 +34,7 @@ tput cnorm (cursor on)
 
 ### Hardware & System
 ```bash
+sudo apt-get update && apt-get upgrade
 lscpu           (cpu architecture)
 uname -a        (display Linux system info) - r (kernel release)
 last reboot     (reboot history)
@@ -51,6 +52,10 @@ df -h (human)
 du -sh /dir/
 <du -s * | sort -nr > $HOME/user_space_report.txt
 screen
+
+temporary RAMdisk:
+mknod -m 660 /dev/ram b 1 1
+chown root:disk /dev/ram
 ```
 
 ### Users & file permission related
@@ -135,11 +140,12 @@ service
 htop (better top)
 iotop
 wiresharp-gtk
+cron                  (Daemon to execute scheduled commands)
+crontab               (Schedule a command to run at a later time)
 lsusb
 lsmod
-shutdown -h / -r
-sudo apt-get update && apt-get upgrade
-reboot
+shutdown -h / -r      (Shutdown or restart linux)
+reboot                (Reboot the system)
 
 system nginx status / start / stop / restart
 systemctl status nginx
@@ -164,8 +170,10 @@ sudo route -n
 ping host-IP
 ping -c 5 google.com / 8.8.8.8
 whois domain
-dig domain      (get DNS info)
+dig domain      (DNS lookup)
 dig -x host     (reverse lookup)
+traceroute      (Trace Route to Host)
+mtr             (Network diagnostics - traceroute/ping)
 ip a l / a s    (addr show)
 nmap (network mapper)
 nmap - sn / -v -A / -sP 192.168.0.*
