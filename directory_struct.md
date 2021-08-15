@@ -14,6 +14,10 @@ Linux exposes devices as files, and the **/dev** directory contains a number of 
 
 The **/etc** directory contains **configuration files**, which can generally be edited by hand in a text editor.
 
+/etc/password
+
+/etc/shadow
+
 /etc/fstab (setup RAM-disk etc.)
 
 /etc/shells
@@ -68,6 +72,12 @@ Applications store **temporary files** in the **/tmp** directory. These files ar
 ## --- /usr ---
 
 The **/usr** directory contains **applications and files used by users**, as opposed to applications and files used by the system. 
+
+/usr/bin/
+
+/usr/man/
+
+/usr/sbin/
 
 /usr/bin/start_script
 
