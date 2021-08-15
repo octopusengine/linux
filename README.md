@@ -11,7 +11,8 @@ https://github.com/octopusengine/linux/blob/master/directory_struct.md
 man man
 man COMM (manual) man intro
 man -k = apropos STH
-which bash / APP
+which bash / APP (ls > /usr/bin/ls) 
+whereis APP (ls > ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz)
 history | less / tail..  (CTRL+R)
 history >> history123.txt
 alias COMM/expr. ("rename")
