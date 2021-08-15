@@ -268,7 +268,7 @@ pi=`echo "h=10;4*a(1)" | bc -l`    ( echo $pi -> 3.14...)
 $BASH (/usr/bin/bash) $SHELL (/bin/bash)
 $HOME (/home/$USER) ($USER/$HOSTNAME $HOSTTYPE) $PATH
 $EDITOR $BROWSER
-$USER = logname
+$USER = logname / whoami
 $LANG (en_US.UTF-8) $LINES (58)
 
 apt-get install python-pip
