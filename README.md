@@ -110,6 +110,7 @@ tr              (translate or delete characters)
 echo test | tr -d"t" >> es
 echo -n "agama3" | sha256sum | tr -d "[:space:]-" >> correct hash
 find
+locate STR 
 wc FILE
 grep FILE/EXPR  (history: g/re/p - print regul.expr.)
 md5sum FILE
@@ -156,9 +157,11 @@ ls /etc/systemd/system
 
 ### Network
 ```bash
-hostname
+hostname 
 RPi: myPiName - /etc/hostname
 ifconfig
+ifconfig | grep broadcast | awk '{print $2}'   (get IP)
+hostname -I                                    (get IP)
 alias ipaddress="ifconfig | grep broadcast | awk `{print $2}`" 
 alias ipaddress="echo $(ifconfig | grep broadcast | awk `{print $2}`)" 
 ethtool eth()
