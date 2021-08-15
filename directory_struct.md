@@ -26,6 +26,8 @@ The **/etc** directory contains **configuration files**, which can generally be 
 
 /etc/init.d/ssh start
 
+/etc/nginx/nginx.conf 
+
 /etc/tor/torrc 
 
 ## --- /home ---
