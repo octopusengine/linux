@@ -26,6 +26,8 @@ The **/etc** directory contains **configuration files**, which can generally be 
 
 /etc/init.d/ssh start
 
+/etc/tor/torrc 
+
 ## --- /home ---
 
 The **/home** directory contains a home folder for each user. 
@@ -90,5 +92,7 @@ The **/usr** directory contains **applications and files used by users**, as opp
 The **/var** directory is the writable counterpart to the **/usr** directory, which must be read-only in normal operation. Log files and everything else that would normally be written to **/usr** during normal operation are written to the **/var** directory. 
 
 /var/log/... (logs)
+
+/var/lib/tor/hidden_service/hostname
 
 /var/www/html (nginx default web server) 
