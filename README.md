@@ -63,6 +63,7 @@ chown root:disk /dev/ram
 w               (who is online)
 who
 whoami -> @USER (who you are logged as)
+id              (Print user and group id's)
 uptime
 finger user     (info about user)
 sudo adduser newUser
