@@ -11,11 +11,6 @@ https://github.com/octopusengine/linux/blob/master/directory_struct.md
 man man
 man COMM (manual) man intro
 man -k = apropos STH
-which bash / APP (ls > /usr/bin/ls) 
-
-whereis APP (ls > ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz)
-https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html#ls-invocation
-
 history | less / tail..  (CTRL+R)
 history >> history123.txt
 alias COMM/expr. ("rename")
@@ -34,7 +29,16 @@ ps -ef | grep dpkg*  --> kill PID#
 clear      (clear terminal / CTRL+L)
 tput civis (cursor off)
 tput cnorm (cursor on)
+
+$PATH
+which bash / APP (ls > /usr/bin/ls) 
+whereis APP (ls > ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz)
 ```
+
+https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html#ls-invocation
+
+https://github.com/wertarbyte/coreutils/blob/master/src/ls.c
+
 
 ### Hardware & System
 ```bash
