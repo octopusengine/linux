@@ -12,7 +12,10 @@ man man
 man COMM (manual) man intro
 man -k = apropos STH
 which bash / APP (ls > /usr/bin/ls) 
+
 whereis APP (ls > ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz)
+https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html#ls-invocation
+
 history | less / tail..  (CTRL+R)
 history >> history123.txt
 alias COMM/expr. ("rename")
@@ -193,6 +196,7 @@ service ssh start
 /etc/init.d/ssh start
 ssh-copy-id
 ssh IP / ssh USER@IP
+logout
 
 scp USER@IP_ADDR:/home/USER/FILE.src FILE.dest  (netw copy)
 
