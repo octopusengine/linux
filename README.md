@@ -90,10 +90,12 @@ exit
 ### String / File commands
 ```bash
 pwd -> DIR      (Print Work Directory - path of current dir)
-ls -lat         (list - line all time) (l=list, a=all, t=time/default Abc)
-ls -d */        (only sub/DIR)
+~ $ >           (~ home directory, $ home user)
 cd
 cd ~/.. && cd /var/www/...
+cd; cd /; cd ~  (/home/USER; / "root"; = cd > home/USER) 
+ls -lat         (list - line all time) (l=list, a=all, t=time/default Abc)
+ls -d */        (only sub/DIR)
 pushd
 popd
 mkdir
