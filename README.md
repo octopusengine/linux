@@ -40,6 +40,8 @@ which bash / APP (ls > /usr/bin/ls)
 whereis APP (ls > ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz)
 ```
 
+### Sources
+
 https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html#ls-invocation
 
 https://github.com/wertarbyte/coreutils/blob/master/src/ls.c
@@ -237,4 +239,3 @@ sudo ifdown eth0 && sudo ifup eth0 (restart wifi)
 nohup (no hangup)
 sudo nohup sh -c "ifdown eth0 && ifup eth0"
 ```
-
