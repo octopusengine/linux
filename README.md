@@ -91,8 +91,7 @@ exit
 ```bash
 pwd -> DIR      (Print Work Directory - path of current dir)
 ~ $ >           (~ home directory, $ home user)
-cd
-cd ~/.. && cd /var/www/...
+cd PATH         (change directory)
 cd; cd /; cd ~  (/home/USER; / "root"; = cd > home/USER) 
 ls -lat         (list - line all time) (l=list, a=all, t=time/default Abc)
 ls -d */        (only sub/DIR)
