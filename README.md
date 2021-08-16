@@ -38,6 +38,8 @@ tput cnorm (cursor on)
 $PATH
 which bash / APP (ls > /usr/bin/ls) 
 whereis APP (ls > ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz)
+
+st         (simple terminal - install sttrminal)
 ```
 
 ### Sources
