@@ -1,10 +1,14 @@
 # linux
 
+[Directory structure](https://github.com/octopusengine/linux/blob/master/directory_struct.md)
+
+[Applications and Programs](https://github.com/octopusengine/linux/blob/master/app_prg.md)
+
+[Links](https://github.com/octopusengine/linux/blob/master/links.md)
+---
+
 ## The Most Useful Linux Commands To Run in the Terminal
 
-### Directory structure
-
-https://github.com/octopusengine/linux/blob/master/directory_struct.md
 
 ### Basic
 ```bash
@@ -233,89 +237,3 @@ nohup (no hangup)
 sudo nohup sh -c "ifdown eth0 && ifup eth0"
 ```
 
-### Aps & Etc. (terminal)
-```bash
-tmux / ctrl+B / Create: % (-) " (|) ! (x) Next Prew >
-mc (norton comm.)
-scrot (print screen)
-neofetch (system info)
-toilet -f mono12 -F metal Tecmint.com
-figlet Welcome
-asciiview elephant.jpg -driver curses 
-echo "octopusengine[dot]com is a community of Linux Nerds and Geeks" | pv -qL 10  (x ./baudprint.pl 600)
-rig (random identity)
-sl (Steam Locomotive)
-asciiquarium
-cowsay Hello
-cowsay -f ghostbusters Who you Gonna Call
-cowthink ...funny
-telnet towel.blinkenlights.nl
-curl -u YourUsername:YourPassword -d status="message" http://twitter.com/statuses/update.xml
-
-bc (line calculator)
-echo "12+5" | bc
-hex="FF" && echo "obase=10;ibase=16;$hex" | bc  ( -> 255 )
-echo "1==2" | bc           ( -> 0 )
-echo "10>5" | bc           ( -> 1 )
-pi=`echo "h=10;4*a(1)" | bc -l`    ( echo $pi -> 3.14...)
-
-```
-
----
-
-### bash / CPP / Python
-```bash
-#!bin/sh x #!bin/bash
-$BASH (/usr/bin/bash) $SHELL (/bin/bash)
-$HOME (/home/$USER) ($USER/$HOSTNAME $HOSTTYPE) $PATH
-$EDITOR $BROWSER
-$USER = logname / whoami
-$LANG (en_US.UTF-8) $LINES (58)
-
-apt-get install python-pip
-pip install pybitcoin
-
-cd python-proj-dir
-python3 -m venv venv  (virtual environment)
-source ./venv/bin/activate
-```
----
-
-## games
-```
-/usr/games
-
-./rogue
-
-```
-
-## SW / APP  (x-prg)
-```
-thunar (file manager)
-brave  (web browser + tor) 
-
-```
-
-
-
-
-
-## links
-
-https://ss64.com/bash/
-
-<a href=http://wiki.ubuntu.cz/z%C3%A1kladn%C3%AD_p%C5%99%C3%ADkazy>wiky-ubuntu-cz</a><br />
-<a href=https://www.ubuntupit.com/best-linux-commands-to-run-in-the-terminal/>50 best-linux-commands</a><br />
-<a href=http://searchdatacenter.techtarget.com/tutorial/77-Linux-commands-and-utilities-youll-actually-use>77-commands</a><br />
-http://ifanda.cz/it/linux/2011-01-04-vicero-live-linuxu-na-jedne-usb-flash-klicence/<br />
-system.d service: https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/<br />
-https://linuxconfig.org/bash-scripting-tutorial<br />
-https://github.com/LukeSmithxyz/shortcut-sync<br />
-https://gitlab.com/dwt1<br />
-https://github.com/EzeeLinux/ezeelinux-script-collection<br />
-
-<hr />
-
-<a href=http://www.root.cz/clanky/programovani-v-bash-shellu/>programovani-v-bash-shellu</a><br />
-<a href=http://www.abclinuxu.cz/clanky/navody/bash-i>navody/bash-i</a><br />
-<a href=https://edu.dtlab.cz/linux/>edu.dtlab.cz/linux</a><br />
