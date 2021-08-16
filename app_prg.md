@@ -1,4 +1,4 @@
-# Aplications and programs
+# Aplications and Programs
 
 
 ### Aps & Etc. (terminal)
