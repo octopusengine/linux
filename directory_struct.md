@@ -21,7 +21,7 @@ The **/etc** directory contains **configuration files**, which can generally be 
 
 /etc/shadow
 
-/etc/fstab (setup RAM-disk etc.)
+/etc/fstab (*setup RAM-disk etc.*)
 
 /etc/shells
 
@@ -37,7 +37,7 @@ The **/etc** directory contains **configuration files**, which can generally be 
 
 The **/home** directory contains a home folder for each user. 
 
-/home/USER/.bashrc   (script after login)
+/home/USER/.bashrc   (*script after login*)
 
 ### --- /lib ---
 
@@ -90,7 +90,7 @@ The **/usr** directory contains **applications and files used by users**, as opp
 
 /usr/bin/uptime
 
-/usr/bin/free (memory usage)
+/usr/bin/free (*memory usage*
 
 ### --- var ---
 
