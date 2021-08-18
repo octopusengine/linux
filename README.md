@@ -13,6 +13,7 @@
 ```bash
 $ = another example
 COMM = command
+COMM -> RESULT  (by executing the command we get the result)
 USER
 FILE
 DIR
@@ -22,6 +23,7 @@ IP
 
 ### Basic
 ```bash
+
 man COMM                   (Help manual)
 $ man man / $ man intro
 $ man -k = apropos STH
@@ -37,14 +39,14 @@ grep alias ~/.bashrc
 $ apt install / remove / APPLICATION
 $ sudo locate APPLICATION
 $ sudo apt-get purge APPLICATION
-dpkg                (Package manager - Debian/Ubuntu)
-$ dpkg -l | more    (what is installed)
+dpkg                      (Package manager - Debian/Ubuntu)
+$ dpkg -l | more          (what is installed)
 $ dpkg -l | grep -i game/python... (-i case intersensitive - Game / gaMe..)
 $ sudo dpkg --configure -a
 $ ps -ef | grep dpkg*  --> kill PID#
-clear               (clear terminal / CTRL+L)
-tput civis          (cursor off)
-tput cnorm          (cursor on)
+clear                     (clear terminal / CTRL+L)
+tput civis                (cursor off)
+tput cnorm                (cursor on)
 
 $PATH
 which bash / APP    (ls > /usr/bin/ls) 
@@ -63,43 +65,43 @@ https://github.com/wertarbyte/coreutils/blob/master/src/ls.c
 ### Hardware & System
 ```bash
 sudo apt-get update && apt-get upgrade
-lscpu             (cpu architecture)
-uname -a          (display Linux system info) - r (kernel release)
-last reboot       (reboot history)
-date              (current date and time)
-cal               (month calendar)
-blkid             (nlock device atributes)
-lsblk             (block device related info)
+lscpu                  (cpu architecture)
+uname -a               (display Linux system info) - r (kernel release)
+last reboot            (reboot history)
+date                   (current date and time)
+cal                    (month calendar)
+blkid                  (nlock device atributes)
+lsblk                  (block device related info)
 mount DEV PATH  / sudo mount /dev/sdb1 usb-disk
 free (mem)
 sudo fdisk -l
 sudo mount -a / /media/usb1t
 less /etc/fstab
-df / (space - disk free)
-df -h (human)
+df                     (space - disk free)
+$ df -h                (-h human)
 du -sh /dir/
 $ du -s * | sort -nr > $HOME/user_space_report.txt
 screen
 
 temporary RAMdisk:
-mknod -m 660 /dev/ram b 1 1
-chown root:disk /dev/ram
+$ mknod -m 660 /dev/ram b 1 1
+$ chown root:disk /dev/ram
 ```
 
 ### Users & file permission related
 ```bash
-w                  (who is online)
+w                      (who is online)
 who
-whoami -> @USER    (who you are logged as)
-id                 (Print user and group id's)
+whoami -> @USER        (who you are logged as)
+id                     (Print user and group id's)
 uptime
-finger user        (info about user)
+finger user            (info about user)
 sudo adduser newUser
 sudo passwd newUser
 passwd
-chmod              (change the permission of file to octal)
-$ chmod 775 DIR    (pwd)/hi.sh ( - change mode to 775)
-$ chmod +x FILE    ("executable" - better)
+chmod                  (change the permission of file to octal)
+$ chmod 775 DIR        (pwd)/hi.sh ( - change mode to 775)
+$ chmod +x FILE        ("executable" - better)
 chown owner-user FILE
 
 sudo su - (as a superuser)
@@ -109,20 +111,20 @@ exit
 
 ### String / File commands
 ```bash
-pwd -> DIR        (Print Work Directory - path of current dir)
-~ $ >             (~ home directory, $ home user)
-cd PATH           (change directory)
-cd; cd /; cd ~    (/home/USER; / "root"; = cd > home/USER) 
-ls                (List information about file/s)
-$ ls -lat         (list - line all time) (l=list, a=all, t=time/default Abc)
-$ ls -d */        (only sub/DIR)
+pwd -> DIR             (Print Work Directory - path of current dir)
+~ $ >                  (~ home directory, $ home user)
+cd PATH                (change directory)
+cd; cd /; cd ~         (/home/USER; / "root"; = cd > home/USER) 
+ls                     (List information about file/s)
+$ ls -lat              (list - line all time) (l=list, a=all, t=time/default Abc)
+$ ls -d */             (only sub/DIR)
 pushd
 popd
 mkdir
 rmdir
 touch FILE              (create or update F)
 cat                     (Concatenate and print (display) the content of files)
-$ cat > FILE            (write and create..)  end: CTRL+C / D
+$ cat > FILE            (write and create..)  end: CTRL+C / CTRL+D
 $ cat >> FILE           (add..)
 $ cat F1 F2 > F3 (join)
 $ echo "add line" >> FILE
@@ -141,6 +143,12 @@ $ awk -F':' '{print $1,$7}' /etc/password          (-F: separator)
 $ awk '/path {print $1,$2/1024"kB"}'  ls.txt       (size/1024 + kB)
 $ awk '/path && $2 > 10000 {print $1,$2/1024"kB"}' (data > 10k ...) > path10.awk
 $ awk -f path10k.awk ls_usr_bin.txt                (the same) 
+sed                     (Stream editor for Replacing or substituting string)
+$sed 's/unix/linux/g' file                         (Replace pattern unix -> linux)
+$ sed '5d' filename.txt                            (Delete 5th line)
+$ sed '$d' filename.txt                            (Delete last line)
+$ echo "Welcome To The Geek Stuff" | sed 's/\(\b[A-Z]\)/\(\1\)/g'
+$ -> (W)elcome (T)o (T)he (G)eek (S)tuff
 hexdump -C FILE
 tr              (translate or delete characters)
 $ echo test | tr -d"t" >> es
@@ -148,19 +156,18 @@ $ echo -n "agama3" | sha256sum | tr -d "[:space:]-" >> correct hash
 find
 locate STR 
 wc FILE
-grep FILE/EXPR  (history: g/re/p - print regul.expr.)
+grep FILE/EXPR         (history: g/re/p - print regul.expr.)
 md5sum FILE
-gpg              (GnuPrivacy Guard)
-$ gpg -c FILE    (encrypt F)
-$ gpg file.gpg   (decrypt F)
+gpg                    (GnuPrivacy Guard)
+$ gpg -c FILE          (encrypt F)
+$ gpg file.gpg         (decrypt F)
 find DIR/FILE
-wget URL         (Retrieve web pages or files via HTTP, HTTPS or FTP)
+wget URL               (Retrieve web pages or files via HTTP, HTTPS or FTP)
 $ wget -O https://raw.githubusercontent.com/octopusengine/linux/master/ct/btc.sh
-scp             (file transfer)
-dmesg           (report sit.)
+scp                    (file transfer)
+dmesg                  (report sit.)
 sudo blkid
-echo "& one more line" >> FILE / ~/name.txt
-sed (stream editor)
+$ echo "& one more line" >> FILE / ~/name.txt
 
 ```
 
