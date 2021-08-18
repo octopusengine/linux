@@ -49,8 +49,8 @@ tput civis                (cursor off)
 tput cnorm                (cursor on)
 
 $PATH
-which bash / APP    (ls > /usr/bin/ls) 
-whereis APP         (ls > ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz)
+which bash / APP          (ls > /usr/bin/ls) 
+whereis APP               (ls > ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz)
 
 st            (simple terminal - install sttrminal)
 ```
@@ -174,16 +174,20 @@ $ echo "& one more line" >> FILE / ~/name.txt
 
 ### Process / System
 ```bash
-ps afux (process - all tree user)
-ps afx | grep py > ID
-ps aux | grep -i vi (-i ignore case)
+ps
+$ ps afux (process - all tree user)
+$ ps afx | grep py > ID
+$ ps aux | grep -i vi (-i ignore case)
+$ ps axch -o cmd:16,%mem --sort=-%mem | head (top memory usage ps)
+$ ps axch -o cmd:16,%cpu --sort=-%cpu | head (top cpu usage ps)
 kill ID / NAME
 kill $(ps aux | grep ´...´ | awk ...)
 killall
 sysv-rc-conf (start init)
 tail -f /var/log/uwsgi/app/*.log
 service
-htop (better top)
+top
+htop  (better top)
 iotop
 wiresharp-gtk
 cron                  (Daemon to execute scheduled commands)
