@@ -10,20 +10,30 @@
 
 ## The Most Useful Linux Commands To Run in the Terminal
 
+```bash
+$ = another example
+COMM = command
+USER
+FILE
+DIR
+IP
+...
+```
 
 ### Basic
 ```bash
-man COMM    (Help manual)
+man COMM                   (Help manual)
 $ man man / $ man intro
-man -k = apropos STH
-history | less / tail..  (CTRL+R)
+$ man -k = apropos STH
+COMM -h / --help           (help)
+history                    (Command History)
+$ history | less / tail..  (CTRL+R)
 $ history >> history123.txt
 alias COMM/expr. ("rename")
 $ alias hm="ls -l | wc -l" (hm = howmany)
-sleep 2 (pause 2 sec)
-watch -n 30 COMM (periodic)
+sleep 2                    (Delay for a specified time - 2 sec)
+watch -n 30 COMM           (Execute/display a program periodically)
 grep alias ~/.bashrc
-COMM -h (help)
 $ apt install / remove / APPLICATION
 $ sudo locate APPLICATION
 $ sudo apt-get purge APPLICATION
