@@ -1,9 +1,9 @@
 # Links
 
 
-https://ss64.com/bash/ (An A-Z Index of the Linux command line: bash + utilities)
+https://ss64.com/bash/ An A-Z Index of the Linux command line: bash + utilities
 
-https://www.ubuntupit.com/best-linux-commands-to-run-in-the-terminal/ (50 best-linux-commands)
+https://www.ubuntupit.com/best-linux-commands-to-run-in-the-terminal/ The 50 Most Useful Linux Commands To Run in the Terminal
 
 http://searchdatacenter.techtarget.com/tutorial/77-Linux-commands-and-utilities-youll-actually-use (77-commands)
 
