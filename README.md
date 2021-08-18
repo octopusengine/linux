@@ -122,7 +122,7 @@ rm file.txt
 echo file.txt byl > backup and delete
 cat FILE | less / more
 awk '{print}' FILE = cat FILE
-awk '{print $2}' / col. ($0 = all,  $1 first, ...)
+awk '{print $2}' FILE -> second column           ($0 = all,  $1 first, ...)
 awk -F':' '{print $1,$7}' /etc/password          (-F: separator)
 awk '/path {print $1,$2/1024"kB"}'  ls.txt       (size/1024 + kB)
 awk '/path && $2 > 10000 {print $1,$2/1024"kB"}' (data > 10k ...) > path10.awk
