@@ -155,13 +155,13 @@ $ echo test | tr -d"t" >> es
 $ echo -n "agama3" | sha256sum | tr -d "[:space:]-" >> correct hash
 find
 locate STR 
-wc FILE
+wc FILE                (Print byte, word, and line counts)
 grep FILE/EXPR         (history: g/re/p - print regul.expr.)
 md5sum FILE
 gpg                    (GnuPrivacy Guard)
 $ gpg -c FILE          (encrypt F)
 $ gpg file.gpg         (decrypt F)
-find DIR/FILE
+find DIR/FILE          (Find files)
 wget URL               (Retrieve web pages or files via HTTP, HTTPS or FTP)
 $ wget -O https://raw.githubusercontent.com/octopusengine/linux/master/ct/btc.sh
 scp                    (file transfer)
