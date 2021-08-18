@@ -143,6 +143,7 @@ $ awk -F':' '{print $1,$7}' /etc/password          (-F: separator)
 $ awk '/path {print $1,$2/1024"kB"}'  ls.txt       (size/1024 + kB)
 $ awk '/path && $2 > 10000 {print $1,$2/1024"kB"}' (data > 10k ...) > path10.awk
 $ awk -f path10k.awk ls_usr_bin.txt                (the same) 
+$ free -h | awk '/^Mem:/ {print $3 "/" $2}'        (Memory used: used/total)  
 sed                     (Stream editor for Replacing or substituting string)
 $ sed 's/unix/linux/g' file                        (Replace pattern unix -> linux)
 $ -> (W)elcome (T)o (T)he (G)eek (S)tuff
