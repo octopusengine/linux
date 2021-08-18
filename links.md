@@ -1,17 +1,27 @@
 # Links
 
 
-https://ss64.com/bash/
+https://ss64.com/bash/ (An A-Z Index of the Linux command line: bash + utilities)
 
-<a href=http://wiki.ubuntu.cz/z%C3%A1kladn%C3%AD_p%C5%99%C3%ADkazy>wiky-ubuntu-cz</a><br />
-<a href=https://www.ubuntupit.com/best-linux-commands-to-run-in-the-terminal/>50 best-linux-commands</a><br />
-<a href=http://searchdatacenter.techtarget.com/tutorial/77-Linux-commands-and-utilities-youll-actually-use>77-commands</a><br />
-http://ifanda.cz/it/linux/2011-01-04-vicero-live-linuxu-na-jedne-usb-flash-klicence/<br />
-system.d service: https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/<br />
-https://linuxconfig.org/bash-scripting-tutorial<br />
-https://github.com/LukeSmithxyz/shortcut-sync<br />
-https://gitlab.com/dwt1<br />
-https://github.com/EzeeLinux/ezeelinux-script-collection<br />
+http://wiki.ubuntu.cz/z%C3%A1kladn%C3%AD_p%C5%99%C3%ADkazy (wiky-ubuntu-cz)
+
+https://www.ubuntupit.com/best-linux-commands-to-run-in-the-terminal/ (50 best-linux-commands)
+
+http://searchdatacenter.techtarget.com/tutorial/77-Linux-commands-and-utilities-youll-actually-use (77-commands)
+
+http://ifanda.cz/it/linux/2011-01-04-vicero-live-linuxu-na-jedne-usb-flash-klicence/
+
+system.d service: https://www.linode.com/docs/quick-answers/linux/start-service-at-boot
+
+https://linuxconfig.org/bash-scripting-tutorial
+
+https://github.com/LukeSmithxyz/shortcut-sync
+
+https://gitlab.com/dwt1
+
+https://github.com/EzeeLinux/ezeelinux-script-collection
+
+----
 
 <hr />
 
