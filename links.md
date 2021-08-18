@@ -15,7 +15,7 @@ https://gitlab.com/dwt1
 
 https://github.com/EzeeLinux/ezeelinux-script-collection
 
-https://edu.dtlab.cz/linux/edu.dtlab.cz/linux
+https://edu.dtlab.cz/linux/
 
 ----
 
