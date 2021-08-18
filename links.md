@@ -3,8 +3,6 @@
 
 https://ss64.com/bash/ (An A-Z Index of the Linux command line: bash + utilities)
 
-http://wiki.ubuntu.cz/z%C3%A1kladn%C3%AD_p%C5%99%C3%ADkazy (wiky-ubuntu-cz)
-
 https://www.ubuntupit.com/best-linux-commands-to-run-in-the-terminal/ (50 best-linux-commands)
 
 http://searchdatacenter.techtarget.com/tutorial/77-Linux-commands-and-utilities-youll-actually-use (77-commands)
@@ -21,14 +19,16 @@ https://gitlab.com/dwt1
 
 https://github.com/EzeeLinux/ezeelinux-script-collection
 
+https://edu.dtlab.cz/linux/edu.dtlab.cz/linux
+
 ----
 
-<hr />
+### CZ
 
-<a href=http://www.root.cz/clanky/programovani-v-bash-shellu/>programovani-v-bash-shellu</a><br />
-<a href=http://www.abclinuxu.cz/clanky/navody/bash-i>navody/bash-i</a><br />
-<a href=https://edu.dtlab.cz/linux/>edu.dtlab.cz/linux</a><br />
+http://wiki.ubuntu.cz/z%C3%A1kladn%C3%AD_p%C5%99%C3%ADkazy (wiky-ubuntu-cz)
 
+http://www.root.cz/clanky/programovani-v-bash-shellu/ programovani-v-bash-shellu
 
+http://www.abclinuxu.cz/clanky/navody/bash-i navody/bash-i
 
 ---
