@@ -4,9 +4,9 @@
 blkid                  (block device atributes)
 lsblk                  (block device related info)
 
-fdisk                  
+fdisk                  (Partition table manipulator for Linux)                 
 
-cfdisk 
+cfdisk                 (Partition table manipulator for Linux)
 $ cfdisk /dev/sda
 
 gparted                (gr. parti 
@@ -16,6 +16,8 @@ $ sudo mkfs.ext4 -L disk_name /dev/sdb1  (formating: ext2/3/4 bfs/fat/nfts/vfat/
 ...    mkfs.bfs                          (bfs boot file system) 
 
 mount DEV PATH  / sudo mount /dev/sdb1 usb-disk
+
+ddrescue               (Data recovery tool)
 
 df                     (space - disk free)
 $ df -h                (-h human)
@@ -37,6 +39,7 @@ $ sudo mount ~/howtogeek.img /mnt/geek
 $ sudo chown dave:users /mnt/geek/
 ...
 $ sudo umount /mnt/geek
+
 
 temporary RAMdisk:
 $ mknod -m 660 /dev/ram b 1 1
