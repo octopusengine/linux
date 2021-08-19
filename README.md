@@ -4,6 +4,10 @@
 
 [Applications and Programs](https://github.com/octopusengine/linux/blob/master/app_prg.md)
 
+[Disk](https://github.com/octopusengine/linux/blob/master/disk.md)
+
+[Network](https://github.com/octopusengine/linux/blob/master/network.md)
+
 [Links](https://github.com/octopusengine/linux/blob/master/links.md)
 
 ---
@@ -70,23 +74,16 @@ uname -a               (display Linux system info) - r (kernel release)
 last reboot            (reboot history)
 date                   (current date and time)
 cal                    (month calendar)
-blkid                  (nlock device atributes)
-lsblk                  (block device related info)
-mount DEV PATH  / sudo mount /dev/sdb1 usb-disk
 free (mem)
 sudo fdisk -l
 sudo mount -a / /media/usb1t
 less /etc/fstab
-df                     (space - disk free)
-$ df -h                (-h human)
-du -sh /dir/
-$ du -s * | sort -nr > $HOME/user_space_report.txt
 screen
-
-temporary RAMdisk:
-$ mknod -m 660 /dev/ram b 1 1
-$ chown root:disk /dev/ram
 ```
+
+[Disk](https://github.com/octopusengine/linux/blob/master/disk.md)
+
+
 
 ### Users & file permission related
 ```bash
@@ -204,57 +201,6 @@ systemctl status nginx
 systemctl daemon-reload
 
 ls /etc/systemd/system
-```
-
-### Network
-```bash
-hostname 
-RPi: myPiName - /etc/hostname
-ifconfig
-$ ifconfig | grep broadcast | awk '{print $2}'   (get IP)
-hostname -I                                      (get IP)
-$ alias ipaddress="ifconfig | grep broadcast | awk `{print $2}`" 
-$ alias ipaddress="echo $(ifconfig | grep broadcast | awk `{print $2}`)" 
-ethtool eth()
-ip addr
-curl [options] URL -- dtata transfer (HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP or FILE)
-nc (net cat / listen / connect)
-iftop
-sudo route -n
-ping host-IP
-$ ping -c 5 google.com / 8.8.8.8
-whois domain
-dig domain      (DNS lookup)
-dig -x host     (reverse lookup)
-traceroute      (Trace Route to Host)
-mtr             (Network diagnostics - traceroute/ping)
-ip a l / a s    (addr show)
-nmap (network mapper)
-nmap - sn / -v -A / -sP 192.168.0.*
-nmap - sT -p80,433 192.168.0.* | grep report (scan TCP-IP for port)
-netstat -vat / -nr / -i / -ta (install net-tools)
-netstat -tulpn  (ports)
-bsh-write       (send message)
-
-ssh
-sudo apt-get install openssh-server
-service ssh start
-/etc/init.d/ssh start
-ssh-copy-id
-ssh IP / ssh USER@IP
-logout
-
-scp USER@IP_ADDR:/home/USER/FILE.src FILE.dest  (netw copy)
-
-sftp IP  (secure FTP) 
-> ls/lls / pwd/lpwd / cd/lcd
-> get FILE / -r DIR
-> put FILE
-> bye
-
-python3 -m http.server
->> browser: http://IP_ADDR:8000/
-
 ```
 
 ### webcam
