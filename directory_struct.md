@@ -25,6 +25,10 @@ The **/etc** directory contains **configuration files**, which can generally be 
 
 /etc/shells
 
+/etc/samba/smb.conf
+
+/etc/samba/smbusers
+
 /etc/network
 
 /etc/init.d/ssh start
