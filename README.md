@@ -15,7 +15,8 @@
 ## The Most Useful Linux Commands To Run in the Terminal
 
 ```bash
-$ = another example
+$ = another example (~ example describe)
+$ -> return
 COMM = command
 COMM -> RESULT  (by executing the command we get the result)
 USER
@@ -29,11 +30,11 @@ IP
 ```bash
 
 man COMM                   (Help manual)
-$ man man / $ man intro
+$ man man / $ man intro    
 $ man -k = apropos STH
 COMM -h / --help           (help)
-history                    (Command History)
-$ history | less / tail..  (CTRL+R)
+history                    (Command History - CTRL+R)
+$ history | less / tail..   
 $ history >> history123.txt
 alias COMM/expr. ("rename")
 $ alias hm="ls -l | wc -l" (hm = howmany)
@@ -44,7 +45,7 @@ $ apt install / remove / APPLICATION
 $ sudo locate APPLICATION
 $ sudo apt-get purge APPLICATION
 dpkg                      (Package manager - Debian/Ubuntu)
-$ dpkg -l | more          (what is installed)
+$ dpkg -l | more          (~ what is installed)
 $ dpkg -l | grep -i game/python... (-i case intersensitive - Game / gaMe..)
 $ sudo dpkg --configure -a
 $ ps -ef | grep dpkg*  --> kill PID#
@@ -74,10 +75,8 @@ uname -a               (display Linux system info) - r (kernel release)
 last reboot            (reboot history)
 date                   (current date and time)
 cal                    (month calendar)
-free (mem)
-sudo fdisk -l
-sudo mount -a / /media/usb1t
-less /etc/fstab
+free                   (memory)
+$ free -h | awk '/^Mem:/ {print $3 "/" $2}'        (Memory used: used/total)
 screen
 ```
 
@@ -87,18 +86,18 @@ screen
 
 ### Users & file permission related
 ```bash
-w                      (who is online)
+w                       (who is online)
 who
-whoami -> @USER        (who you are logged as)
-id                     (Print user and group id's)
+whoami -> @USER         (who you are logged as)
+id                      (Print user and group id's)
 uptime
-finger user            (info about user)
+finger user             (info about user)
 sudo adduser newUser
 sudo passwd newUser
 passwd
-chmod                  (change the permission of file to octal)
-$ chmod 775 DIR        (pwd)/hi.sh ( - change mode to 775)
-$ chmod +x FILE        ("executable" - better)
+chmod                   (change the permission of file to octal)
+$ chmod 775 DIR         (~ pwd)/hi.sh ( - change mode to 775)
+$ chmod +x FILE         (~ "executable" - better)
 chown owner-user FILE
 
 sudo su - (as a superuser)
@@ -108,23 +107,27 @@ exit
 
 ### String / File commands
 ```bash
-pwd -> DIR             (Print Work Directory - path of current dir)
-~ $ >                  (~ home directory, $ home user)
-cd PATH                (change directory)
-cd; cd /; cd ~         (/home/USER; / "root"; = cd > home/USER) 
-ls                     (List information about file/s)
-$ ls -lat              (list - line all time) (l=list, a=all, t=time/default Abc)
-$ ls -d */             (only sub/DIR)
-pushd
-popd
-mkdir
-rmdir
+pwd -> DIR              (Print Work Directory - path of current dir)
+~ $ >                   (~ home directory, $ home user)
+cd PATH                 (change directory)
+cd; cd /; cd ~          (/home/USER; / "root"; = cd > home/USER) 
+ls                      (List information about file/s)
+$ ls -lat               (~ list - line all time) (l=list, a=all, t=time/default Abc)
+$ ls -d */              (~ only sub/DIR)
+pushd                   (Save and then change the current directory)
+popd                    (Restore the previous value of the current directory)
+mkdir                   (Create new folder/s)
+rmdir                   (Remove folder/s)
 touch FILE              (create or update F)
 cat                     (Concatenate and print (display) the content of files)
-$ cat > FILE            (write and create..)  end: CTRL+C / CTRL+D
-$ cat >> FILE           (add..)
+$ cat > FILE            (~ write and create..)  end: CTRL+C / CTRL+D
+$ cat >> FILE           (~ add..)
 $ cat F1 F2 > F3 (join)
 $ echo "add line" >> FILE
+
+tee                     (Redirect output to multiple files)
+echo program_usb_boot_mode=1 | sudo tee -a /boot/config.txt (add line)
+
 sudo nano FILE / vi / gedit
 
 cp F1 F2                (copy source destination) cp file.txt file-bak.txt
@@ -133,6 +136,7 @@ cmp F1 F2               (compare)
 rm file.txt             (remove)
 echo file.txt byl > backup and delete
 cat FILE | less / more
+
 awk                     (Find and Replace text, database sort/validate/index)
 $ awk '{print}' FILE = cat FILE
 $ awk '{print $2}' FILE -> second column           ($0 = all,  $1 first, ...)
@@ -140,13 +144,14 @@ $ awk -F':' '{print $1,$7}' /etc/password          (-F: separator)
 $ awk '/path {print $1,$2/1024"kB"}'  ls.txt       (size/1024 + kB)
 $ awk '/path && $2 > 10000 {print $1,$2/1024"kB"}' (data > 10k ...) > path10.awk
 $ awk -f path10k.awk ls_usr_bin.txt                (the same) 
-$ free -h | awk '/^Mem:/ {print $3 "/" $2}'        (Memory used: used/total)  
+
 sed                     (Stream editor for Replacing or substituting string)
 $ sed 's/unix/linux/g' file                        (Replace pattern unix -> linux)
 $ -> (W)elcome (T)o (T)he (G)eek (S)tuff
 $ echo "Welcome To The Geek Stuff" | sed 's/\(\b[A-Z]\)/\(\1\)/g'
 $ sed '5d' filename.txt                            (Delete 5th line)
 $ sed '$d' filename.txt                            (Delete last line)
+
 hexdump -C FILE
 tr                     (translate or delete characters)
 $ echo test | tr -d"t" >> es
@@ -157,8 +162,8 @@ wc FILE                (Print byte, word, and line counts)
 grep FILE/EXPR         (history: g/re/p - print regul.expr.)
 md5sum FILE
 gpg                    (GnuPrivacy Guard)
-$ gpg -c FILE          (encrypt F)
-$ gpg file.gpg         (decrypt F)
+$ gpg -c FILE          (~ encrypt F)
+$ gpg file.gpg         (~ decrypt F)
 find DIR/FILE          (Find files)
 wget URL               (Retrieve web pages or files via HTTP, HTTPS or FTP)
 $ wget -O https://raw.githubusercontent.com/octopusengine/linux/master/ct/btc.sh
@@ -172,7 +177,7 @@ $ echo "& one more line" >> FILE / ~/name.txt
 ### Process / System
 ```bash
 ps
-$ ps afux (process - all tree user)
+$ ps afux              (~ process - all tree user)
 $ ps afx | grep py > ID
 $ ps aux | grep -i vi (-i ignore case)
 $ ps axch -o cmd:16,%mem --sort=-%mem | head (top memory usage ps)
