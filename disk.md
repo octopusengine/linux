@@ -4,23 +4,28 @@
 blkid                  (block device atributes)
 lsblk                  (block device related info)
 
-fdisk                  (Partition table manipulator for Linux)                 
+fdisk                  (Partition table manipulator) 
+$ sudo fdisk -l
+
+less /etc/fstab
 
 cfdisk                 (Partition table manipulator for Linux)
 $ cfdisk /dev/sda
 
-gparted                (gr. parti 
+gparted                (gr. Partition table manipulator)
 
 mkfs                   (make file systems)
 $ sudo mkfs.ext4 -L disk_name /dev/sdb1  (formating: ext2/3/4 bfs/fat/nfts/vfat/msdos...)
 ...    mkfs.bfs                          (bfs boot file system) 
 
-mount DEV PATH  / sudo mount /dev/sdb1 usb-disk
+mount DEV PATH          (Mount a file system - device + path)
+$ sudo mount /dev/sdb1 usb-disk
+$ sudo mount -a / /media/usb1t
 
-ddrescue               (Data recovery tool)
+ddrescue                (Data recovery tool)
 
-df                     (space - disk free)
-$ df -h                (-h human)
+df                      (space - disk free)
+$ df -h                 (-h human)
 
 du -sh /dir/
 $ du -s * | sort -nr > $HOME/user_space_report.txt
