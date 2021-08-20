@@ -33,7 +33,7 @@ IP
 man COMM                   (Help manual)
 $ man man / $ man intro    
 $ man -k = apropos STH
-tldr COMM                  (“Too Long; Didn’t Read“. Pages are summarized practical usage examples of commands..)
+tldr COMM                  (“Too Long - Didn’t Read“. Pages are summarized practical usage examples of commands..)
 COMM -h / --help           (help)
 history                    (Command History - CTRL+R)
 $ history | less / tail..   
