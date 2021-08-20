@@ -4,7 +4,12 @@
 ### Aps & Etc. (terminal)
 ```bash
 tmux / ctrl+B / Create: % (-) " (|) ! (x) Next Prew >
-mc              (norton comm.)
+
+
+$ sudo add-apt-repository universe (for ubuntu)
+$ sudo apt install mc
+mc              (norton commander - filesystem)
+
 sensors         (install lm-sensors)
 neofetch        (system info)
 pfetch          (simple neofetch)
