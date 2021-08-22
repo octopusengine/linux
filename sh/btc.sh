@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+# ... /home/yenda/mysh/btc.sh price usd
+
 if [ "$1" = "price" ]; then
         currency=$([ "$2" = "" ] && echo "usd" || echo $2)
 
@@ -35,5 +38,7 @@ if [ "$1" = "price" ]; then
                 toilet -t -f bigascii12 $price
         fi
 else
-        echo "No argument provided. (Try: ...PATH/btc.sh price usd"
+        echo "No argument provided. 
+        echo "Try: ...PATH/btc.sh price usd"
 fi
+
