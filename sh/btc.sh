@@ -35,5 +35,5 @@ if [ "$1" = "price" ]; then
                 toilet -t -f bigascii12 $price
         fi
 else
-        echo "No argument provided."
+        echo "No argument provided. (Try: ...PATH/btc.sh price usd"
 fi
