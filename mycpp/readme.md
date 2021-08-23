@@ -6,6 +6,7 @@ simple test and examples
 
 # C
 
+```bash
 //compile>
 //cc -o hw hw.cpp  ------ o: a.out
 //run:
@@ -20,7 +21,7 @@ gcc -o myprog 02scr.c -lm
 run:
 ./myprog
 */
-
+```
 
 ### double.c / double.py
 
@@ -42,8 +43,10 @@ $ 6
 
 # Cpp
 
+```bash
 //compile>
 //g++ -std=c++0x File.cpp -oFile
 //run:
 // ./File
 //---------------
+```
