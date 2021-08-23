@@ -232,6 +232,19 @@ ls /etc/systemd/system
 service
 ```
 
+### bash script
+```bash
+bash SCRIPT
+
+bash <SCRIPT
+
+$ chmod +x SCRIPT
+$ ./SCRIPT
+
+./SCRIPT <&
+
+```
+
 ### webcam
 ```bash
 cheese
