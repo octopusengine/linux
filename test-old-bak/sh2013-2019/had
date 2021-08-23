@@ -1,0 +1,56 @@
+#!/bin/sh
+
+#nastaveni portu s tlacitkama pro vstup
+gpio-admin export 21
+gpio-admin export 22
+
+#nastaveni portu LEDkama pro vystup
+gpio-admin export 4
+echo out > /sys/devices/virtual/gpio/gpio4/direction
+gpio-admin export 18
+echo out > /sys/devices/virtual/gpio/gpio18/direction
+gpio-admin export 24
+echo out > /sys/devices/virtual/gpio/gpio24/direction
+gpio-admin export 25
+echo out > /sys/devices/virtual/gpio/gpio25/direction
+
+
+stav21=1
+
+while [ "$stav21" -eq "1" ]     # testovani startovaciho tlacitka 21
+do
+  stav21=`cat /sys/devices/virtual/gpio/gpio21/value`
+  sleep 1
+done
+
+
+stav22=1
+while [ "$stav22" -eq "1" ]     # testovani ukoncovaciho tlacitka 22
+do
+
+  # postupne rozsvecovani a zhasinani LEDek vzdycky se sekundovou pauzou mezi prechody
+  echo 1 > /sys/devices/virtual/gpio/gpio4/value
+  sleep 1
+  echo 0 > /sys/devices/virtual/gpio/gpio4/value
+  echo 1 > /sys/devices/virtual/gpio/gpio18/value
+  sleep 1
+  echo 0 > /sys/devices/virtual/gpio/gpio18/value
+  echo 1 > /sys/devices/virtual/gpio/gpio24/value
+  sleep 1
+  echo 0 > /sys/devices/virtual/gpio/gpio24/value
+  echo 1 > /sys/devices/virtual/gpio/gpio25/value
+  sleep 1
+  echo 0 > /sys/devices/virtual/gpio/gpio25/value
+  stav22=`cat /sys/devices/virtual/gpio/gpio22/value`
+
+done
+
+# uvolneni vsech pouzitych portu
+gpio-admin unexport 21
+gpio-admin unexport 22
+gpio-admin unexport 4
+gpio-admin unexport 18
+gpio-admin unexport 24
+gpio-admin unexport 25
+
+exit 0
