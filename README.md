@@ -148,9 +148,12 @@ $ awk '/path && $2 > 10000 {print $1,$2/1024"kB"}' (data > 10k ...) > path10.awk
 $ awk -f path10k.awk ls_usr_bin.txt                (the same) 
 
 sed                     (Stream editor for Replacing or substituting string)
+$ echo "hello" | sed 's/hello/goodbye'              ->  goodbye
 $ sed 's/unix/linux/g' file                        (Replace pattern unix -> linux)
-$ -> (W)elcome (T)o (T)he (G)eek (S)tuff
+$ sed 's/unix/linux/g' file > newfile              (s + delimiter: s/ s. s* ...)
+$ sed -i 's/unix/linux/g' file (rewrite)
 $ echo "Welcome To The Geek Stuff" | sed 's/\(\b[A-Z]\)/\(\1\)/g'
+$ -> (W)elcome (T)o (T)he (G)eek (S)tuff
 $ sed '5d' filename.txt                            (Delete 5th line)
 $ sed '$d' filename.txt                            (Delete last line)
 
