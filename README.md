@@ -184,6 +184,8 @@ find DIR/FILE          (Find files)
 wget URL               (Retrieve web pages or files via HTTP, HTTPS or FTP)
 $ wget -O https://raw.githubusercontent.com/octopusengine/linux/master/ct/btc.sh
 scp                    (file transfer)
+$ scp file user@url:   
+
 dmesg                  (report sit.)
 sudo blkid
 $ echo "& one more line" >> FILE / ~/name.txt
