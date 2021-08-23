@@ -1,20 +1,28 @@
 ## Disk
 
 ```bash
-blkid                  (block device atributes)
-lsblk                  (block device related info)
+blkid                            (block device atributes)
+lsblk                            (block device related info)
 
-fdisk                  (Partition table manipulator) 
+--- ext4 ---
+$ dumpe2fs /dev/sda1 | head -n 30 (file sysem of first disk.. -h / ext4 super block)
+$ ls -li                         (id mum ...)
+$ stat FILE.iso                  (size, blocks, reg.file, ...)
+$ sudo fsck /dev/sdb1            (lsblk > ...)
+$ sudo tune2fs -m 0 /dev/sdb2    (tweak file system param. and adjust reserved space 0% for the system)
+$ sudo e4defrag -c /             (check foor file syst > need defragmentation?)
+
+fdisk                            (Partition table manipulator) 
 $ sudo fdisk -l
 
 less /etc/fstab
 
-cfdisk                 (Partition table manipulator for Linux)
+cfdisk                           (Partition table manipulator for Linux)
 $ cfdisk /dev/sda
 
-gparted                (gr. Partition table manipulator)
+gparted                          (gr. Partition table manipulator)
 
-mkfs                   (make file systems)
+mkfs                             (make file systems)
 $ sudo mkfs.ext4 -L disk_name /dev/sdb1  (formating: ext2/3/4 bfs/fat/nfts/vfat/msdos...)
 ...    mkfs.bfs                          (bfs boot file system) 
 
