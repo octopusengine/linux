@@ -36,7 +36,7 @@ or
 
 ---
 
-# Simple examples, tests and experimants
+# Simple examples, tests and experiments
 
 
 ### double.c / double.py
