@@ -17,11 +17,10 @@ int main ( int argc, char *argv[] )
 
 /*
 compile:
-gcc -o myprog 01haloo.c
-gcc -o myprog 02scr.c -lm
-
+$ gcc -o dbl double.c
+$ chmod +x dbl
 run:
-./myprog
+$ ./myprog
 */
 
 
