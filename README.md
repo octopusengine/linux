@@ -34,7 +34,7 @@ help COMM
 COMM -h / --help           (help)
 man COMM                   (manual page)
 $ man man / $ man intro    
-$ man -k = apropos STH
+$ man -k = apropos STH     (where is man...)
 tldr COMM                  (“Too Long - Didn’t Read“. Pages are summarized practical usage examples of commands..)
 
 history                    (Command History - CTRL+R)
