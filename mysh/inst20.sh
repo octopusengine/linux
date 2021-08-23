@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# /home/user: cd
 # mkdir mysh
 # cd mysh
 # wget https://raw.githubusercontent.com/octopusengine/linux/master/mysh/inst20.sh
