@@ -3,6 +3,7 @@
 ```bash
 compile
 $ g++ SHA_256_hak.cpp -o sha256_hak
+(only 55 chars!)
 or
 $g++ sha256.cpp main.cpp -o sha256_example
 
