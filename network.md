@@ -38,6 +38,10 @@ ssh-copy-id
 ssh IP / ssh USER@IP
 logout
 
+mutt            (terminal e-mail - IMAP, SMTP)
+$ .config/mutt / man neomutt / -- home/user/Mail/
+$ mutt 
+
 scp USER@IP_ADDR:/home/USER/FILE.src FILE.dest  (netw copy)
 
 sftp IP  (secure FTP) 
