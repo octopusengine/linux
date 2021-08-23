@@ -21,6 +21,22 @@ run:
 ./myprog
 */
 
+
+### double.c / double.py
+
+```bash
+compile
+$ gcc -o dbl double.c
+$ chmod +x dbl
+
+run
+$ ./dbl 3
+$ 6
+
+$ python3 double 3
+$ 6
+```
+
 ---
 
 
