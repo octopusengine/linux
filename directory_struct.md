@@ -43,6 +43,10 @@ The **/home** directory contains a home folder for each user.
 
 /home/USER/.bashrc   (*script after login*)
 
+.ssh/known_hosts
+
+.ssh/id_rsa
+
 ### --- /lib ---
 
 The **/lib** directory contains **libraries** needed by the essential binaries in the **/bin** and **/sbin** folder. 
