@@ -29,12 +29,14 @@ IP
 
 ### Basic
 ```bash
-
-man COMM                   (Help manual)
+type COMM                  (find out the information about a Linux command)
+help COMM
+COMM -h / --help           (help)
+man COMM                   (manual page)
 $ man man / $ man intro    
 $ man -k = apropos STH
 tldr COMM                  (“Too Long - Didn’t Read“. Pages are summarized practical usage examples of commands..)
-COMM -h / --help           (help)
+
 history                    (Command History - CTRL+R)
 $ history | less / tail..   
 $ history >> history123.txt
@@ -126,6 +128,7 @@ $ cat > FILE            (~ write and create..)  end: CTRL+C / CTRL+D
 $ cat >> FILE           (~ add..)
 $ cat F1 F2 > F3 (join)
 $ echo "add line" >> FILE
+printf
 
 tee                     (Redirect output to multiple files)
 echo program_usb_boot_mode=1 | sudo tee -a /boot/config.txt (add line)
