@@ -1,27 +1,41 @@
 ## C / C++ (cpp) / c#
 
-simple test and examples
-
 ---
 
 # C
 
+**cc** command is classical stands for C Compiler
+
+**gcc** stands for GNU Compiler Collections which is used to compile mainly C and C++ language
+
 ```bash
-//compile>
+//compile> 
 //cc -o hw hw.cpp  ------ o: a.out
 //run:
 // ./hw
 //---------------
 
 /*
-compile:
+compile: 
 gcc -o myprog 01haloo.c
 gcc -o myprog 02scr.c -lm
 
 run:
 ./myprog
 */
+
+or
+//compile>
+//g++ -std=c++0x File.cpp -oFile
+//run:
+// ./File
+//---------------
 ```
+
+---
+
+# Simple examples, tests and experimants
+
 
 ### double.c / double.py
 
@@ -40,13 +54,3 @@ $ 6
 
 ---
 
-
-# Cpp
-
-```bash
-//compile>
-//g++ -std=c++0x File.cpp -oFile
-//run:
-// ./File
-//---------------
-```
