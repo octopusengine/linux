@@ -1,33 +1,14 @@
 #!/bin/bash
 
-echo "============================================"
-echo "-----  basic info  -------------------------"
-echo "============================================"
+# mkdir mysh
+# cd mysh
+# wget https://raw.githubusercontent.com/octopusengine/linux/master/mysh/inst20.sh
+# chmod +x inst20.sh
+# ./inst20.sh
 
-w=$(whoami)
-echo "- whoami   > " $w 
-echo "- HOME     > " $HOME
-echo "- HOSTNAME > " $HOSTNAME
-
-echo "----- system info -------------------------"
-uname -a
-cat /proc/cpuinfo | grep "MHz" | sort -r | head -32
-
-#free
-echo "--- RAM - Memory Usage:"
-/usr/bin/free -h
-
-echo $'\n'$"--- HD - Disk Usage:"
-/bin/df -h /dev/sd[a-z][1-9] 2>/dev/null
-disk=$(du -sh)
-echo "--> " $disk 
-
-echo $'\n'$"--- Uptime:"
-/usr/bin/uptime
-
-echo "--- NETw ---"
-ifconfig | grep broadcast
-
+wget https://raw.githubusercontent.com/octopusengine/linux/master/mysh/info.sh
+chmod +x info.sh
+./info.sh
 
 echo "============================================"
 echo "--- instYY.sh > install - octopusLab 2017-20"
