@@ -202,7 +202,7 @@ $ ps aux | grep -i vi (-i ignore case)
 $ ps axch -o cmd:16,%mem --sort=-%mem | head (top memory usage ps)
 $ ps axch -o cmd:16,%cpu --sort=-%cpu | head (top cpu usage ps)
 $ ps -e -o pid,ppid,uid,user,gid,group,pcpu,pmem,etime,tty,args
-ptree
+pstree
 $ ptree -a $$
 pgrep -U "$USER"
 kill ID / NAME
@@ -234,14 +234,12 @@ service
 
 ### bash script
 ```bash
-bash SCRIPT
-
-bash <SCRIPT
+$ bash <SCRIPT
 
 $ chmod +x SCRIPT
-$ ./SCRIPT
+$ ./SCRIPT             (= bash SCRIPT)
 
-./SCRIPT <&
+$ ./SCRIPT <&-           (&- = close i/o) 
 
 ```
 
