@@ -9,11 +9,13 @@
 **gcc** stands for GNU Compiler Collections which is used to compile mainly C and C++ language
 
 ```bash
-//compile> 
-//cc -o hw hw.cpp  ------ o: a.out
-//run:
-// ./hw
-//---------------
+basic compile  
+$ cc -o hw hw.cpp
+$ chmod +x hw
+
+run:
+$  ./hw
+
 
 /*
 compile: 
