@@ -137,6 +137,7 @@ $ cat >> FILE           (~ add..)
 $ cat F1 F2 > F3 (join)
 $ echo "add line" >> FILE
 printf
+$ echo $((1+2))          -> 3
 
 tee                     (Redirect output to multiple files)
 echo program_usb_boot_mode=1 | sudo tee -a /boot/config.txt (add line)
