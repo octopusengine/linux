@@ -193,17 +193,20 @@ $ echo "& one more line" >> FILE / ~/name.txt
 ### Process / System
 ```bash
 ps
-$ ps afux              (~ process - all tree user)
-$ ps afx | grep py > ID
+$ ps afux                   (~ process - all tree user)
+$ ps afx | grep py > ID     (process ID PID = $, $$ $PPID) 
 $ ps aux | grep -i vi (-i ignore case)
 $ ps axch -o cmd:16,%mem --sort=-%mem | head (top memory usage ps)
 $ ps axch -o cmd:16,%cpu --sort=-%cpu | head (top cpu usage ps)
+$ ps -e -o pid,ppid,uid,user,gid,group,pcpu,pmem,etime,tty,args
+ptree
+$ ptree -a $$
+pgrep -U "$USER"
 kill ID / NAME
 kill $(ps aux | grep ´...´ | awk ...)
 killall
 sysv-rc-conf (start init)
 tail -f /var/log/uwsgi/app/*.log
-service
 top
 htop  (better top)
 iotop
@@ -222,6 +225,8 @@ systemctl status nginx
 systemctl daemon-reload
 
 ls /etc/systemd/system
+                      (init()=systemd)
+service
 ```
 
 ### webcam
