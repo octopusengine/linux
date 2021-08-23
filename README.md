@@ -37,6 +37,14 @@ $ man man / $ man intro
 $ man -k = apropos STH     (where is man...)
 tldr COMM                  (“Too Long - Didn’t Read“. Pages are summarized practical usage examples of commands..)
 
+COMM1 ; COMM2              (1 then 2)
+$ date +%T; sleep 5; date +%T
+COMM1 & COMM2 &            (1 and 2)
+$ date & sleep & date
+& yes comm1 & yes comm2    ( -> comm1 2122121212121112111...) 
+COMM1 && COMM2             (if 1 then 2)
+z
+
 history                    (Command History - CTRL+R)
 $ history | less / tail..   
 $ history >> history123.txt
