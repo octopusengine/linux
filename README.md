@@ -254,8 +254,4 @@ debug "Uploading photo to server"
 curl -s -X POST -F "fileToUpload=@/tmp/temp.jpg" -F "authkey=${UPLOAD_KEY}" -F "submit=1" ${UPLOAD_CURL_EXTRA_PARAMS} "${UPLOAD_URL}" > /dev/null
 ```
 
-```
-sudo ifdown eth0 && sudo ifup eth0 (restart wifi)
-nohup (no hangup)
-sudo nohup sh -c "ifdown eth0 && ifup eth0"
-```
+
