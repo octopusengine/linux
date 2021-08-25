@@ -14,16 +14,20 @@ sensors         (install lm-sensors)
 neofetch        (system info)
 pfetch          (simple neofetch)
 scrot           (print screen)
-toilet -f mono12 -F metal Tecmint.com
+
+$ toilet -f mono12 -F metal Tecmint.com
 rig             (random identity)
 figlet Welcome
-asciiview elephant.jpg -driver curses 
 echo "octopusengine[dot]com is a community of Linux Nerds and Geeks" | pv -qL 10  (x ./baudprint.pl 600)
 sl              (Steam Locomotive)
 asciiquarium
 cowsay Hello
-cowsay -f ghostbusters Who you Gonna Call
+$ cowsay -f ghostbusters Who you Gonna Call | lolcat (add usr/share/cowsay/cows/octopus.cow)
 cowthink ...funny
+tty-clock
+aafire
+asciiview elephant.jpg -driver curse
+
 telnet towel.blinkenlights.nl
 curl -u YourUsername:YourPassword -d status="message" http://twitter.com/statuses/update.xml
 
