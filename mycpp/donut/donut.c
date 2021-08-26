@@ -1,14 +1,11 @@
-#include <iostream>
-// #include <windows.h>
-
-#include <cstring>
-
-//If you're getting Sin / Cos not defined error, then uncomment the following:
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
+#include <unistd.h>
+#include <iostream>
 
 
-void usleep(int usec)
+void usleep_x(int usec)
 {
 /*
     HANDLE timer;
@@ -25,6 +22,7 @@ for (float i = 0; i < usec; i += 0.01)
      {
                 float cc = sin(i);
      }
+ // fix <unistd.h>
 }
 
 
@@ -95,7 +93,7 @@ int main()
             A += 0.00004;
             B += 0.00002;
         }
-        usleep(5000);
+        usleep(10000);
     }
     return 0;
 }
