@@ -4,6 +4,11 @@
 #include <unistd.h>
 #include <iostream>
 
+/*
+$ wget https://raw.githubusercontent.com/octopusengine/linux/master/mycpp/donut/donut.c
+$ g++ -o donut donut.c
+$ ./donut
+*/
 
 void usleep_x(int usec)
 {
