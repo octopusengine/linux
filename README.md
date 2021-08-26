@@ -126,6 +126,8 @@ cd; cd /; cd ~          (/home/USER; / "root"; = cd > home/USER)
 ls                      (List information about file/s)
 $ ls -lat               (~ list - line all time) (l=list, a=all, t=time/default Abc)
 $ ls -d */              (~ only sub/DIR)
+$ alias ls="ls --color=auto"
+$ alias ll="ls -alF"    (... for bashrs)
 pushd                   (Save and then change the current directory)
 popd                    (Restore the previous value of the current directory)
 mkdir                   (Create new folder/s)
