@@ -29,7 +29,8 @@ aafire
 asciiview elephant.jpg -driver curse
 
 telnet towel.blinkenlights.nl
-curl -u YourUsername:YourPassword -d status="message" http://twitter.com/statuses/update.xml
+$ curl -u YourUsername:YourPassword -d status="message" http://twitter.com/statuses/update.xml
+KeePassX         (password manager)
 
 bc               (line calculator)
 $ echo "12+5" | bc
