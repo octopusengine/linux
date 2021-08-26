@@ -83,6 +83,7 @@ https://github.com/wertarbyte/coreutils/blob/master/src/ls.c
 ```bash
 sudo apt-get update && apt-get upgrade
 lscpu                  (cpu architecture)
+iostat                 (Report CPU and i/o statistics)
 uname -a               (display Linux system info) - r (kernel release)
 last reboot            (reboot history)
 date                   (current date and time)
@@ -212,18 +213,22 @@ kill $(ps aux | grep ´...´ | awk ...)
 killall
 sysv-rc-conf (start init)
 tail -f /var/log/uwsgi/app/*.log
-top
-htop  (better top)
+seq [FIRST] [INCREMENT] LAST  (seq command in Linux is used to generate numbers from FIRST to LAST in steps of INCREMENT)
+tqdm                        (progress bar)
+$ seq 9999999 | tqdm --bytes | wc -l
+$ tar -zcf - docs/ | tqdm --bytes --total `du -sb docs/ | cut -f1` > backup.tgz
+top                         (	List processes running on the system)
+htop                        (better top)
 iotop
 wiresharp-gtk
-cron                  (Daemon to execute scheduled commands)
-crontab               (Schedule a command to run at a later time)
-lsof                  (List open files)
-lspci                 (List all PCI devices)
+cron                        (Daemon to execute scheduled commands)
+crontab                     (Schedule a command to run at a later time)
+lsof                        (List open files)
+lspci                       (List all PCI devices)
 lsusb
 lsmod
-shutdown -h / -r      (Shutdown or restart linux)
-reboot                (Reboot the system)
+shutdown -h / -r            (Shutdown or restart linux)
+reboot                      (Reboot the system)
 
 system nginx status / start / stop / restart
 systemctl status nginx
