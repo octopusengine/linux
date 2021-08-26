@@ -13,8 +13,12 @@ basic compile
 $ cc -o hw hw.cpp
 $ chmod +x hw
 
+or
+g++ -std=c++0x hw.cpp -o hw
+
 run:
 $  ./hw
+
 
 
 /*
@@ -25,12 +29,6 @@ gcc -o myprog 02scr.c -lm
 run:
 ./myprog
 */
-
-or
-//compile>
-//g++ -std=c++0x File.cpp -oFile
-//run:
-// ./File
 //---------------
 ```
 
