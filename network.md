@@ -25,13 +25,16 @@ dig -x host     (reverse lookup)
 traceroute      (Trace Route to Host)
 mtr             (Network diagnostics - traceroute/ping)
 ip a l / a s    (addr show)
+arp             (ip & MAC addr. with robust feature set)
 
-nmap (network mapper)
+nmap            (network mapper)
 $ nmap - sn / -v -A / -sP 192.168.0.*
 $ nmap - sT -p80,433 192.168.0.* | grep report (scan TCP-IP for port)
 
-$ netstat -vat / -nr / -i / -ta (install net-tools)
+netstat         (Networking connections/stats / install net-tools)
+$ netstat -vat / -nr / -i / -ta 
 $ netstat -tulpn  (ports)
+
 bsh-write       (send message)
 
 ssh
