@@ -11,6 +11,7 @@
 #define DEBUG 0
 #define LENKEY 256 // main random key string lenght (13+4)*12 = 204 > 256
 #define MODP 32    // modulo for format print
+#define BASE 26    // only ascii small alphabet
 
 using namespace std;
 
@@ -30,7 +31,7 @@ void tokenize(string &str, char delim, vector<string> &out)
 
 string random_string(int num){
     string s;
-    for(int i = 0; i < num; i++) { s += 'a' + rand()%24; }
+    for(int i = 0; i < num; i++) { s += 'a' + rand()%BASE; }
     return s;
 }
 
