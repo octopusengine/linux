@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <iostream>
-#include <sstream> //std::stringstream
+#include <sstream>   //std::stringstream
 #include <vector>
 // #include <iterator>
 #include <fstream>
@@ -8,7 +8,8 @@
 // #include <regex>
 #include <random>
 
-#define DEBUG 0
+
+//#define DEBUG
 #define LENKEY 256 // main random key string lenght (13+4)*12 = 204 > 256
 #define MODP 32    // modulo for format print
 #define BASE 26    // only ascii small alphabet
@@ -27,7 +28,6 @@ void tokenize(string &str, char delim, vector<string> &out)
 		out.push_back(str.substr(start, end - start));
 	}
 }
-
 
 string random_string(int num){
     string s;
@@ -61,31 +61,30 @@ int arr_len(int *p) { return sizeof(p)/sizeof(*p); }
 //--------------------------------------------------------
 int main ( int argc, char *argv[] )
 {
-    if (DEBUG) {
-    printf( "[ --- device entropy for random ]\n" );
-    std::random_device rd;
-    std::cout << rd.entropy() << '\n';
-    }
-    else { srand(time(0)); }
+    #ifdef DEBUG
+    	printf( "[ --- device entropy for random ]\n" );
+    	std::random_device rd;
+    	std::cout << rd.entropy() << '\n';
+    #else
+        srand(time(0));
+    #endif
 
-    int distance = 13; 
+    int distance = 13;
     string sr = random_string(LENKEY);
 
-    if ( argc < 2 ) /* argc should be 2 for correct execution */
-    {
-        /* We print argv[0] assuming it is the program name */
-        printf( "usage: %s input_filename [distance]", argv[0] );
-    }
+    // argv[0] - program name
+    if ( argc < 2 )
+    { printf( "usage: %s input_filename [distance]", argv[0] );  }
     else
     {
-        if ( argc == 3 ) { 
+        if ( argc == 3 ) {
             //print_string(argv[0]);
             //print_string(argv[1]);
             //print_string(argv[2]);
-            distance = stoi(argv[2]); 
-            } 
+            distance = stoi(argv[2]); // 1-17
+            }
 
-        if (DEBUG) {
+        #ifdef DEBUG
             printf( "[ --- arguments ]\n" );
             printf("\n%d - ", argc);
 
@@ -93,7 +92,7 @@ int main ( int argc, char *argv[] )
             //std::cout << sr << "\n"; //you can do anything with the string!
             string sf = format_print(sr);
             save_string(sf, "random_string0.txt");
-            }
+        #endif
 
 
         // We assume argv[1] is a filename to open
@@ -101,7 +100,7 @@ int main ( int argc, char *argv[] )
 
         /* fopen returns 0, the NULL pointer, on failure */
         if ( file == 0 )
-        { printf( "Could not open file\n" ); }
+        {   printf( "Could not open file\n" ); }
         else
         {
             // --- read file asi string
@@ -112,30 +111,28 @@ int main ( int argc, char *argv[] )
             strStream << inFile.rdbuf(); //read the file
             std::string str = strStream.str(); //str holds the content of the file
 
-            if (DEBUG) {
-            printf( "[ --- input string from file ]\n" );
-            std::cout << str << "\n"; //you can do anything with the string!
-            printf( "\n\n" );
-            }
+            #ifdef DEBUG
+            	printf( "[ --- input string from file ]\n" );
+            	std::cout << str << "\n"; //you can do anything with the string!
+            	printf( "\n\n" );
+            #endif
 
             // --- split string to array
             char delim=' ';
             vector<string> arr;
             tokenize(str, delim, arr);
 
+            #ifdef DEBUG
+            	printf( "[ --- list of the words ]\n" );
+            	for(auto it:arr) cout << it << " / ";
+            	printf("\n");
+            #endif
 
-            if (DEBUG) {
-            printf( "[ --- list of the words ]\n" );
-            for(auto it:arr) cout << it << " / ";
-            printf("\n");
-            }
-            
             int wi = 0;
             int temp_dist = 0;
             string sn;     // string new
             string word;   // single word
             //for(char& c : sr)
- 
             //for (int i = 0; i < LENKEY +2; i++) // work around +2
             int i = 0;
             do
@@ -144,38 +141,36 @@ int main ( int argc, char *argv[] )
                 //sn += "*";
                     word = arr[wi];
                     int sl = word.length();
-                    
+
                     if (wi>11) { wi = 12; temp_dist = 0; }
                     else {
                     for (int j = 0; j < sl; j++) {
                         sn += word[j];
-                        ///printf("=%d", i); 
-                        i += 1;                      
-                    }              
-                    
-                    if (DEBUG) {
+                        i += 1;
+                    }
+
+                    #ifdef DEBUG
                         printf("\n%d - ", sl);
-                        print_string(arr[wi]);                    
-                        }
+                        print_string(arr[wi]);
+                    #endif
                     }
 
                     temp_dist = 0;
                     wi += 1;
-                    
                     }
-                else { 
-                    sn += sr[i]; 
+                else {
+                    sn += sr[i];
                     temp_dist += 1;
                     ///printf("-%d", i);
-                    i += 1; 
-                    }                     
+                    i += 1;
+                    }
             }
             while (i < LENKEY);
 
             printf("\n--------------------------------");
             printf("\n");
             string sf = format_print(sn); // string final
-            save_string(sf, "random_string.txt");            
+            save_string(sf, "random_string.txt");
         }
     }
     printf("\n");
@@ -183,4 +178,5 @@ int main ( int argc, char *argv[] )
 
 /* ----------------------------------
 ./infilt in12.txt
+
 */
