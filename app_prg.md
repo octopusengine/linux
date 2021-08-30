@@ -4,6 +4,7 @@
 ### Aps & Etc. (terminal)
 ```bash
 tmux / ctrl+B / Create: % (-) " (|) ! (x) Next Prew >
+tilix           (tiling terminal emulator)
 
 
 $ sudo add-apt-repository universe (for ubuntu)
