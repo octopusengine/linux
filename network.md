@@ -45,6 +45,9 @@ $ ssh-copy-id
 $ ssh IP / ssh USER@IP
 $ logout
 
+ssh-tor (open port for tor: in ..torrc)
+$ torify ssh USER@HOSTNAME.onion
+
 $ scp USER@IP_ADDR:/home/USER/FILE.src FILE.dest  (netw copy)
 
 sftp IP  (secure FTP) 
