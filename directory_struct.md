@@ -17,6 +17,8 @@ Linux exposes devices as files, and the **/dev** directory contains a number of 
 
 The **/etc** directory contains **configuration files**, which can generally be edited by hand in a text editor.
 
+/etc/hostname
+
 /etc/password
 
 /etc/shadow
