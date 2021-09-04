@@ -108,6 +108,6 @@ The **/var** directory is the writable counterpart to the **/usr** directory, wh
 
 /var/log/... (logs)
 
-sudo cat /var/lib/tor/hidden_service/hostname
+/var/lib/tor/hidden_service/hostname
 
 /var/www/html (nginx default web server) 
