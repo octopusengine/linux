@@ -2,20 +2,21 @@
 #include <iostream>
 #include <sstream>   //std::stringstream
 #include <vector>
-// #include <iterator>
 #include <fstream>
 #include <string>
-// #include <regex>
 #include <random>
+// #include <iterator>
+// #include <regex>
 
 
 //#define DEBUG
-#define LENKEY 256 // main random key string lenght (13+4)*12 = 204 > 256
+#define LENKEY 512 // main random key string lenght (13+4)*12 = 204 > 256(1-15) or 512(1-38)
 #define MODP 32    // modulo for format print
-#define BASE 26    // only ascii small alphabet
+#define BASE 26    // ascii alphabet
 
 using namespace std;
 
+int CaMeL = 1; // [0] lower / [1] CaMeL / [2] todo: & numbers
 
 void tokenize(string &str, char delim, vector<string> &out)
 {
@@ -31,7 +32,15 @@ void tokenize(string &str, char delim, vector<string> &out)
 
 string random_string(int num){
     string s;
-    for(int i = 0; i < num; i++) { s += 'a' + rand()%BASE; }
+    for(int i = 0; i < num; i++) {
+        char srnd = 'a' + rand()%BASE;
+        if ( CaMeL > 0 ) {
+           //int selector = rand()%10;
+           if (rand()%10>6) srnd = 'A' + rand()%BASE;
+        }
+        s += srnd;
+  
+    }
     return s;
 }
 
@@ -58,7 +67,7 @@ void print_string(string s){ std::cout << s << "\n"; }
 int arr_len(int *p) { return sizeof(p)/sizeof(*p); }
 
 
-//--------------------------------------------------------
+//--------------------------------------------------
 int main ( int argc, char *argv[] )
 {
     #ifdef DEBUG
@@ -69,25 +78,24 @@ int main ( int argc, char *argv[] )
         srand(time(0));
     #endif
 
-    int distance = 13;
     string sr = random_string(LENKEY);
 
     // argv[0] - program name
     if ( argc < 2 )
-    { printf( "usage: %s input_filename [distance]", argv[0] );  }
+    { printf( "usage: %s input_filename [distance] [CaMeL]", argv[0] );  }
     else
     {
-        if ( argc == 3 ) {
-            //print_string(argv[0]);
-            //print_string(argv[1]);
-            //print_string(argv[2]);
-            distance = stoi(argv[2]); // 1-17
-            }
+        int distance = 13; 
+        CaMeL = 0; // [0] lower / [1] CaMeL / [2] todo: & numbers
+        if ( argc > 2 ) distance = stoi(argv[2]); // 1-17
+        if ( argc > 3 ) CaMeL = stoi(argv[3]); // 1/0
 
         #ifdef DEBUG
             printf( "[ --- arguments ]\n" );
             printf("\n%d - ", argc);
-
+            printf("\n-1- %s ", argv[1]);
+            printf("\n-2- %d ", distance);
+            printf("\n-3- %d ", CaMeL);
             printf( "[ --- basic random string ]\n" );
             //std::cout << sr << "\n"; //you can do anything with the string!
             string sf = format_print(sr);
@@ -168,15 +176,19 @@ int main ( int argc, char *argv[] )
             while (i < LENKEY);
 
             printf("\n--------------------------------");
+            printf("\n-------- supplement-key --------");
             printf("\n");
             string sf = format_print(sn); // string final
-            save_string(sf, "random_string.txt");
+            save_string(sf, "supplement_key.txt");
         }
     }
     printf("\n");
 }
 
 /* ----------------------------------
-./infilt in12.txt
+./infilt input.txt
 
+--- / --|
+27 / 28 |
+  /(512)|
 */
