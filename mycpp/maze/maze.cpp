@@ -1,14 +1,14 @@
 #include <iostream> //cout <<
 #include <stdio.h>  //file+fprintf
 #include <fstream>  //lines
-
 #include <unistd.h>  //_getch*/
 #include <termios.h> //_getch*/
+#include <chrono>
 
 
 //#define DEBUG
-#define MAZEX 9
-#define MAZEY 10
+#define MAZEX 32
+#define MAZEY 12
 #define KB_UP 65 //72
 #define KB_DOWN 66
 #define KB_LEFT 68 //75
@@ -18,13 +18,13 @@
 using namespace std;
 
 
-char maze[MAZEY][MAZEX];
+char maze[MAZEX][MAZEY];
 string info_line = ".:.";
 bool bingo = false;
 int KB_code = 0;  	// kbd arrows
 
 // start position
-int row = 8;
+int row = 10;
 int col = 1;
 
 
@@ -51,9 +51,9 @@ void print_maze()
 	//std::system("clear");
 	printf("\033[2J\033[1;1H"); //https://en.wikipedia.org/wiki/ANSI_escape_code
 	
-	for(int i = 0; i < 10; i++)
+	for(int j = 0; j < MAZEY; j++)
 	{
-		for(int j = 0; j < 9; j++)
+		for(int i = 0; i < MAZEX; i++)
 			{ cout << maze[i][j]; }
 		cout << endl;
 	}
@@ -73,12 +73,11 @@ void load_maze(string file_name)
 			cout << line << endl;
             #endif
 
-           	for (int li=0; li< MAZEY; li++)
-				{  
-
+           	for (int li=0; li< MAZEX; li++)
+				{
 					//if( feof(line[li]) ) { break; }	
 
-					maze[ln][li]=line[li]; 
+					maze[li][ln]=line[li]; 
 					//printf("%s","x" );
 					#ifdef DEBUG
 						printf("%d %d . ",li,ln );
@@ -116,6 +115,12 @@ void save_maze(string file_name)
 //--------------------------------------------------------------------
 int main()
 {
+	using std::chrono::high_resolution_clock;
+	using std::chrono::duration;
+	using std::chrono::duration_cast;
+    using std::chrono::milliseconds;
+	auto t1 = high_resolution_clock::now(); // start
+
     #ifdef DEBUG
        	printf( "[ --- maze init ]\n" );
 		cout << MAZEX << "x" << MAZEY;	
@@ -123,17 +128,17 @@ int main()
     #endif
 
 	//char maze[20][10]; 
-	char maze0[][MAZEX] = { 
-                 { '+', '-', '-', '-', '-', '-', '-', '-', '+' },
-	             { '|', ' ', ' ', ' ', '|', ' ', ' ', ' ', '|' },
-	             { '|', ' ', '|', ' ', ' ', ' ', '|', ' ', '|' },
-	             { '|', ' ', '+', '-', '-', '-', '+', ' ', '|' },
-	             { '|', '#', '|', ' ', ' ', ' ', ' ', ' ', '|' },
-	             { '|', '-', '+', ' ', '+', ' ', '+', '-', '|' },
-	             { '|', ' ', ' ', ' ', '|', ' ', '|', ' ', '|' },
-	             { '|', ' ', '|', ' ', '+', '-', '+', ' ', '|' },
-	             { '|', '*', '|', ' ', ' ', ' ', ' ', ' ', '|' },
-				 { '+', '-', '-', '-', '-', '-', '-', '-', '+' } };
+	char maze0[][MAZEY] = { 
+        { '+', '-', '-', '-', '-', '-', '-', '-', '+' },
+	    { '|', ' ', ' ', ' ', '|', ' ', ' ', ' ', '|' },
+	    { '|', ' ', '|', ' ', ' ', ' ', '|', ' ', '|' },
+	    { '|', ' ', '+', '-', '-', '-', '+', ' ', '|' },
+	    { '|', '#', '|', ' ', ' ', ' ', ' ', ' ', '|' },
+	    { '|', '-', '+', ' ', '+', ' ', '+', '-', '|' },
+	    { '|', ' ', ' ', ' ', '|', ' ', '|', ' ', '|' },
+	    { '|', ' ', '|', ' ', '+', '-', '+', ' ', '|' },
+	    { '|', '*', '|', ' ', ' ', ' ', ' ', ' ', '|' },
+		{ '+', '-', '-', '-', '-', '-', '-', '-', '+' } };
 
 	
 	load_maze("./maze1.txt"); 
@@ -158,43 +163,54 @@ while(!gameOver)
         switch (KB_code)
         {				
             case KB_LEFT:
-			    if (maze[row][col-1] == '#'){ bingo = true; }
-			    if (maze[row][col-1] == ' '){
-                maze[row][col] = ' ';
+			    if (maze[col-1][row] == '#'){ bingo = true; }
+			    if (maze[col-1][row] == ' '){
+                maze[col][row] = ' ';
 				col--;
-				maze[row][col] = '*';}
+				maze[col][row]= '*';}
             break;
 
             case KB_RIGHT:
-			    if (maze[row][col+1] == '#'){ bingo = true; }
-			    if (maze[row][col+1] == ' '){
-                maze[row][col] = ' ';
+			    if (maze[col+1][row] == '#'){ bingo = true; }
+			    if (maze[col+1][row] == ' '){
+                maze[col][row] = ' ';
 				col++;
-				maze[row][col] = '*';}                           
+				maze[col][row] = '*';}                           
             break;
 
             case KB_UP:
-				if (maze[row-1][col] == '#'){ bingo = true; }
-			    if (maze[row-1][col] == ' '){
-                maze[row][col] = ' ';
+				if (maze[col][row-1] == '#'){ bingo = true; }
+			    if (maze[col][row-1] == ' '){
+                maze[col][row] = ' ';
 			    row--;
-				maze[row][col] = '*';}                 
+				maze[col][row] = '*';}                 
             break;
 
             case KB_DOWN:
-				if (maze[row+1][col] == '#'){ bingo = true; }
-			    if (maze[row+1][col] == ' '){
-                maze[row][col] = ' ';
+				if (maze[col][row+1] == '#'){ bingo = true; }
+			    if (maze[col][row+1] == ' '){
+                maze[col][row] = ' ';
 			    row++;
-				maze[row][col] = '*';}                  
+				maze[col][row] = '*';}                  
             break;			
 		}
 			
 		print_maze();	
 
-		info_line = to_string(row) + " | " + to_string(col) + " | ";
-		cout << "\n" << info_line;
-		if (bingo) {cout << "BINGO! 123"; gameOver = true;}
+        auto t2 = high_resolution_clock::now();
+    	auto ms_int = duration_cast<milliseconds>(t2 - t1);
+    	duration<double, std::milli> ms_double = t2 - t1;
+    	//std::cout << ms_int.count() << "ms\n";
+    	//std::cout << ms_double.count() << "ms";
+
+
+		info_line = to_string(col) + " | " + to_string(row) + " | " + to_string(ms_int.count()/1000);
+		cout << "\n" << info_line << "\n";
+
+		if (bingo) {
+			if ( col > 10) { cout << "BINGO! 123"; gameOver = true;}
+			else { cout << "BINGO! 567"; gameOver = true;}
+			}
 		cout << "\n";	
 	    //cout << move << endl;
 		
