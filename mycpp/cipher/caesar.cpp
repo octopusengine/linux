@@ -29,6 +29,12 @@ string caesar(const char*  input_s, int key = 13) {
 }
 
 
+void save_string(string s, string file_name){
+    std::ofstream out(file_name);
+    out << s;
+    out.close();
+}
+
 //----------------------------------------------------------------
 int main( int argc, char *argv[] ){
 
@@ -90,9 +96,12 @@ int main( int argc, char *argv[] ){
     cout<<"Encrypted message is:\n" << cstr <<'\n';
     printf("\n\n");
 
+    if ( argc > 3 ) save_string("-"+cstr, argv[3]); // todo "-"+ infilt
+
     return 0;
 }
 
 /*
-./caesar [input_file.txt] [key]
+./caesar [input_file] [key] [output_file]
+
 */
