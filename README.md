@@ -196,7 +196,7 @@ $ echo "& one more line" >> FILE / ~/name.txt
 
 ```
 
-### Process / System
+### Process / System / Logs
 ```bash
 ps
 $ ps afux                   (~ process - all tree user)
@@ -241,6 +241,14 @@ $ systemctl add-wants mutli-user.target nginx.srevice
 ls /etc/systemd/system
                       (init()=systemd)
 service
+
+--- logs ---
+$ du -sh /var/log/syslog
+$ journalctl --disk-usage    =    $ du -sh /var/log/journal
+$ journalctl --vacuum-time=2d
+$ journalctl --vacuum-size=100M
+
+
 ```
 
 ### bash script
