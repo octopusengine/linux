@@ -233,6 +233,10 @@ reboot                      (Reboot the system)
 system nginx status / start / stop / restart
 systemctl status nginx
 systemctl daemon-reload
+$ systemctl list-units --type=service
+$ systemctl list-units --type=target
+$ systemctl status nginx    (status / enable / disable / start / stop / kill/ reload / restart)
+$ systemctl add-wants mutli-user.target nginx.srevice
 
 ls /etc/systemd/system
                       (init()=systemd)
