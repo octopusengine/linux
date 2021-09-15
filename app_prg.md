@@ -10,6 +10,8 @@ tilix           (tiling terminal emulator)
 $ sudo add-apt-repository universe (for ubuntu)
 $ sudo apt install mc
 mc              (norton commander - filesystem)
+htop
+bpytop          ($ sudo pip3 install bpytop && sudo snap install bpytop)
 
 sensors         (install lm-sensors)
 neofetch        (system info)
