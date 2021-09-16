@@ -48,7 +48,12 @@ $ logout
 ssh-tor (open port for tor: in ..torrc)
 $ torify ssh USER@HOSTNAME.onion
 
-$ scp USER@IP_ADDR:/home/USER/FILE.src FILE.dest  (netw copy)
+$ scp USER@IP_ADDR:/home/USER/FILE.src FILE.dest                  (netw copy)
+$ scp -v username@from_host:file.txt /local/directory/            (-v Verbose mode) 
+$ scp file.txt username@to_host:/remote/directory/
+$ scp -r username@from_host:/remote/directory/  /local/directory/ (–r Recursively copy entire directories)
+$ scp -r /local/directory/ username@to_host:/remote/directory/
+$ scp username@from_host:/remote/directory/file.txt username@to_host:/remote/directory/
 
 sftp IP  (secure FTP) 
 > ls/lls / pwd/lpwd / cd/lcd
