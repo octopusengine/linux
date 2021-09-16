@@ -167,7 +167,9 @@ sudo nano FILE / vi / gedit
 cp F1 F2                (copy source destination) cp file.txt file-bak.txt
 mv F1 F2                (move)
 cmp F1 F2               (compare)
-rm file.txt             (remove)
+rm FILE                 (remove)
+trash FILE              (x rm / apt install trash-cli)
+$ trash-info / trash-put / trash-empty ...
 echo file.txt byl > backup and delete
 cat FILE | less / more
 
