@@ -10,6 +10,7 @@ tilix           (tiling terminal emulator)
 $ sudo add-apt-repository universe (for ubuntu)
 $ sudo apt install mc
 mc              (norton commander - filesystem)
+ranger
 htop
 bpytop          ($ sudo pip3 install bpytop && sudo snap install bpytop)
 
