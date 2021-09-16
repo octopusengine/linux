@@ -1,8 +1,8 @@
 ## Disk
 
 ```bash
-blkid                            (block device atributes)
 lsblk                            (block device related info)
+blkid                            (block device atributes)
 
 --- ext4 ---
 $ dumpe2fs /dev/sda1 | head -n 30 (file sysem of first disk.. -h / ext4 super block)
