@@ -83,7 +83,14 @@ https://github.com/wertarbyte/coreutils/blob/master/src/ls.c
 ```bash
 sudo apt-get update && apt-get upgrade
 lscpu                  (cpu architecture)
+$ cat /proc/cpuinfo
+$ cat /proc/meminfo
+vmstat                 (Report virtual memory statistics)
+$ vmstat -S M
 iostat                 (Report CPU and i/o statistics)
+$ iostat -mdz / ? -wmdz
+mpstat                 (Report processor related statistics)
+
 uname -a               (display Linux system info) - r (kernel release)
 last reboot            (reboot history)
 date                   (current date and time)
@@ -91,6 +98,10 @@ cal                    (month calendar)
 free                   (memory)
 $ free -h | awk '/^Mem:/ {print $3 "/" $2}'        (Memory used: used/total)
 screen
+
+env                    (Environment variables)
+set                    (Manipulate shell variables and functions)
+
 ```
 
 [Disk](https://github.com/octopusengine/linux/blob/master/disk.md)
@@ -208,7 +219,7 @@ $ ps axch -o cmd:16,%mem --sort=-%mem | head (top memory usage ps)
 $ ps axch -o cmd:16,%cpu --sort=-%cpu | head (top cpu usage ps)
 $ ps -e -o pid,ppid,uid,user,gid,group,pcpu,pmem,etime,tty,args
 pstree
-$ ptree -a $$
+$ ptree -pa $$
 pgrep -U "$USER"
 kill ID / NAME
 kill $(ps aux | grep ´...´ | awk ...)
