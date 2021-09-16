@@ -204,6 +204,7 @@ scp                    (file transfer)
 $ scp file user@url:   
 
 dmesg                  (report sit.)
+$ dmesg -H | grep X
 sudo blkid
 $ echo "& one more line" >> FILE / ~/name.txt
 
