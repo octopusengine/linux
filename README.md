@@ -60,7 +60,8 @@ dpkg                      (Package manager - Debian/Ubuntu)
 $ dpkg -l | more          (~ what is installed)
 $ dpkg -l | grep -i game/python... (-i case intersensitive - Game / gaMe..)
 $ sudo dpkg --configure -a
-$ ps -ef | grep dpkg*  --> kill PID#
+rpm                       (RedHat Package Manager)
+
 clear                     (clear terminal / CTRL+L)
 tput civis                (cursor off)
 tput cnorm                (cursor on)
@@ -119,6 +120,9 @@ finger user             (info about user)
 sudo adduser newUser
 sudo passwd newUser
 passwd
+$ echo abc123 | cracklib-check   
+$ -> it is too simplistic/systematic
+
 chmod                   (change the permission of file to octal)
 $ chmod 775 DIR         (~ pwd)/hi.sh ( - change mode to 775)
 $ chmod +x FILE         (~ "executable" - better)
@@ -190,6 +194,7 @@ tr                     (translate or delete characters)
 $ echo test | tr -d"t" >> es
 $ echo -n "agama3" | sha256sum | tr -d "[:space:]-" >> correct hash
 find
+$ find /var/ | grep .service
 locate STR 
 wc FILE                (Print byte, word, and line counts)
 grep FILE/EXPR         (history: g/re/p - print regul.expr.)
@@ -214,6 +219,7 @@ $ echo "& one more line" >> FILE / ~/name.txt
 ```bash
 ps
 $ ps afux                   (~ process - all tree user)
+$ ps -ef | grep dpkg*       --> kill PID#
 $ ps afx | grep py > ID     (process ID PID = $, $$ $PPID) 
 $ ps aux | grep -i vi (-i ignore case)
 $ ps axch -o cmd:16,%mem --sort=-%mem | head (top memory usage ps)
@@ -244,6 +250,7 @@ lsmod
 shutdown -h / -r            (Shutdown or restart linux)
 reboot                      (Reboot the system)
 
+systemd-cgls
 system nginx status / start / stop / restart
 systemctl status nginx
 systemctl daemon-reload
