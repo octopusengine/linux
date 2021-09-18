@@ -8,6 +8,8 @@
 
 [Network](https://github.com/octopusengine/linux/blob/master/network.md)
 
+[Multimedia](https://github.com/octopusengine/linux/blob/master/multimedia.md)
+
 [Links](https://github.com/octopusengine/linux/blob/master/links.md)
 
 ---
