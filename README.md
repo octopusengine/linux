@@ -1,16 +1,11 @@
 # linux
 
-[Directory structure](https://github.com/octopusengine/linux/blob/master/directory_struct.md)
-
-[Applications and Programs](https://github.com/octopusengine/linux/blob/master/app_prg.md)
-
-[Disk](https://github.com/octopusengine/linux/blob/master/disk.md)
-
-[Network](https://github.com/octopusengine/linux/blob/master/network.md)
-
-[Multimedia](https://github.com/octopusengine/linux/blob/master/multimedia.md)
-
-[Links](https://github.com/octopusengine/linux/blob/master/links.md)
+- [Directory structure](https://github.com/octopusengine/linux/blob/master/directory_struct.md)
+- [Applications and Programs](https://github.com/octopusengine/linux/blob/master/app_prg.md)
+- [Disk](https://github.com/octopusengine/linux/blob/master/disk.md)
+- [Network](https://github.com/octopusengine/linux/blob/master/network.md)
+- [Multimedia](https://github.com/octopusengine/linux/blob/master/multimedia.md)
+- [Links](https://github.com/octopusengine/linux/blob/master/links.md)
 
 ---
 
