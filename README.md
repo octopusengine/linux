@@ -173,6 +173,13 @@ $ trash-info / trash-put / trash-empty ...
 echo file.txt byl > backup and delete
 cat FILE | less / more
 
+gzip FILE               (Compress or decompress named file-s)
+$ gzip -c f1 > f.gz     (...use output redirection to write the output)
+$ gzip f1 f2            (compress multiple files by listing them)
+$ gzip -r FOLDER
+$ gzip -kv              (-keep -verbose/print info %)    
+$ gzip -d f.gz          (dekompress a file)
+
 awk                     (Find and Replace text, database sort/validate/index)
 $ awk '{print}' FILE = cat FILE
 $ awk '{print $2}' FILE -> second column           ($0 = all,  $1 first, ...)
