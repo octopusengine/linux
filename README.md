@@ -176,6 +176,7 @@ $ gzip f1 f2            (compress multiple files by listing them)
 $ gzip -r FOLDER
 $ gzip -kv              (-keep -verbose/print info %)    
 $ gzip -d f.gz          (dekompress a file)
+$ unzip FILE.zip
 
 awk                     (Find and Replace text, database sort/validate/index)
 $ awk '{print}' FILE = cat FILE
