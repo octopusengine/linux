@@ -243,8 +243,23 @@ top                         (	List processes running on the system)
 htop                        (better top)
 iotop
 wiresharp-gtk
+
 cron                        (Daemon to execute scheduled commands)
 crontab                     (Schedule a command to run at a later time)
+$ crontab -l                (list - of cron job)
+$ crontab -e                (edit - for user)
+$ sudo crontab -u root -e   (edit - for root)
+:
+m h dom mon dow  command  (minute hour month day-of-week)
+* * * * * * command
+
+* * * * * * apt instal -y tmux
+$ cat /var/log/syslog  | grep tmux
+
+1 * * * * * date >> /root/date.txt
+...
+:
+
 lsof                        (List open files)
 lspci                       (List all PCI devices)
 lsusb
