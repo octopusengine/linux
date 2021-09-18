@@ -257,6 +257,7 @@ m h dom mon dow  command  (minute hour month day-of-week)
 $ cat /var/log/syslog  | grep tmux
 
 1 * * * * * date >> /root/date.txt
+0 3 * * * * /usr/local/bin/website_backup.sh
 ...
 :
 
