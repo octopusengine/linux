@@ -1,7 +1,7 @@
-#Multimedia
+# Multimedia
 
 
-###Images
+### Images
 
 gimp
 
@@ -9,7 +9,7 @@ inkscape
 
 ---
 
-###Audio
+### Audio
 
 audacity
 
@@ -23,7 +23,7 @@ mixxx
 
 ---
 
-###Video
+### Video
 
 vlc
 
