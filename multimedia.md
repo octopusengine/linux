@@ -3,6 +3,12 @@
 
 ### Images
 
+jp2a
+```bash
+$ jp2a IMAGE.jpg   (convert jpg to ASCIIart)
+$ jp2a IMAGE.jpg --output=IMG_ASCII.txt
+```
+
 gimp
 
 inkscape
