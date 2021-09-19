@@ -209,6 +209,12 @@ md5sum FILE
 gpg                    (GnuPrivacy Guard)
 $ gpg -c FILE          (~ encrypt F)
 $ gpg file.gpg         (~ decrypt F)
+ssss                   (Shamir's Secret Sharing Scheme)
+$ ssss-split -t 3 -n 5  
+$ ... -> Enter the secret, at most 128 ASCII characters: my secret root password
+$ ssss-combine -t 3     
+$ ... -> Resulting secret: my secret root password
+
 find DIR/FILE          (Find files)
 wget URL               (Retrieve web pages or files via HTTP, HTTPS or FTP)
 $ wget -O https://raw.githubusercontent.com/octopusengine/linux/master/ct/btc.sh
