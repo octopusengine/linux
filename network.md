@@ -45,6 +45,11 @@ $ ssh-copy-id
 $ ssh IP / ssh USER@IP
 $ logout
 
+$ ssh-keygen -b 4096
+--> priv.key: id_rsa
+--> publ.key: id_rsa.pub
+$ ssh-copy-id USER@IP
+
 ssh-tor (open port for tor: in ..torrc)
 $ torify ssh USER@HOSTNAME.onion
 
