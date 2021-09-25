@@ -207,8 +207,11 @@ wc FILE                (Print byte, word, and line counts)
 grep FILE/EXPR         (history: g/re/p - print regul.expr.)
 md5sum FILE
 gpg                    (GnuPrivacy Guard)
-$ gpg -c FILE          (~ encrypt F)
-$ gpg file.gpg         (~ decrypt F)
+$ gpg --full-gen-key   (..RSA/2048/expiration..)
+$ gpg -r MAIL -e FILE  (-recipient, -encrypt)
+$ gpg -d FILE.gpg      (-decrypt)
+$ gpg -c FILE          (~ simple encrypt F)
+$ gpg file.gpg         (~ simple decrypt F)
 ssss                   (Shamir's Secret Sharing Scheme)
 $ ssss-split -t 3 -n 5  
 $ ... -> Enter the secret, at most 128 ASCII characters: my secret root password
