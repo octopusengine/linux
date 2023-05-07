@@ -148,6 +148,7 @@ popd                    (Restore the previous value of the current directory)
 mkdir                   (Create new folder/s)
 rmdir                   (Remove folder/s)
 touch FILE              (create or update F)
+code FILE               ( = with your IDE)
 cat                     (Concatenate and print (display) the content of files)
 $ cat > FILE            (~ write and create..)  end: CTRL+C / CTRL+D
 $ cat >> FILE           (~ add..)
