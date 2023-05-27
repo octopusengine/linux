@@ -6,7 +6,7 @@
 - [Multimedia](https://github.com/octopusengine/linux/blob/master/multimedia.md)
 - [Applications and Programs](https://github.com/octopusengine/linux/blob/master/app_prg.md)
 - [Links](https://github.com/octopusengine/linux/blob/master/links.md)
-
+- [python useful and cool toolbox](https://github.com/octopusengine/py_uctx)
 ---
 
 ## The Most Useful Linux Commands To Run in the Terminal
