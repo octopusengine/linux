@@ -5,7 +5,7 @@
 
 jp2a
 ```bash
-$ jp2a IMAGE.jpg   (convert jpg to ASCIIart)
+$ jp2a (convert jpg to ASCIIart)
 $ jp2a IMAGE.jpg --output=IMG_ASCII.txt
 ```
 
@@ -35,8 +35,10 @@ vlc
 
 VSDC video editor
 
-
-
+```bash
+$ sudo apt install ffmpeg
+$ ffmpeg -i input.mp4 -vn -acodec libmp3lame -ab 192k output.mp3
+```
 ---
 
 ### webcam
@@ -47,6 +49,7 @@ fswebcam -r "${CAM_RESOLUTION}" --info "${CAM_INFO_TEXT}" --font "${CAM_FONT}" -
 debug "Get picture from camera"
 [ ! -e "/tmp/temp.jpg" ] && echo "Error while getting picture" >&2 && exit 1
 debug "Uploading photo to server"
+
 curl -s -X POST -F "fileToUpload=@/tmp/temp.jpg" -F "authkey=${UPLOAD_KEY}" -F "submit=1" ${UPLOAD_CURL_EXTRA_PARAMS} "${UPLOAD_URL}" > /dev/null
 ```
 ---
