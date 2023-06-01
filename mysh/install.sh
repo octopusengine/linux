@@ -3,16 +3,16 @@
 # /home/user: cd
 # mkdir mysh
 # cd mysh
-# wget https://raw.githubusercontent.com/octopusengine/linux/master/mysh/inst20.sh
+# wget https://raw.githubusercontent.com/octopusengine/linux/master/mysh/install.sh
 # chmod +x inst20.sh
-# ./inst20.sh
+# ./install.sh
 
 wget https://raw.githubusercontent.com/octopusengine/linux/master/mysh/info.sh
 chmod +x info.sh
 ./info.sh
 
 echo "============================================"
-echo "--- instYY.sh > install - octopusLab 2017-20"
+echo "--- yenda > install - octopus/agama 2017-23"
 echo "============================================"
 # sudo root ...
 
