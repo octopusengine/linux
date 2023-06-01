@@ -4,7 +4,7 @@
 # mkdir mysh
 # cd mysh
 # wget https://raw.githubusercontent.com/octopusengine/linux/master/mysh/install.sh
-# chmod +x inst20.sh
+# chmod +x install.sh
 # ./install.sh
 
 wget https://raw.githubusercontent.com/octopusengine/linux/master/mysh/info.sh
