@@ -14,6 +14,7 @@ $ alias ipaddress="ifconfig | grep broadcast | awk `{print $2}`"
 $ alias ipaddress="echo $(ifconfig | grep broadcast | awk `{print $2}`)" 
 ethtool eth()
 ip addr
+$ ip address | grep eth0 | grep inet
 curl [options] URL -- dtata transfer (HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP or FILE)
 nc (net cat / listen / connect)
 
