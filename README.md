@@ -153,6 +153,7 @@ cat                     (Concatenate and print (display) the content of files)
 $ cat > FILE            (~ write and create..)  end: CTRL+C / CTRL+D
 $ cat >> FILE           (~ add..)
 $ cat F1 F2 > F3 (join)
+$ bat                   (~ cat, for "prg" better)
 $ echo "add line" >> FILE
 printf
 $ echo $((1+2))          -> 3
