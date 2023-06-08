@@ -1,4 +1,4 @@
-| [Directory struct](https://github.com/octopusengine/linux/blob/master/directory_struct.md) | [Disk] | [Network](https://github.com/octopusengine/linux/blob/master/network.md) | [Multimedia](https://github.com/octopusengine/linux/blob/master/multimedia.md) | [App & Prog](https://github.com/octopusengine/linux/blob/master/app_prg.md) | [Links](https://github.com/octopusengine/linux/blob/master/links.md) |
+| [Directory struct](https://github.com/octopusengine/linux/blob/master/directory_struct.md) | **Disk** | [Network](https://github.com/octopusengine/linux/blob/master/network.md) | [Multimedia](https://github.com/octopusengine/linux/blob/master/multimedia.md) | [App & Prog](https://github.com/octopusengine/linux/blob/master/app_prg.md) | [Links](https://github.com/octopusengine/linux/blob/master/links.md) |
 
 ---
 
