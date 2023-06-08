@@ -36,12 +36,13 @@ $ sudo mount -a / /media/usb1t
 
 ddrescue                (Data recovery tool)
 
-df                      (space - disk free)
+**df**                      (space - disk free)
 $ df -h                 (-h human)
- 
-du -sh /dir/
+**du**
+$ du -sh /dir/
 $ du -s * | sort -nr > $HOME/user_space_report.txt
 $ du -shBM /var/ | sort -n
+$ gdu                   (A Pretty Fast Disk Usage Analyzer)
 
 dd if=source of=dest                             (disk dump - of "dest" defines the file or location where you want your data saved) 
 $ dd if=/dev/sda of=/dev/sdb
