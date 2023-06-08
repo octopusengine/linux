@@ -1,4 +1,4 @@
-| [Directory struct](https://github.com/octopusengine/linux/blob/master/directory_struct.md) | [Disk](https://github.com/octopusengine/linux/blob/master/disk.md) | [Network](https://github.com/octopusengine/linux/blob/master/network.md) | [Multimedia](https://github.com/octopusengine/linux/blob/master/multimedia.md) | [App & Prog](https://github.com/octopusengine/linux/blob/master/app_prg.md) | [Links](https://github.com/octopusengine/linux/blob/master/links.md) |
+| [Directory struct](https://github.com/octopusengine/linux/blob/master/directory_struct.md) | [Disk] | [Network](https://github.com/octopusengine/linux/blob/master/network.md) | [Multimedia](https://github.com/octopusengine/linux/blob/master/multimedia.md) | [App & Prog](https://github.com/octopusengine/linux/blob/master/app_prg.md) | [Links](https://github.com/octopusengine/linux/blob/master/links.md) |
 
 ---
 
@@ -36,9 +36,9 @@ $ sudo mount -a / /media/usb1t
 
 ddrescue                (Data recovery tool)
 
-**df**                      (space - disk free)
+df                      (space - disk free)
 $ df -h                 (-h human)
-**du**
+du
 $ du -sh /dir/
 $ du -s * | sort -nr > $HOME/user_space_report.txt
 $ du -shBM /var/ | sort -n
