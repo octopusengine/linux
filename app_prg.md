@@ -7,8 +7,11 @@
 ### Aps & Etc. (terminal)
 ```bash
 tmux / ctrl+B / Create: % (-) " (|) ! (x) Next Prew >
+terminator
 tilix           (tiling terminal emulator)
 
+~ terminal move: ctrl+ 🠖/🠔 / 
+  ctrl+u (del rigt) / ctrl+k (delete from cursor to right)
 
 $ sudo add-apt-repository universe (for ubuntu)
 $ sudo apt install mc
