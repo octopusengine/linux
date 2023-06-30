@@ -16,6 +16,8 @@ ethtool eth()
 ip addr
 $ ip address | grep eth0 | grep inet
 curl [options] URL -- dtata transfer (HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP or FILE)
+$ curl -s "https://api.chucknorris.io/jokes/random" | jq -r '.value'
+
 nc (net cat / listen / connect)
 
 iftop
@@ -30,6 +32,8 @@ traceroute      (Trace Route to Host)
 mtr             (Network diagnostics - traceroute/ping)
 ip a l / a s    (addr show)
 arp             (ip & MAC addr. with robust feature set)
+$ arp -a        (display all hosts in alternative BSD style)
+$ more /etc/hosts
 
 nmap            (network mapper)
 $ nmap - sn / -v -A / -sP 192.168.0.*
