@@ -27,6 +27,7 @@ scrot           (print screen)
 
 $ toilet -f mono12 -F metal Tecmint.com
 rig             (random identity)
+fortune         (random quotes)
 figlet Welcome
 echo "octopusengine[dot]com is a community of Linux Nerds and Geeks" | pv -qL 10  (x ./baudprint.pl 600)
 sl              (Steam Locomotive)
