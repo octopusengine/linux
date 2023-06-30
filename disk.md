@@ -33,6 +33,8 @@ $ sudo mkfs.ext4 -L disk_name /dev/sdb1  (formating: ext2/3/4 bfs/fat/nfts/vfat/
 mount DEV PATH          (Mount a file system - device + path)
 $ sudo mount /dev/sdb1 usb-disk
 $ sudo mount -a / /media/usb1t
+$ mount | column -t     (+F11 table)
+ 
 
 ddrescue                (Data recovery tool)
 
