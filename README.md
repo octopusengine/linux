@@ -42,9 +42,6 @@ $ date & sleep & date
 COMM1 && COMM2             (if 1 then 2)
 z
 
-history                    (Command History - CTRL+R)
-$ history | less / tail..   
-$ history >> history123.txt
 alias COMM/expr. ("rename")
 $ alias hm="ls -l | wc -l" (hm = howmany)
 sleep 2                    (Delay for a specified time - 2 sec)
@@ -57,18 +54,49 @@ dpkg                      (Package manager - Debian/Ubuntu)
 $ dpkg -l | more          (~ what is installed)
 $ dpkg -l | grep -i game/python... (-i case intersensitive - Game / gaMe..)
 $ sudo dpkg --configure -a
-rpm                       (RedHat Package Manager)
 
-clear                     (clear terminal / CTRL+L)
-tput civis                (cursor off)
-tput cnorm                (cursor on)
+rpm                       (RedHat Package Manager)
 
 $PATH
 which bash / APP          (ls > /usr/bin/ls) 
 whereis APP               (ls > ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz)
-
-st            (simple terminal - install sttrminal)
 ```
+
+### Terminal
+```
+clear                     (clear terminal / CTRL+L)
+tput civis                (cursor off)
+tput cnorm                (cursor on)
+st            (simple terminal - install sttrminal)
+
+history                    (Command History - CTRL+R)
+$ history | less / tail..   
+$ history >> history123.txt
+$ !NUM (line) > COMM
+$ export HISTTIMEFORMAT="%F %T " (set for session) 
+$ export HISTTIMEFORMAT="%Y-%m-%d %T "
+$ nano ~/.bashrc                 (set pernament) 
+
+```
+- **CTRL+C**: **Stop** the currently running process or command.
+- **CTRL+D**: Exit the current interactive shell or end input from the keyboard (EOF).
+- **CTRL+Z**: Suspend the current process and put it in the background.
+- **CTRL+L**: **Clear** the terminal screen and move the cursor to the beginning.
+- **CTRL+A**: Move the cursor to the **beginning of the line**.
+- **CTRL+E**: Move the cursor to the end of the line.
+- **CTRL+U**: Delete the text on the line **before** the cursor. (Clear line)
+- **CTRL+K**: Delete the text on the line **after** the cursor.
+- **CTRL+W**: Delete the **word** before the cursor.
+- **CTRL+Y**: **Paste** the last deleted text.
+- **CTRL+R**: **Search** the command history.
+- **CTRL+G**: Cancel the current action or command.
+- **CTRL+T**: Swap the two neighboring characters.
+- **CTRL+P**: Show the previous command from history.
+- **CTRL+N**: Show the next command from history.
+- F11: full screen
+
+
+
 
 ### Sources
 
