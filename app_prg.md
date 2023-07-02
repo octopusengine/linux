@@ -52,6 +52,15 @@ $ pi=`echo "h=10;4*a(1)" | bc -l`    ( echo $pi -> 3.14...)
 
 ```
 
+### Multimedia
+```
+<Photo management>
+gthumb
+digikam
+kphotoalbum
+
+```
+
 ---
 
 ### bash / CPP / Python
