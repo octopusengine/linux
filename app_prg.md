@@ -58,6 +58,8 @@ $ pi=`echo "h=10;4*a(1)" | bc -l`    ( echo $pi -> 3.14...)
 gthumb
 digikam
 kphotoalbum
+darktable
+shotwell
 
 ```
 
