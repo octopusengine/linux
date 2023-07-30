@@ -45,6 +45,7 @@ KeePassX         (password manager)
 
 bc               (line calculator)
 $ echo "12+5" | bc
+$ echo "ibase=2; 11010010" | bc
 $ hex="FF" && echo "obase=10;ibase=16;$hex" | bc  ( -> 255 )
 $ echo "1==2" | bc           ( -> 0 )
 $ echo "10>5" | bc           ( -> 1 )
