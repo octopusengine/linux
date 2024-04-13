@@ -54,6 +54,9 @@ dpkg                      (Package manager - Debian/Ubuntu)
 $ dpkg -l | more          (~ what is installed)
 $ dpkg -l | grep -i game/python... (-i case intersensitive - Game / gaMe..)
 $ sudo dpkg --configure -a
+apk                       (Package manager - Alpine Linux)
+$ apk list                {homeassistant}
+$ apk add mc              {install mc ..}
 
 rpm                       (RedHat Package Manager)
 
@@ -94,7 +97,6 @@ $ nano ~/.bashrc                 (set pernament)
 - **CTRL+P**: Show the previous command from history.
 - **CTRL+N**: Show the next command from history.
 - F11: full screen
-
 
 
 
