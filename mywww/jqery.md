@@ -108,25 +108,17 @@ prevUntil()
 
 <script>
 $(document).ready(function() {
-  $('.ico').mouseenter(function() {
-     $(this).css('opacity', '0.5');
-     }).mouseleave(function() {
-     $(this).css('opacity', '0.9');
-    });
-
- $("#examples").hide();
- $("#ex").click(function(){ $("#examples").slideToggle("slow"); });
+   $("#examples").hide();
+   $("#ex").click(function(){ $("#examples").slideToggle("slow"); });
 });
 </script>
 
-<button class="btn btn-warning" id="ex">Examples...</button><br /><br />
+<button class="btn btn-warning" id="ex">Example...</button><br /><br />
 <div class="fc" id="examples">
 ...
 </div>
 
-
 ```
-
 
 ---
 
