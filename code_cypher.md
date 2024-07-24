@@ -8,19 +8,22 @@
 
 Negation
 ```bash
-# Example of bitwise negation on a binary string
-echo "example" | tr '01' '10' | tr '01' '10'
+# negation of a binary string
+echo "11100010" | tr '10' '01'
+# 00011101
 ```
 
 Reverse
 ```bash
 # Reverse a string
-echo "hello" | rev | rev
+echo "agamapoint" | rev
+tniopamaga
 ```
 
 ROT13 | Caesar (13)
 ```bash
-echo "Cbgxna wr cbq xnzrarz" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+$ echo "Ntnzn cbvag frperg" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+# Agama point secret
 ```
 
 ---
@@ -30,8 +33,8 @@ echo "Cbgxna wr cbq xnzrarz" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 BASE64
 ```bash
 # Encode a text string
-echo -n "Hello, World!" | base64
-# Output: SGVsbG8sIFdvcmxkIQ==
+echo -n "Agama point" | base64
+# Output: QWdhbWEgcG9pbnQ=
 
 # Encode the content of a file
 base64 input.txt
@@ -48,7 +51,7 @@ echo -n "Hello, World!" | base64 > encoded.txt
 
 sha256
 ```bash
-$ echo -n "agama3" | sha256sum | tr -d "[:space:]-" >> correct hash
+$ echo -n "agama3" | sha256sum | tr -d "[:space:]-" # correct hash
 ```
 
 ---
@@ -71,6 +74,7 @@ echo | awk '{ printf("%08d\n", strtonum("42") + 0) }'
 dec2hex
 ```bash
 echo "obase=16; 42" | bc
+# 101010
 
 printf "%X\n" 42
 
@@ -85,6 +89,7 @@ MASK
 ```bash
 # Using bc to mask with 0xFFFFFFFF
 echo "obase=16; 42 & FFFFFFFF" | bc
+# 
 ```
 
 ```bash
@@ -98,8 +103,8 @@ normalize_to_32bit() {
 }
 
 # Example usage
-normalize_to_32bit 42
-normalize_to_32bit 255
+normalize_to_32bit 42  # 0000002A
+normalize_to_32bit 255 # 000000FF
 normalize_to_32bit 4294967295  # Should output FFFFFFFF
 normalize_to_32bit 4294967296  # Should output 00000000 (overflow case)
 ```
@@ -125,6 +130,7 @@ dec1=$((16#$hex1))
 dec2=$((16#$hex2))
 xor_result=$((dec1 ^ dec2))
 printf "%X\n" $xor_result
+# 85A54121
 
 # Hexadecimal numbers
 hex1="1A2B3C4D"
