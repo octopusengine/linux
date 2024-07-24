@@ -51,7 +51,16 @@ echo -n "Hello, World!" | base64 > encoded.txt
 
 sha256
 ```bash
+echo -n „AgamaPoint“ | sha256sum
+# 29b5a9c21f25fcc7c015fee5...1e2f7
+ 
 $ echo -n "agama3" | sha256sum | tr -d "[:space:]-" # correct hash
+
+$ echo i=0; while ! (echo -n "Agama Point $i" | sha256sum | tr -d "\n"; echo " (nonce=$i)")|grep -E "^00"; do let i++; done
+# 00999ac48b71fc267.....269d62d4b9f55b90b1  - (nonce=263)
+
+$ echo i=0; while ! (echo -n "Agama Point $i" | sha256sum | tr -d "\n"; echo " (nonce=$i)")|grep -E "^000"; do let i++; done
+# 00059e3f5b79199b149f1...b5c180b9a6616b9e  - (nonce=3439)
 ```
 
 ---
