@@ -145,13 +145,36 @@ printf "%X\n" $xor_result
 hex1="1A2B3C4D"
 hex2="9F8E7D6C"
 
-# Perform XOR operation using awk
+ Perform XOR operation using awk
 echo | awk -v hex1=$hex1 -v hex2=$hex2 'BEGIN {
     dec1 = strtonum("0x" hex1)
     dec2 = strtonum("0x" hex2)
     xor_result = dec1 ^ dec2
     printf "%X\n", xor_result
 }'
+```
+
+entropy
+```bash
+hexdump -C -n 256 /dev/random
+
+# ->
+00000000  64 52 9f 9b d6 a7 c0 ef  82 fd 73 a2 ca 1f b4 c9  |dR........s.....|
+00000010  2d 52 04 c8 5d df b9 f0  e0 7b 43 71 bd d5 d4 9e  |-R..]....{Cq....|
+00000020  23 3b 39 34 7d b0 b1 b2  f7 76 0e 75 19 7d 14 02  |#;94}....v.u.}..|
+00000030  dc 6b e1 a2 5c 62 29 98  e4 d7 84 bb d8 d7 54 e6  |.k..\b).......T.|
+00000040  97 0b 9a 10 ca ca f4 0a  d5 f2 76 4d a3 8b ce c6  |..........vM....|
+00000050  2f 72 93 4b 5a c8 fc 56  da 5c 6a 18 6d 7a 6a 5d  |/r.KZ..V.\j.mzj]|
+00000060  72 32 84 b2 1c bb eb 0d  18 1d ad f8 1f 49 7d 9d  |r2...........I}.|
+00000070  30 2c 0f 63 fb 79 32 c2  59 70 4c d2 fe f6 10 7c  |0,.c.y2.YpL....||
+00000080  6c b9 dd 3d cd ca 58 05  4a b9 b2 5b 3c 8c a8 35  |l..=..X.J..[<..5|
+00000090  55 98 f5 55 31 73 34 52  00 8d 31 d6 02 4e cc 12  |U..U1s4R..1..N..|
+000000a0  0c 34 6b b9 1e ac 90 52  f5 5c ec 6b 71 13 dd 31  |.4k....R.\.kq..1|
+000000b0  86 fe 9d 0e 6a 9a 6e 21  ba 34 b6 6d 54 1f 82 be  |....j.n!.4.mT...|
+000000c0  91 3f 69 54 45 98 df f9  a8 4e a7 53 cb 64 a1 13  |.?iTE....N.S.d..|
+000000d0  c5 23 06 87 8d 31 4b 9d  23 28 d9 f9 a3 1c 4b d7  |.#...1K.#(....K.|
+000000e0  80 59 98 3d c0 94 d6 20  bf 65 f8 92 3c fc 01 26  |.Y.=... .e..<..&|
+000000f0  5d 2c 2d 90 00 bc 2a d2  58 c8 cd 76 fc 5e ac 76  |],-...*.X..v.^.v|
 ```
 
 
