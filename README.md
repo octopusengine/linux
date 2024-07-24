@@ -6,6 +6,7 @@
 - [Multimedia](https://github.com/octopusengine/linux/blob/master/multimedia.md)
 - [Applications and Programs](https://github.com/octopusengine/linux/blob/master/app_prg.md)
 - [Links](https://github.com/octopusengine/linux/blob/master/links.md)
+- [Code/cypher](https://github.com/octopusengine/linux/blob/master/code_cypher.md)
 - [python useful and cool toolbox](https://github.com/octopusengine/py_uctx)
 ---
 
