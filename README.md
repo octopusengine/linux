@@ -288,6 +288,7 @@ $ seq 9999999 | tqdm --bytes | wc -l
 $ tar -zcf - docs/ | tqdm --bytes --total `du -sb docs/ | cut -f1` > backup.tgz
 top                         (	List processes running on the system)
 htop                        (better top)
+btop                        ...
 iotop
 wiresharp-gtk
 
