@@ -18,6 +18,7 @@ $ sudo apt install mc
 mc              (norton commander - filesystem)
 ranger          (console file manager with VI key bindings)
 htop
+btop
 bpytop          ($ sudo pip3 install bpytop && sudo snap install bpytop)
 
 sensors         (install lm-sensors)
