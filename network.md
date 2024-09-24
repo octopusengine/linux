@@ -18,6 +18,7 @@ $ ip address | grep eth0 | grep inet
 curl [options] URL -- dtata transfer (HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP or FILE)
 $ curl -s "https://api.chucknorris.io/jokes/random" | jq -r '.value'
 
+speedtest
 nc (net cat / listen / connect)
 
 iftop
