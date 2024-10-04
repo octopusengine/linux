@@ -234,7 +234,13 @@ tr                     (translate or delete characters)
 $ echo test | tr -d"t" >> es
 $ echo -n "agama3" | sha256sum | tr -d "[:space:]-" >> correct hash
 find
+find DIR/FILE          (Find files)
 $ find /var/ | grep .service
+fzf                     (Fuzzy finder)
+$ fzf ...
+$ ls | fzf
+$ grep -rl "BLE" --include="*.py" . | fzf
+
 locate STR 
 wc FILE                (Print byte, word, and line counts)
 grep FILE/EXPR         (history: g/re/p - print regul.expr.)
@@ -251,7 +257,6 @@ $ ... -> Enter the secret, at most 128 ASCII characters: my secret root password
 $ ssss-combine -t 3     
 $ ... -> Resulting secret: my secret root password
 
-find DIR/FILE          (Find files)
 wget URL               (Retrieve web pages or files via HTTP, HTTPS or FTP)
 $ wget -O https://raw.githubusercontent.com/octopusengine/linux/master/ct/btc.sh
 scp                    (file transfer)
