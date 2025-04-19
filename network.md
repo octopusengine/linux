@@ -62,6 +62,20 @@ $ ssh-copy-id USER@IP
 ssh-tor (open port for tor: in ..torrc)
 $ torify ssh USER@HOSTNAME.onion
 
+ssh config
+$ nano ~/.ssh/config
+$ chmod 600 ~/.ssh/config
+
+Host pi-home
+    HostName 192.168.x.y
+    User pi
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
+Host internal-*
+    ProxyJump jumpuser@gateway.example.com
+    User internaluser
+$ ssh pi-home
+
 $ scp USER@IP_ADDR:/home/USER/FILE.src FILE.dest                  (netw copy)
 $ scp -v username@from_host:file.txt /local/directory/            (-v Verbose mode) 
 $ scp file.txt username@to_host:/remote/directory/
