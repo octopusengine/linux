@@ -66,7 +66,7 @@ $ ssh-copy-id USER@IP
 ssh-tor (open port for tor: in ..torrc)
 $ torify ssh USER@HOSTNAME.onion
 
-*ssh config*
+ssh config
 $ mkdir -p ~/.ssh
 $ nano ~/.ssh/config
 $ chmod 600 ~/.ssh/config
