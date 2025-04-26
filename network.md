@@ -49,7 +49,11 @@ bsh-write       (send message)
 ssh
 $ sudo apt-get install openssh-server
 $ service ssh start
-$ /etc/init.d/ssh start
+$$ old: /etc/init.d/ssh start
+$ systemctl list-unit-files | grep -i ssh (?ssh.service en/dis-able)
+$ sudo systemctl enable ssh.service
+$ sudo systemctl status ssh
+
 $ ssh-copy-id
 $ ssh IP / ssh USER@IP
 $ logout
