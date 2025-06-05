@@ -177,6 +177,25 @@ hexdump -C -n 256 /dev/random
 000000f0  5d 2c 2d 90 00 bc 2a d2  58 c8 cd 76 fc 5e ac 76  |],-...*.X..v.^.v|
 ```
 
+---
+
+gpg
+```bash
+sudo apt install gnupg
+gpg -c secret_file.txt
+gpg -d secret_file.txt.gpg > tajny_soubor.txt
+
+
+tar czf tajna_slozka.tar.gz tajna_slozka/
+gpg -c tajna_slozka.tar.gz
+
+gpg -d tajna_slozka.tar.gz.gpg > tajna_slozka.tar.gz
+tar xzf tajna_slozka.tar.gz
+
+win:
+# https://www.gpg4win.org/
+```
+
 
 
 
