@@ -192,6 +192,8 @@ gpg -c tajna_slozka.tar.gz
 gpg -d tajna_slozka.tar.gz.gpg > tajna_slozka.tar.gz
 tar xzf tajna_slozka.tar.gz
 
+linux:
+# https://www.gnupg.org/
 win:
 # https://www.gpg4win.org/
 ```
