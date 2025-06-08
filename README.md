@@ -233,6 +233,8 @@ hexdump -C FILE
 tr                     (translate or delete characters)
 $ echo test | tr -d"t" >> es
 $ echo -n "agama3" | sha256sum | tr -d "[:space:]-" >> correct hash
+... | tr 'A-F' 'a-f'     (>> 1ABC2 > 1abc) 
+
 find
 find DIR/FILE          (Find files)
 $ find /var/ | grep .service
