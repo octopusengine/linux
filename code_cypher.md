@@ -214,6 +214,9 @@ uid           [ultimate] Bob B <bob@test.cz>
 
 
 gpg --print-md SHA256 secret_file.txt.gpg
+
+gpg --print-md SHA256 gpg25_o19.txt.gpg | awk 'NR>0 {for (i=2; i<=NF; i++) printf "%s", $i} END {print ""}' | tr 'A-F' 'a-f'
+==
 sha256sum secret_file.txt.gpg | awk '{print $1}'
 ```
 src: [linux](https://www.gnupg.org/) | [win](https://www.gpg4win.org/)
