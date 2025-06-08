@@ -180,6 +180,14 @@ hexdump -C -n 256 /dev/random
 ---
 
 gpg
+```
+Supported algorithms:
+Pubkey: RSA, ELG, DSA, ECDH, ECDSA, EDDSA
+Cipher: IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH, CAMELLIA128, CAMELLIA192, CAMELLIA256
+Hash: SHA1, RIPEMD160, SHA256, SHA384, SHA512, SHA224
+Compression: Uncompressed, ZIP, ZLIB, BZIP2
+```
+
 ```bash
 sudo apt install gnupg
 gpg -c secret_file.txt
@@ -192,11 +200,25 @@ gpg -c tajna_slozka.tar.gz
 gpg -d tajna_slozka.tar.gz.gpg > tajna_slozka.tar.gz
 tar xzf tajna_slozka.tar.gz
 
-linux:
-# https://www.gnupg.org/
-win:
-# https://www.gpg4win.org/
+gpg --gen-key
+gpg --full-generate-key
+gpg --list-keys
+
+...
+pub   rsa3072 2023-07-08 [SC] [expires: 2025-07-08] 912BD016869A1D00B405B3E1C02816DED4BD822B
+uid           [ultimate] Alice A <alice@test.cz>
+sub   rsa3072 2023 07-08 [E] [expires: 2025-07-08]
+pub   rsa3072 2023-07-08 [SC] [expires: 2025-07-08] F454877B829548BD44819F14C6058B41420580F3
+uid           [ultimate] Bob B <bob@test.cz>
+...
+
+
+gpg --print-md SHA256 secret_file.txt.gpg
+sha256sum secret_file.txt.gpg | awk '{print $1}'
 ```
+src: [linux](https://www.gnupg.org/) | [win](https://www.gpg4win.org/)
+
+[GNUPG Manual](https://www.gnupg.org/gph/en/manual.html)
 
 
 
