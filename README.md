@@ -71,9 +71,11 @@ whereis APP               (ls > ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz)
 clear                     (clear terminal / CTRL+L)
 tput civis                (cursor off)
 tput cnorm                (cursor on)
-st            (simple terminal - install sttrminal)
+st                        (simple terminal - install sttrminal)
 
-history                    (Command History - CTRL+R)
+setxkbmap cz / us         (kbd chars)
+
+history                   (Command History - CTRL+R)
 $ history | less / tail..   
 $ history >> history123.txt
 $ !NUM (line) > COMM
