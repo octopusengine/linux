@@ -81,7 +81,19 @@ $ history >> history123.txt
 $ !NUM (line) > COMM
 $ export HISTTIMEFORMAT="%F %T " (set for session) 
 $ export HISTTIMEFORMAT="%Y-%m-%d %T "
-$ nano ~/.bashrc                 (set pernament) 
+
+bash = Bourne Again SHell
+Bourne shell (sh), [Stephen Bourne] / "Bourne Again" ~ "born again"
+.bashrc
+rc = run commands
+.bashrc = Bash Run Commands
+
+$ nano ~/.bashrc           (set pernament - ~/ = /home/yenda/.bashrc) 
+alias kbc='setxkbmap cz'
+alias kbe='setxkbmap us'
+source ~/.bashrc           (refresh)
+
+
 
 ```
 - **CTRL+C**: **Stop** the currently running process or command.
